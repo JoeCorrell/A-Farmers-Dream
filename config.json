@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "A Farmer's Dream",
+	"namespace": "addon",
+	"authors": [
+		"ProfMags"
+	],
+	"targetVersion": "1.20.0",
+	"description": "Dive into a tastier Minecraft with HarvestCraft! Grow new crops, cook delicious foods, and decorate with stylish furniture for an enriched gameplay experience.",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": true,
+		"upcomingCreatorFeatures": true,
+		"enableGameTestFramework": true,
+		"experimentalMolangFeatures": true,
+		"educationEdition": false
+	},
+	"bdsProject": true,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "HarvestCraft"
+				}
+			]
+		]
+	}
+}

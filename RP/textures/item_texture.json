@@ -1,0 +1,18 @@
+{
+	"resource_pack_name": "HarvestCraft",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"corn_item": {
+			"textures": "textures/items/food_item_textures/corn_texture"
+		},
+		"corn_seed": {
+			"textures": "textures/items/seed_item_textures/corn_seed_texture"
+		},
+		"tomato_item": {
+			"textures": "textures/items/food_item_textures/tomato_texture"
+		},
+		"tomato_seed": {
+			"textures": "textures/items/seed_item_textures/tomato_seed_texture"
+		}
+	}
+}

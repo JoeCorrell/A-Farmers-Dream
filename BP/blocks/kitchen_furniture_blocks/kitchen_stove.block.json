@@ -1,0 +1,189 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:kitchen_stove",
+            "menu_category": {
+                "category": "construction"
+            },
+            "properties": {
+                "property:direction_player_is_facing": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "property:animated": [
+                    0,
+                    1,
+                    2
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('property:direction_player_is_facing')== 0",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('property:direction_player_is_facing')== 1",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('property:direction_player_is_facing')== 2",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('property:direction_player_is_facing')== 3",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            270,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('property:animated') == 0",
+                "components": {
+                    "minecraft:queued_ticking": {
+                        "looping": false,
+                        "interval_range": [
+                            0.25,
+                            0.25
+                        ],
+                        "on_tick": {
+                            "event": "event:place_inventory"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('property:animated') == 1",
+                "components": {
+                    "minecraft:on_interact": {
+                        "event": "event:block_opened",
+                        "target": "self"
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('property:animated') == 2",
+                "components": {
+                    "minecraft:on_interact": {
+                        "event": "event:block_closed",
+                        "target": "self"
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:selection_box": {
+                "origin": [
+                    -8,
+                    7,
+                    -8
+                ],
+                "size": [
+                    16,
+                    9,
+                    16
+                ]
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    16,
+                    16
+                ]
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3
+            },
+            "minecraft:on_player_placing": {
+                "event": "event:block_placed"
+            },
+            "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_stove.loot.json",
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 15
+            },
+            "minecraft:geometry": "geometry.stove",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "kitchen_stove_on",
+                    "ambient_occlusion": true,
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:map_color": "#7d7d7d"
+        },
+        "events": {
+            "event:place_inventory": {
+                "run_command": {
+                    "command": [
+                        "/summon entity:kitchen_furniture_inventory stove ~ ~-0.25 ~"
+                    ]
+                },
+                "set_block_property": {
+                    "property:animated": 1
+                }
+            },
+            "event:block_placed": {
+                "set_block_property": {
+                    "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
+                }
+            },
+            "event:block_closed": {
+                "run_command": {
+                    "command": [
+                        "/playsound drawer.close @p"
+                    ]
+                },
+                "set_block_property": {
+                    "property:animated": 1
+                }
+            },
+            "event:block_opened": {
+                "run_command": {
+                    "command": [
+                        "/playsound drawer.open @p"
+                    ]
+                },
+                "set_block_property": {
+                    "property:animated": 2
+                }
+            }
+        }
+    }
+}

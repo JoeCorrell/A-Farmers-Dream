@@ -1,0 +1,23 @@
+{
+	"kitchen_drawer_oak": {
+		"sound": "wood"
+	},
+	"kitchen_cabinent_oak": {
+		"sound": "wood"
+	},
+	"kitchen_sink_oak": {
+		"sound": "wood"
+	},
+	"kitchen_cupboard_oak": {
+		"sound": "wood"
+	},
+	"kitchen_half_cupboard_oak": {
+		"sound": "wood"
+	},
+	"kitchen_counter_oak": {
+		"sound": "wood"
+	},
+	"kitchen_stove": {
+		"sound": "metal"
+	}
+}

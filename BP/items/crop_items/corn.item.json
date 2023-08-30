@@ -1,0 +1,18 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "item:corn"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "corn_item"
+			},
+			"minecraft:use_duration": 32,
+			"minecraft:food": {
+				"nutrition": 4,
+				"saturation_modifier": 1
+			}
+		}
+	}
+}

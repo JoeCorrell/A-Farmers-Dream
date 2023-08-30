@@ -1,0 +1,16 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "item:tomato_seed"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "tomato_seed"
+            },
+            "minecraft:block_placer": {
+                "block": "block:tomato_crop_block"
+            }
+        }
+    }
+}

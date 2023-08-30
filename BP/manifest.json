@@ -1,0 +1,83 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"ProfMags"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.6.1"
+			],
+			"dash": [
+				"0.10.10"
+			]
+		}
+	},
+	"header": {
+		"name": "addon.name",
+		"description": "addon.description",
+		"min_engine_version": [
+			1,
+			20,
+			0
+		],
+		"uuid": "d481ada9-d0ca-4105-b760-8f3171488d7c",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "82c08ae3-c240-4bde-bde1-e26fd82edfb9",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "57a6aced-22ab-4d7b-babf-e9400325c38c",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "8cfe6f02-75d4-4022-b98b-da7478794c43",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-gametest",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-admin",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-net",
+			"version": "1.0.0-beta"
+		}
+	]
+}

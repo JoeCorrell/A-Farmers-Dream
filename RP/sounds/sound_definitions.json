@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.0",
+  "sound_definitions": {
+    "drawer.open": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/kitchen_furniture/kitchen_drawer_open",
+          "volume": 3
+        }
+      ]
+    },
+    "drawer.close": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/kitchen_furniture/kitchen_drawer_close",
+          "volume": 3
+        }
+      ]
+    },
+    "interact.dye_block": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/interactions/dye_block",
+          "volume": 1
+        }
+      ]
+    }
+  }
+}

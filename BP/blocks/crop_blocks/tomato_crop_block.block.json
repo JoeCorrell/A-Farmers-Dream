@@ -1,0 +1,177 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:tomato_crop_block",
+            "properties": {
+                "property:growth_stage": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            "menu_category": {
+                "category": "nature"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('property:growth_stage') == 0",
+                "components": {
+                    "minecraft:geometry": "geometry.tomato_crop_block_stage_0",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "tomato_crop_block_stage_0",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "event:player_used_bone_meal",
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')"
+                    },
+                    "minecraft:loot": "loot_tables/crop_block_loot/tomato_crop_block_loot/tomato_crop_block_stage_0.loot.json"
+                }
+            },
+            {
+                "condition": "query.block_property('property:growth_stage') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.tomato_crop_block_stage_1",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "tomato_crop_block_stage_1",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "event:player_used_bone_meal",
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')"
+                    },
+                    "minecraft:loot": "loot_tables/crop_block_loot/tomato_crop_block_loot/tomato_crop_block_stage_0.loot.json"
+                }
+            },
+            {
+                "condition": "query.block_property('property:growth_stage') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.tomato_crop_block_stage_2",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "tomato_crop_block_stage_2",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "event:player_used_bone_meal",
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')"
+                    },
+                    "minecraft:loot": "loot_tables/crop_block_loot/tomato_crop_block_loot/tomato_crop_block_stage_0.loot.json"
+                }
+            },
+            {
+                "condition": "query.block_property('property:growth_stage') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.tomato_crop_block_stage_3",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "tomato_crop_block_stage_3",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "event:player_used_bone_meal",
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')"
+                    },
+                    "minecraft:loot": "loot_tables/crop_block_loot/tomato_crop_block_loot/tomato_crop_block_stage_0.loot.json"
+                }
+            },
+            {
+                "condition": "query.block_property('property:growth_stage') == 4",
+                "components": {
+                    "minecraft:geometry": "geometry.tomato_crop_block_stage_4",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "tomato_crop_block_stage_4",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:loot": "loot_tables/crop_block_loot/tomato_crop_block_loot/tomato_crop_block_stage_4.loot.json",
+                    "minecraft:on_interact": {
+                        "event": "event:harvest_crop"
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:geometry": "geometry.tomato_crop_block_stage_0",
+            "minecraft:random_ticking": {
+                "on_tick": {
+                    "event": "event:crop_growth_stage_increase"
+                }
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    0,
+                    0,
+                    0
+                ],
+                "size": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "minecraft:selection_box": true,
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ],
+                        "block_filter": [
+                            "farmland"
+                            //"block:fertile_soil"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:loot": "loot_tables/crop_block_loot/tomato_crop_block_loot/tomato_crop_block_stage_0.loot.json",
+            "minecraft:light_dampening": 0
+        },
+        "events": {
+            "event:player_used_bone_meal": {
+                "sequence": [
+                    {
+                        "decrement_stack": {},
+                        "run_command": {
+                            "command": [
+                                "particle minecraft:crop_growth_emitter ~~~",
+                                "playsound item.bone_meal.use @a ~~~"
+                            ]
+                        },
+                        "trigger": {
+                            "event": "event:crop_growth_stage_increase"
+                        }
+                    }
+                ]
+            },
+            "event:crop_growth_stage_increase": {
+                "set_block_property": {
+                    "property:growth_stage": "(query.block_property('property:growth_stage')<4) ? query.block_property('property:growth_stage') + 1 : 4"
+                }
+            },
+            "event:harvest_crop": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "property:growth_stage": 3
+                        },
+                        "spawn_loot": {
+                            "table": "loot_tables/crop_block_loot/tomato_crop_block_loot/tomato_crop_block_stage_4.loot.json"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

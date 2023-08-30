@@ -1,0 +1,191 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "entity:kitchen_furniture_inventory",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      /* "component_group:kitchen_drawer_inventory": {
+        "minecraft:inventory": {
+          "container_type": "hopper",
+          "can_be_siphoned_from": true
+        }
+      },
+      "component_group:kitchen_sink_inventory": {
+        "minecraft:inventory": {
+          "container_type": "hopper",
+          "can_be_siphoned_from": true
+        }
+      },
+      "component_group:kitchen_cabinent_inventory": {
+        "minecraft:inventory": {
+          "container_type": "hopper",
+          "can_be_siphoned_from": true
+        }
+      },
+      "component_group:kitchen_cupboard_inventory": {
+        "minecraft:inventory": {
+          "container_type": "hopper",
+          "can_be_siphoned_from": true
+        }
+      },
+      "component_group:kitchen_half_cupboard_inventory": {
+        "minecraft:inventory": {
+          "container_type": "hopper",
+          "can_be_siphoned_from": true
+        }
+      },*/
+      "component_group:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:inventory": {
+        "container_type": "hopper",
+        "can_be_siphoned_from": true
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "width": 0.7,
+            "height": 0.5,
+            "pivot": [
+              -0.03,
+              -0,
+              0.03
+            ]
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:inside_block_notifier": {
+        "block_list": [
+          {
+            "block": "block:kitchen_drawer_white",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_white",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_white",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_white",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_white",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          }
+        ]
+      },
+      "minecraft:despawn": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "has_tag",
+              "subject": "self",
+              "operator": "equals",
+              "value": "despawn"
+            }
+          ]
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "player",
+          "deals_damage": false
+        }
+      },
+      "minecraft:health": {
+        "value": 1
+      }
+    },
+    "events": {
+      /*
+      "event:switch_storage_size_to_drawer": {
+        "add": {
+          "component_groups": [
+            "component_group:kitchen_drawer_inventory"
+          ]
+        }
+      },
+      "event:switch_storage_size_to_sink": {
+        "add": {
+          "component_groups": [
+            "component_group:kitchen_sink_inventory"
+          ]
+        }
+      },
+      "event:switch_storage_size_to_cabinent": {
+        "add": {
+          "component_groups": [
+            "component_group:kitchen_cabinent_inventory"
+          ]
+        }
+      },
+      "event:switch_storage_size_to_cupboard": {
+        "add": {
+          "component_groups": [
+            "component_group:kitchen_cupboard_inventory"
+          ]
+        }
+      },
+      "event:switch_storage_size_to_half_cupboard": {
+        "add": {
+          "component_groups": [
+            "component_group:kitchen_half_cupboard_inventory"
+          ]
+        }
+      },*/
+      "event:despawn": {
+        "add": {
+          "component_groups": [
+            "component_group:despawn"
+          ]
+        }
+      }
+    }
+  }
+}
