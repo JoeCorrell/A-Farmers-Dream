@@ -99,7 +99,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_white",
+                            "texture": "kitchen_universal_colored_white",
                             "render_method": "opaque"
                         }
                     }
@@ -110,7 +110,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_black",
+                            "texture": "kitchen_universal_colored_black",
                             "render_method": "opaque"
                         }
                     }
@@ -121,7 +121,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_blue",
+                            "texture": "kitchen_universal_colored_blue",
                             "render_method": "opaque"
                         }
                     }
@@ -132,7 +132,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_brown",
+                            "texture": "kitchen_universal_colored_brown",
                             "render_method": "opaque"
                         }
                     }
@@ -143,7 +143,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_cyan",
+                            "texture": "kitchen_universal_colored_cyan",
                             "render_method": "opaque"
                         }
                     }
@@ -154,7 +154,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_gray",
+                            "texture": "kitchen_universal_colored_gray",
                             "render_method": "opaque"
                         }
                     }
@@ -165,7 +165,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_green",
+                            "texture": "kitchen_universal_colored_green",
                             "render_method": "opaque"
                         }
                     }
@@ -176,7 +176,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_light_blue",
+                            "texture": "kitchen_universal_colored_light_blue",
                             "render_method": "opaque"
                         }
                     }
@@ -187,7 +187,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_lime",
+                            "texture": "kitchen_universal_colored_lime",
                             "render_method": "opaque"
                         }
                     }
@@ -198,7 +198,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_magenta",
+                            "texture": "kitchen_universal_colored_magenta",
                             "render_method": "opaque"
                         }
                     }
@@ -209,7 +209,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_orange",
+                            "texture": "kitchen_universal_colored_orange",
                             "render_method": "opaque"
                         }
                     }
@@ -220,7 +220,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_pink",
+                            "texture": "kitchen_universal_colored_pink",
                             "render_method": "opaque"
                         }
                     }
@@ -231,7 +231,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_purple",
+                            "texture": "kitchen_universal_colored_purple",
                             "render_method": "opaque"
                         }
                     }
@@ -242,7 +242,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_red",
+                            "texture": "kitchen_universal_colored_red",
                             "render_method": "opaque"
                         }
                     }
@@ -253,7 +253,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_light_gray",
+                            "texture": "kitchen_universal_colored_light_gray",
                             "render_method": "opaque"
                         }
                     }
@@ -264,7 +264,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_half_cupboard_yellow",
+                            "texture": "kitchen_universal_colored_yellow",
                             "render_method": "opaque"
                         }
                     }
@@ -356,7 +356,7 @@
             },
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "kitchen_half_cupboard_white",
+                    "texture": "kitchen_universal_colored_white",
                     "ambient_occlusion": true,
                     "render_method": "opaque"
                 }
@@ -405,7 +405,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'white_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:white_dye')",
                         "set_block_property": {
                             "property:block_color": 0
                         },
@@ -420,7 +420,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'black_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:black_dye')",
                         "set_block_property": {
                             "property:block_color": 1
                         },
@@ -435,7 +435,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'blue_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:blue_dye')",
                         "set_block_property": {
                             "property:block_color": 2
                         },
@@ -450,7 +450,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'brown_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:brown_dye')",
                         "set_block_property": {
                             "property:block_color": 3
                         },
@@ -465,7 +465,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'cyan_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cyan_dye')",
                         "set_block_property": {
                             "property:block_color": 4
                         },
@@ -480,7 +480,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'gray_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:gray_dye')",
                         "set_block_property": {
                             "property:block_color": 5
                         },
@@ -495,7 +495,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'green_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:green_dye')",
                         "set_block_property": {
                             "property:block_color": 6
                         },
@@ -510,7 +510,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'light_blue_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:light_blue_dye')",
                         "set_block_property": {
                             "property:block_color": 7
                         },
@@ -525,7 +525,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'lime_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:lime_dye')",
                         "set_block_property": {
                             "property:block_color": 8
                         },
@@ -540,7 +540,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'magenta_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:magenta_dye')",
                         "set_block_property": {
                             "property:block_color": 9
                         },
@@ -555,7 +555,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'orange_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:orange_dye')",
                         "set_block_property": {
                             "property:block_color": 10
                         },
@@ -570,7 +570,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'pink_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:pink_dye')",
                         "set_block_property": {
                             "property:block_color": 11
                         },
@@ -585,7 +585,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'purple_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:purple_dye')",
                         "set_block_property": {
                             "property:block_color": 12
                         },
@@ -600,7 +600,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'red_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:red_dye')",
                         "set_block_property": {
                             "property:block_color": 13
                         },
@@ -615,7 +615,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'light_gray_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:light_gray_dye')",
                         "set_block_property": {
                             "property:block_color": 14
                         },
@@ -630,7 +630,7 @@
                         }
                     },
                     {
-                        "condition": "q.get_equipped_item_name('main_hand') == 'yellow_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:yellow_dye')",
                         "set_block_property": {
                             "property:block_color": 15
                         },

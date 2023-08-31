@@ -1,0 +1,16 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "item:cabbage_seed"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "cabbage_seed"
+            },
+            "minecraft:block_placer": {
+                "block": "block:cabbage_crop_block"
+            }
+        }
+    }
+}

@@ -44,8 +44,38 @@
     },
     "components": {
       "minecraft:inventory": {
-        "container_type": "hopper",
+        "container_type": "inventory",
+        "inventory_size": 18,
         "can_be_siphoned_from": true
+      },
+      //
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_container_open",
+                  "subject": "other"
+                }
+              ]
+            },
+            "event": "event:player_is_in_ui"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_container_open",
+                  "subject": "other",
+                  "operator": "equals",
+                  "value": false
+                }
+              ]
+            },
+            "event": "event:player_has_exited_ui"
+          }
+        ]
       },
       "minecraft:nameable": {
         "allow_name_tag_renaming": false
@@ -143,6 +173,15 @@
       }
     },
     "events": {
+      "event:player_is_in_ui": {
+        "run_command": {
+          "command": [
+            "/say opened",
+            "/playsound drawer.open @p[tag=!sound]",
+            "/tag @p add sound"
+          ]
+        }
+      },
       /*
       "event:switch_storage_size_to_drawer": {
         "add": {

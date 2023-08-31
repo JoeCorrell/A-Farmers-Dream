@@ -1,309 +1,66 @@
 {
 	"num_mip_levels": 4,
 	"padding": 8,
-	"resource_pack_name": "HarvestCraft",
+	"resource_pack_name": "FarmersDream",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
-		//Kitchen Cupboard Block Textures =>
-		"kitchen_cupboard_black": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_black_texture"
+		//Kitchen Block Textures =>
+		"kitchen_universal_colored_black": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_black_texture"
 		},
-		"kitchen_cupboard_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_blue_texture"
+		"kitchen_universal_colored_blue": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_blue_texture"
 		},
-		"kitchen_cupboard_brown": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_brown_texture"
+		"kitchen_universal_colored_brown": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_brown_texture"
 		},
-		"kitchen_cupboard_cyan": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_cyan_texture"
+		"kitchen_universal_colored_cyan": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_cyan_texture"
 		},
-		"kitchen_cupboard_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_gray_texture"
+		"kitchen_universal_colored_gray": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_gray_texture"
 		},
-		"kitchen_cupboard_green": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_green_texture"
+		"kitchen_universal_colored_green": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_green_texture"
 		},
-		"kitchen_cupboard_light_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_light_blue_texture"
+		"kitchen_universal_colored_light_blue": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_light_blue_texture"
 		},
-		"kitchen_cupboard_lime": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_lime_texture"
+		"kitchen_universal_colored_lime": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_lime_texture"
 		},
-		"kitchen_cupboard_magenta": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_magenta_texture"
+		"kitchen_universal_colored_magenta": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_magenta_texture"
 		},
-		"kitchen_cupboard_orange": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_orange_texture"
+		"kitchen_universal_colored_orange": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_orange_texture"
 		},
-		"kitchen_cupboard_pink": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_pink_texture"
+		"kitchen_universal_colored_pink": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_pink_texture"
 		},
-		"kitchen_cupboard_purple": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_purple_texture"
+		"kitchen_universal_colored_purple": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_purple_texture"
 		},
-		"kitchen_cupboard_red": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_red_texture"
+		"kitchen_universal_colored_red": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_red_texture"
 		},
-		"kitchen_cupboard_light_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_light_gray_texture"
+		"kitchen_universal_colored_light_gray": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_light_gray_texture"
 		},
-		"kitchen_cupboard_white": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_white_texture"
+		"kitchen_universal_colored_white": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_white_texture"
 		},
-		"kitchen_cupboard_yellow": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cupboard_block_textures/kitchen_counter_yellow_texture"
+		"kitchen_universal_colored_yellow": {
+			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_yellow_texture"
 		},
-		//Kitchen Half Cupboard Block Textures =>
-		"kitchen_half_cupboard_black": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_black_texture"
-		},
-		"kitchen_half_cupboard_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_blue_texture"
-		},
-		"kitchen_half_cupboard_brown": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_brown_texture"
-		},
-		"kitchen_half_cupboard_cyan": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_cyan_texture"
-		},
-		"kitchen_half_cupboard_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_gray_texture"
-		},
-		"kitchen_half_cupboard_green": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_green_texture"
-		},
-		"kitchen_half_cupboard_light_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_light_blue_texture"
-		},
-		"kitchen_half_cupboard_lime": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_lime_texture"
-		},
-		"kitchen_half_cupboard_magenta": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_magenta_texture"
-		},
-		"kitchen_half_cupboard_orange": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_orange_texture"
-		},
-		"kitchen_half_cupboard_pink": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_pink_texture"
-		},
-		"kitchen_half_cupboard_purple": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_purple_texture"
-		},
-		"kitchen_half_cupboard_red": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_red_texture"
-		},
-		"kitchen_half_cupboard_light_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_light_gray_texture"
-		},
-		"kitchen_half_cupboard_white": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_white_texture"
-		},
-		"kitchen_half_cupboard_yellow": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_half_cupboard_block_textures/kitchen_counter_yellow_texture"
-		},
-		//Kitchen Cabinent Block Textures =>
-		"kitchen_cabinent_black": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_black_texture"
-		},
-		"kitchen_cabinent_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_blue_texture"
-		},
-		"kitchen_cabinent_brown": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_brown_texture"
-		},
-		"kitchen_cabinent_cyan": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_cyan_texture"
-		},
-		"kitchen_cabinent_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_gray_texture"
-		},
-		"kitchen_cabinent_green": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_green_texture"
-		},
-		"kitchen_cabinent_light_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_light_blue_texture"
-		},
-		"kitchen_cabinent_lime": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_lime_texture"
-		},
-		"kitchen_cabinent_magenta": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_magenta_texture"
-		},
-		"kitchen_cabinent_orange": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_orange_texture"
-		},
-		"kitchen_cabinent_pink": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_pink_texture"
-		},
-		"kitchen_cabinent_purple": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_purple_texture"
-		},
-		"kitchen_cabinent_red": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_red_texture"
-		},
-		"kitchen_cabinent_light_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_light_gray_texture"
-		},
-		"kitchen_cabinent_white": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_white_texture"
-		},
-		"kitchen_cabinent_yellow": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_cabinent_block_textures/kitchen_counter_yellow_texture"
-		},
-		//Kitchen Counter Block Textures =>
-		"kitchen_counter_black": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_black_texture"
-		},
-		"kitchen_counter_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_blue_texture"
-		},
-		"kitchen_counter_brown": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_brown_texture"
-		},
-		"kitchen_counter_cyan": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_cyan_texture"
-		},
-		"kitchen_counter_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_gray_texture"
-		},
-		"kitchen_counter_green": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_green_texture"
-		},
-		"kitchen_counter_light_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_light_blue_texture"
-		},
-		"kitchen_counter_lime": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_lime_texture"
-		},
-		"kitchen_counter_magenta": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_magenta_texture"
-		},
-		"kitchen_counter_orange": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_orange_texture"
-		},
-		"kitchen_counter_pink": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_pink_texture"
-		},
-		"kitchen_counter_purple": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_purple_texture"
-		},
-		"kitchen_counter_red": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_red_texture"
-		},
-		"kitchen_counter_light_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_light_gray_texture"
-		},
-		"kitchen_counter_white": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_white_texture"
-		},
-		"kitchen_counter_yellow": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_counter_block_textures/kitchen_counter_yellow_texture"
-		},
-		//Kitchen Drawer Textures =>
-		"kitchen_drawer_black": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_black_texture"
-		},
-		"kitchen_drawer_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_blue_texture"
-		},
-		"kitchen_drawer_brown": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_brown_texture"
-		},
-		"kitchen_drawer_cyan": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_cyan_texture"
-		},
-		"kitchen_drawer_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_gray_texture"
-		},
-		"kitchen_drawer_green": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_green_texture"
-		},
-		"kitchen_drawer_light_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_light_blue_texture"
-		},
-		"kitchen_drawer_lime": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_lime_texture"
-		},
-		"kitchen_drawer_magenta": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_magenta_texture"
-		},
-		"kitchen_drawer_orange": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_orange_texture"
-		},
-		"kitchen_drawer_pink": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_pink_texture"
-		},
-		"kitchen_drawer_purple": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_purple_texture"
-		},
-		"kitchen_drawer_red": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_red_texture"
-		},
-		"kitchen_drawer_light_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_light_gray_texture"
-		},
-		"kitchen_drawer_white": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_white_texture"
-		},
-		"kitchen_drawer_yellow": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_drawer_block_textures/kitchen_counter_yellow_texture"
-		},
-		//Kitchen Sink Textures =>
-		"kitchen_sink_black": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_black_texture"
-		},
-		"kitchen_sink_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_blue_texture"
-		},
-		"kitchen_sink_brown": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_brown_texture"
-		},
-		"kitchen_sink_cyan": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_cyan_texture"
-		},
-		"kitchen_sink_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_gray_texture"
-		},
-		"kitchen_sink_green": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_green_texture"
-		},
-		"kitchen_sink_light_blue": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_light_blue_texture"
-		},
-		"kitchen_sink_lime": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_lime_texture"
-		},
-		"kitchen_sink_magenta": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_magenta_texture"
-		},
-		"kitchen_sink_orange": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_orange_texture"
-		},
-		"kitchen_sink_pink": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_pink_texture"
-		},
-		"kitchen_sink_purple": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_purple_texture"
-		},
-		"kitchen_sink_red": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_red_texture"
-		},
-		"kitchen_sink_light_gray": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_light_gray_texture"
-		},
-		"kitchen_sink_white": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_white_texture"
-		},
-		"kitchen_sink_yellow": {
-			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_yellow_texture"
-		},
+		//Kitchen stove textures =>
 		"kitchen_stove_off": {
 			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_off"
 		},
 		"kitchen_stove_on": {
 			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_on"
 		},
+		//Tomato crop textures =>
 		"tomato_crop_block_stage_0": {
 			"textures": "textures/blocks/crop_blocks_textures/tomato_crop_block_textures/tomato_crop_block_stage_0"
 		},
@@ -319,6 +76,7 @@
 		"tomato_crop_block_stage_4": {
 			"textures": "textures/blocks/crop_blocks_textures/tomato_crop_block_textures/tomato_crop_block_stage_4"
 		},
+		//Corn crop textures =>
 		"corn_crop_block_stage_0": {
 			"textures": "textures/blocks/crop_blocks_textures/corn_crop_block_textures/corn_crop_block_stage_0"
 		},
@@ -333,6 +91,45 @@
 		},
 		"corn_crop_block_stage_4": {
 			"textures": "textures/blocks/crop_blocks_textures/corn_crop_block_textures/corn_crop_block_stage_4"
+		},
+		//Rice crop textures =>
+		"rice_crop_block_stage_0": {
+			"textures": "textures/blocks/crop_blocks_textures/rice_crop_block_textures/rice_crop_block_stage_0"
+		},
+		"rice_crop_block_stage_1": {
+			"textures": "textures/blocks/crop_blocks_textures/rice_crop_block_textures/rice_crop_block_stage_1"
+		},
+		"rice_crop_block_stage_2": {
+			"textures": "textures/blocks/crop_blocks_textures/rice_crop_block_textures/rice_crop_block_stage_2"
+		},
+		"rice_crop_block_stage_3": {
+			"textures": "textures/blocks/crop_blocks_textures/rice_crop_block_textures/rice_crop_block_stage_3"
+		},
+		//Onion crop textures =>
+		"onion_crop_block_stage_0": {
+			"textures": "textures/blocks/crop_blocks_textures/onion_crop_block_textures/onion_crop_block_stage_0"
+		},
+		"onion_crop_block_stage_1": {
+			"textures": "textures/blocks/crop_blocks_textures/onion_crop_block_textures/onion_crop_block_stage_1"
+		},
+		"onion_crop_block_stage_2": {
+			"textures": "textures/blocks/crop_blocks_textures/onion_crop_block_textures/onion_crop_block_stage_2"
+		},
+		"onion_crop_block_stage_3": {
+			"textures": "textures/blocks/crop_blocks_textures/onion_crop_block_textures/onion_crop_block_stage_3"
+		},
+		//Cabbage crop textures =>
+		"cabbage_crop_block_stage_0": {
+			"textures": "textures/blocks/crop_blocks_textures/cabbage_crop_block_textures/cabbage_crop_block_stage_0"
+		},
+		"cabbage_crop_block_stage_1": {
+			"textures": "textures/blocks/crop_blocks_textures/cabbage_crop_block_textures/cabbage_crop_block_stage_1"
+		},
+		"cabbage_crop_block_stage_2": {
+			"textures": "textures/blocks/crop_blocks_textures/cabbage_crop_block_textures/cabbage_crop_block_stage_2"
+		},
+		"cabbage_crop_block_stage_3": {
+			"textures": "textures/blocks/crop_blocks_textures/cabbage_crop_block_textures/cabbage_crop_block_stage_3"
 		}
 	}
 }

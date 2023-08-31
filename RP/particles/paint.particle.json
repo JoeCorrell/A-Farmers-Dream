@@ -79,15 +79,15 @@
 				],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
-					"texture_width": 16,
-					"texture_height": 16,
+					"texture_width": 4,
+					"texture_height": 4,
 					"uv": [
 						0,
 						0
 					],
 					"uv_size": [
-						16,
-						16
+						4,
+						4
 					]
 				}
 			},
@@ -97,11 +97,11 @@
 					"interpolant": "v.color",
 					"gradient": {
 						"0.0": "#FF485DC7",
-						"0.2": "#FF29A4D9",
-						"0.4": "#FF608116",
-						"0.6": "#FFFFCE29",
-						"0.8": "#FFB53129",
-						"1.0": "#FFBD3CB4"
+						"0.2": "#FF485DC7",
+						"0.4": "#FF485DC7",
+						"0.6": "#FF485DC7",
+						"0.8": "#FF485DC7",
+						"1.0": "#FF485DC7"
 					}
 				}
 			}

@@ -2,17 +2,40 @@
 	"resource_pack_name": "HarvestCraft",
 	"texture_name": "atlas.items",
 	"texture_data": {
+		//Corn item textures =>
 		"corn_item": {
 			"textures": "textures/items/food_item_textures/corn_texture"
 		},
 		"corn_seed": {
 			"textures": "textures/items/seed_item_textures/corn_seed_texture"
 		},
+		//Tomato item textures =>
 		"tomato_item": {
 			"textures": "textures/items/food_item_textures/tomato_texture"
 		},
 		"tomato_seed": {
 			"textures": "textures/items/seed_item_textures/tomato_seed_texture"
+		},
+		//Rice item textures =>
+		"rice_item": {
+			"textures": "textures/items/food_item_textures/rice_texture"
+		},
+		"rice_seed": {
+			"textures": "textures/items/seed_item_textures/rice_seed_texture"
+		},
+		//Onion item textures =>
+		"onion_item": {
+			"textures": "textures/items/food_item_textures/onion_texture"
+		},
+		"onion_seed": {
+			"textures": "textures/items/seed_item_textures/onion_seed_texture"
+		},
+		//Cabbage item textures =>
+		"cabbage_item": {
+			"textures": "textures/items/food_item_textures/cabbage_texture"
+		},
+		"cabbage_seed": {
+			"textures": "textures/items/seed_item_textures/cabbage_seed_texture"
 		}
 	}
 }
