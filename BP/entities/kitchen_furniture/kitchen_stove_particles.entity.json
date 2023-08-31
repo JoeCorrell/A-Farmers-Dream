@@ -1,0 +1,93 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "entity:stove_particles",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "component_group:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "width": 0,
+            "height": 0,
+            "pivot": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:inside_block_notifier": {
+        "block_list": [
+          {
+            "block": "block:kitchen_stove",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 0.25,
+        "time_down_event": {
+          "event": "event:do_stove_particles"
+        }
+      },
+      "minecraft:despawn": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "has_tag",
+              "subject": "self",
+              "operator": "equals",
+              "value": "despawn"
+            }
+          ]
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "player",
+          "deals_damage": false
+        }
+      },
+      "minecraft:health": {
+        "value": 123
+      }
+    },
+    "events": {
+      "event:do_stove_particles": {
+        "run_command": {
+          "command": [
+            "/particle minecraft:basic_smoke_particle ~ ~0.25 ~"
+          ]
+        }
+      },
+      "event:despawn": {
+        "add": {
+          "component_groups": [
+            "component_group:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

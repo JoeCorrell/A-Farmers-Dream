@@ -27,6 +27,42 @@
           "volume": 1
         }
       ]
+    },
+    "interact.stove_turn_on": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/interactions/stove_turn_on",
+          "volume": 1
+        }
+      ]
+    },
+    "interact.stove_door_open": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/interactions/stove_door_open",
+          "volume": 1
+        }
+      ]
+    },
+    "interact.stove_door_close": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/interactions/stove_door_close",
+          "volume": 1
+        }
+      ]
+    },
+    "interact.stove_pan": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/interactions/stove_pan",
+          "volume": 4
+        }
+      ]
     }
   }
 }

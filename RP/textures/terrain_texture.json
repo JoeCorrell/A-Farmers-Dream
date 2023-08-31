@@ -57,8 +57,14 @@
 		"kitchen_stove_off": {
 			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_off"
 		},
+		"kitchen_stove_off_with_pot": {
+			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_off_with_pot"
+		},
 		"kitchen_stove_on": {
 			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_on"
+		},
+		"kitchen_stove_on_with_pot": {
+			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_on_with_pot"
 		},
 		//Tomato crop textures =>
 		"tomato_crop_block_stage_0": {
