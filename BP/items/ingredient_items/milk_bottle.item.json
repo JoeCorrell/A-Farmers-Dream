@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "item:milk_bottle"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "milk_bottle"
+      }
+    }
+  }
+}
