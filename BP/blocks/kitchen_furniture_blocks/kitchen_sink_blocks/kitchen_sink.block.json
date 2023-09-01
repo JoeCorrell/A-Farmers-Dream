@@ -33,15 +33,13 @@
                     2, //West
                     3 //East
                 ],
-                //Property for choosing which doors are opened, if any =>
+                //Property for how much water is in sink, if any =>
                 "property:animated": [
-                    0, //Dummy value but also closed v1
-                    1, //Closed v1
-                    2, //Right Door Opened
-                    3, //Left Door Opened
-                    4, //Both Doors Opened
-                    5, //Top Door opened
-                    6 //All Doors Opened
+                    0, //Empty
+                    1, //1 Bucket
+                    2, //2Bucket
+                    3, //3Bucket
+                    4 //4Bucket
                 ]
             }
         },
@@ -96,13 +94,27 @@
                 }
             },
             {
-                //These permutations are for changing the color of the block =>
+                "condition": "query.block_property('property:animated') > 0",
+                "components": {
+                    "minecraft:queued_ticking": {
+                        "looping": true,
+                        "interval_range": [
+                            20,
+                            20
+                        ],
+                        "on_tick": {
+                            "event": "event:spawn_particles_entity"
+                        }
+                    }
+                }
+            },
+            {
                 "condition": "query.block_property('property:block_color') == 0",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_white",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_white",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -112,8 +124,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_black",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_black",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -123,8 +135,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_blue",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_blue",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -134,8 +146,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_brown",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_brown",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -145,8 +157,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_cyan",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_cyan",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -156,8 +168,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_gray",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_gray",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -167,8 +179,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_green",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_green",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -178,8 +190,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_light_blue",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_light_blue",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -189,8 +201,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_lime",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_lime",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -200,8 +212,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_magenta",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_magenta",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -211,8 +223,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_orange",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_orange",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -222,8 +234,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_pink",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_pink",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -233,8 +245,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_purple",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_purple",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -244,8 +256,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_red",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_red",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -255,8 +267,8 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_light_gray",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_light_gray",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -266,64 +278,41 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "kitchen_universal_colored_yellow",
-                            "render_method": "opaque"
+                            "texture": "kitchen_sink_colored_yellow",
+                            "render_method": "alpha_test"
                         }
                     }
                 }
             },
             {
-                //This permutations is a dummy to prevent multiple storage entities from spawning when the property:animated resets to 0. Maybe a bug? =>
+                //These permutations are for if the sink has water =>
                 "condition": "query.block_property('property:animated') == 0",
                 "components": {
-                    "minecraft:geometry": "geometry.sink_closed",
-                    "minecraft:queued_ticking": {
-                        "looping": false,
-                        "interval_range": [
-                            0.25,
-                            0.25
-                        ],
-                        "on_tick": {
-                            "event": "event:place_inventory" //Sets property:animated to 1 so no more storage entities spawn =>
-                        }
-                    }
+                    "minecraft:geometry": "geometry.sink_water_level_0"
                 }
             },
             {
-                //These permutations are for changing what doors are opened, if any =>
                 "condition": "query.block_property('property:animated') == 1",
                 "components": {
-                    "minecraft:geometry": "geometry.sink_closed"
+                    "minecraft:geometry": "geometry.sink_water_level_1"
                 }
             },
             {
                 "condition": "query.block_property('property:animated') == 2",
                 "components": {
-                    "minecraft:geometry": "geometry.sink_right_opened"
+                    "minecraft:geometry": "geometry.sink_water_level_2"
                 }
             },
             {
                 "condition": "query.block_property('property:animated') == 3",
                 "components": {
-                    "minecraft:geometry": "geometry.sink_left_opened"
+                    "minecraft:geometry": "geometry.sink_water_level_3"
                 }
             },
             {
                 "condition": "query.block_property('property:animated') == 4",
                 "components": {
-                    "minecraft:geometry": "geometry.sink_both_opened"
-                }
-            },
-            {
-                "condition": "query.block_property('property:animated') == 5",
-                "components": {
-                    "minecraft:geometry": "geometry.sink_top_opened"
-                }
-            },
-            {
-                "condition": "query.block_property('property:animated') == 6",
-                "components": {
-                    "minecraft:geometry": "geometry.sink_all_opened"
+                    "minecraft:geometry": "geometry.sink_water_level_4"
                 }
             }
             //After this permutation the block resets property:animated back to 1, not 0 read why above @ property:animated = 0 comment =>
@@ -363,62 +352,67 @@
                 "event": "event:cycle_properties",
                 "target": "self"
             },
-            "minecraft:geometry": "geometry.sink_closed",
             "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_sink.loot.json",
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 15
             },
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "kitchen_universal_colored_white",
+                    "texture": "kitchen_sink_colored_white",
                     "ambient_occlusion": true,
-                    "render_method": "opaque"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:map_color": "#7d7d7d"
         },
         "events": {
-            //This event is for the dummy permutation, to prevent multiple storage entities from spawning when property:animated resets, possibly a bug? =>
-            "event:place_inventory": {
-                "run_command": {
-                    "command": [
-                        "/summon entity:kitchen_furniture_inventory sink_white ~ ~-0.25 ~"
-                    ]
-                },
-                "set_block_property": {
-                    "property:animated": 1
-                }
-            },
             //Determins what direction player is facing, and decides what rotation to apply via permutations =>
             "event:block_placed": {
                 "set_block_property": {
                     "property:direction_player_is_facing": "q.cardinal_facing_2d-2",
-                    "property:block_color": 0
+                    "property:block_color": 0,
+                    "property:animated": 0
+                }
+            },
+            //Summons a dummy entity that makes water particles appear
+            "event:spawn_particles_entity": {
+                "run_command": {
+                    "command": [
+                        "/summon entity:sink_particles ~ ~ ~"
+                    ]
                 }
             },
             //Cycles through the property:color and property:animated to save space on code =>
             "event:cycle_properties": {
                 "sequence": [
                     {
-                        "condition": "q.is_sneaking && q.block_property('property:animated') == 6",
-                        "run_command": {
-                            "command": [
-                                "/playsound drawer.close @p"
-                            ]
-                        }
-                    },
-                    {
-                        "condition": "q.is_sneaking",
+                        //This is for emptying the sink =>
+                        "condition": "q.block_property('property:animated') >0 && q.is_item_name_any('slot.weapon.mainhand', 'minecraft:bucket')",
                         "set_block_property": {
-                            "property:animated": "q.block_property('property:animated') == 6 ? 1 :q.block_property('property:animated')+1"
+                            "property:animated": "q.block_property('property:animated') -1"
                         },
                         "run_command": {
                             "command": [
-                                "/playsound drawer.open @p"
+                                "/replaceitem entity @p slot.weapon.mainhand 1 water_bucket",
+                                "/playsound bucket.fill_water @p"
                             ]
                         }
                     },
                     {
+                        //This is for filling the sink =>
+                        "condition": "q.block_property('property:animated') <=3 && q.is_item_name_any('slot.weapon.mainhand', 'minecraft:water_bucket')",
+                        "set_block_property": {
+                            "property:animated": "q.block_property('property:animated') +1"
+                        },
+                        "run_command": {
+                            "command": [
+                                "/replaceitem entity @p slot.weapon.mainhand 1 bucket",
+                                "/playsound bucket.empty_water @p"
+                            ]
+                        }
+                    },
+                    {
+                        //These are for dying the block =>
                         "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:white_dye')",
                         "set_block_property": {
                             "property:block_color": 0

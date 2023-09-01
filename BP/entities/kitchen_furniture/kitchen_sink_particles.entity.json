@@ -1,0 +1,94 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "entity:sink_particles",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "component_group:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "width": 0,
+            "height": 0,
+            "pivot": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:inside_block_notifier": {
+        "block_list": [
+          {
+            "block": "block:kitchen_sink_white",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 0.25,
+        "time_down_event": {
+          "event": "event:do_sink_particles"
+        }
+      },
+      "minecraft:despawn": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "has_tag",
+              "subject": "self",
+              "operator": "equals",
+              "value": "despawn"
+            }
+          ]
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "player",
+          "deals_damage": false
+        }
+      },
+      "minecraft:health": {
+        "value": 123
+      }
+    },
+    "events": {
+      "event:do_sink_particles": {
+        "run_command": {
+          "command": [
+            "/particle minecraft:water_splash_particle_manual ~ ~-0.25 ~",
+            "/tag @e[type=entity:sink_particles,r=2] add despawn"
+          ]
+        }
+      },
+      "event:despawn": {
+        "add": {
+          "component_groups": [
+            "component_group:despawn"
+          ]
+        }
+      }
+    }
+  }
+}
