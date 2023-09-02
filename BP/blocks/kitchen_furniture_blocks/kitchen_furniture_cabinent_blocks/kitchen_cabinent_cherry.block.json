@@ -105,7 +105,7 @@
           "target": "self"
         },
         "minecraft:geometry": "geometry.cabinent_wood_closed",
-        "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_furniture_wooden_loot/kitchen_furniture_cherry_loot/kitchen_cabinent_cherry.loot.json",
+        "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_furniture_cabinent_loot/kitchen_cabinent_cherry.loot.json",
         "minecraft:destructible_by_explosion": {
           "explosion_resistance": 15
         },

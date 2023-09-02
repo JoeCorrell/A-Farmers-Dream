@@ -110,7 +110,7 @@
         "target": "self"
       },
       "minecraft:geometry": "geometry.counter_wood",
-      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_furniture_wooden_loot/kitchen_furniture_warped_loot/kitchen_counter_warped.loot.json",
+      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_furniture_counter_loot/kitchen_counter_warped.loot.json",
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 15
       },
@@ -124,7 +124,7 @@
       "minecraft:map_color": "#7d7d7d"
     },
     "events": {
-      //Determins what direction player is facing, and decides what rotation to apply via permutations =>
+      //Determines what direction player is facing, and decides what rotation to apply via permutations =>
       "event:block_placed": {
         "set_block_property": {
           "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
