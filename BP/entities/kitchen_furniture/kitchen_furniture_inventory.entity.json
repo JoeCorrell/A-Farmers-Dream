@@ -118,6 +118,24 @@
             }
           },
           {
+            "block": "block:kitchen_drawer_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_cherry",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
             "block": "block:kitchen_cabinent_white",
             "entered_block_event": {
               "event": "event:switch_storage_size_to_cabinent"

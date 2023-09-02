@@ -53,6 +53,22 @@
 		"kitchen_universal_colored_yellow": {
 			"textures": "textures/blocks/kitchen_furniture_textures/universal_colored_furniture_textures/kitchen_yellow_texture"
 		},
+		//Kitchen wooden textures =>
+		"kitchen_cherry": {
+			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_wooden_textures/kitchen_cherry_texture"
+		},
+		"kitchen_spruce": {
+			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_wooden_textures/kitchen_spruce_texture"
+		},
+		"kitchen_birch": {
+			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_wooden_textures/kitchen_birch_texture"
+		},
+		"kitchen_dark_oak": {
+			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_wooden_textures/kitchen_dark_oak_texture"
+		},
+		"kitchen_oak": {
+			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_wooden_textures/kitchen_oak_texture"
+		},
 		//Kitchen sink textures =>
 		"kitchen_sink_colored_black": {
 			"textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_block_textures/kitchen_sink_black_texture"
