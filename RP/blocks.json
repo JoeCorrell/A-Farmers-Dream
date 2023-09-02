@@ -1,23 +1,211 @@
 {
-	"kitchen_drawer_oak": {
-		"sound": "wood"
-	},
-	"kitchen_cabinent_oak": {
-		"sound": "wood"
-	},
-	"kitchen_sink_oak": {
-		"sound": "wood"
-	},
-	"kitchen_cupboard_oak": {
-		"sound": "wood"
-	},
-	"kitchen_half_cupboard_oak": {
-		"sound": "wood"
-	},
-	"kitchen_counter_oak": {
-		"sound": "wood"
-	},
-	"kitchen_stove": {
-		"sound": "metal"
-	}
+  "kitchen_stove": {
+    "sound": "metal"
+  },
+  //Terracotta kitchen furniture blocks =>
+  "kitchen_drawer_white": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_white": {
+    "sound": "wood"
+  },
+  "kitchen_sink_white": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_white": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_white": {
+    "sound": "wood"
+  },
+  //Birch kitchen furniture blocks =>
+  "kitchen_drawer_birch": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_birch": {
+    "sound": "wood"
+  },
+  "kitchen_sink_birch": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_birch": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_birch": {
+    "sound": "wood"
+  },
+  "kitchen_counter_white": {
+    "sound": "wood"
+  },
+  //Crimson furniture blocks =>
+  "kitchen_drawer_crimson": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_crimson": {
+    "sound": "wood"
+  },
+  "kitchen_sink_crimson": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_crimson": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_crimson": {
+    "sound": "wood"
+  },
+  "kitchen_counter_crimson": {
+    "sound": "wood"
+  },
+  //Warped kitchen furniture blocks =>
+  "kitchen_drawer_warped": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_warped": {
+    "sound": "wood"
+  },
+  "kitchen_sink_warped": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_warped": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_warped": {
+    "sound": "wood"
+  },
+  "kitchen_counter_warped": {
+    "sound": "wood"
+  },
+  //Dark oak kitchen furniture blocks =>
+  "kitchen_drawer_dark_oak": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_dark_oak": {
+    "sound": "wood"
+  },
+  "kitchen_sink_dark_oak": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_dark_oak": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_dark_oak": {
+    "sound": "wood"
+  },
+  "kitchen_counter_dark_oak": {
+    "sound": "wood"
+  },
+  //Spruce kitchen furniture blocks =>
+  "kitchen_drawer_spruce": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_spruce": {
+    "sound": "wood"
+  },
+  "kitchen_sink_spruce": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_spruce": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_spruce": {
+    "sound": "wood"
+  },
+  "kitchen_counter_spruce": {
+    "sound": "wood"
+  },
+  //Jungle kitchen furniture blocks =>
+  "kitchen_drawer_jungle": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_jungle": {
+    "sound": "wood"
+  },
+  "kitchen_sink_jungle": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_jungle": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_jungle": {
+    "sound": "wood"
+  },
+  "kitchen_counter_jungle": {
+    "sound": "wood"
+  },
+  //Acacia kitchen furniture blocks =>
+  "kitchen_drawer_acacia": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_acacia": {
+    "sound": "wood"
+  },
+  "kitchen_sink_acacia": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_acacia": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_acacia": {
+    "sound": "wood"
+  },
+  "kitchen_counter_acacia": {
+    "sound": "wood"
+  },
+  //Bamboo kitchen furniture blocks =>
+  "kitchen_drawer_bamboo": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_bamboo": {
+    "sound": "wood"
+  },
+  "kitchen_sink_bamboo": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_bamboo": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_bamboo": {
+    "sound": "wood"
+  },
+  "kitchen_counter_bamboo": {
+    "sound": "wood"
+  },
+  //Cherry kitchen furniture blocks =>
+  "kitchen_drawer_cherry": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_cherry": {
+    "sound": "wood"
+  },
+  "kitchen_sink_cherry": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_cherry": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_cherry": {
+    "sound": "wood"
+  },
+  "kitchen_counter_cherry": {
+    "sound": "wood"
+  },
+  //Oak kitchen furniture blocks =>
+  "kitchen_drawer_oak": {
+    "sound": "wood"
+  },
+  "kitchen_cabinent_oak": {
+    "sound": "wood"
+  },
+  "kitchen_sink_oak": {
+    "sound": "wood"
+  },
+  "kitchen_cupboard_oak": {
+    "sound": "wood"
+  },
+  "kitchen_half_cupboard_oak": {
+    "sound": "wood"
+  },
+  "kitchen_counter_oak": {
+    "sound": "wood"
+  }
 }
