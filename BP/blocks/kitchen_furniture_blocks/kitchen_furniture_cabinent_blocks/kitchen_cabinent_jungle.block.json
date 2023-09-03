@@ -4,7 +4,8 @@
     "description": {
       "identifier": "block:kitchen_cabinent_jungle",
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "itemGroup.name.cabinent"
       },
       "properties": {
         //Property for whether or not the block should have a stripped texture =>
@@ -19,10 +20,22 @@
         "property:animated": [
           0, //Dummy value but also closed v1
           1, //Closed
-          2 //Opened
+          2 //Open
         ],
-        "property:stripped": [0, 1],
-        "property:timer": [0, 1]
+        "property:stripped": [0, 1], //Should texture appear stripped =>
+        "property:timer": [0, 1], //Timer for changing inventory entity hit box to 0 =>
+        "property:storage0": [
+          0, //Drawer storage variant 0 =>
+          1, //Drawer storage variant 1 =>
+          2, //Drawer storage variant 2 =>
+          3, //Drawer storage variant 3 =>
+          4, //Drawer storage variant 4 =>
+          5, //Drawer storage variant 5 =>
+          6, //Drawer storage variant 6 =>
+          7, //Drawer storage variant 7 =>
+          8, //Drawer storage variant 8 =>
+          9 //Drawer storage variant 9 =>
+        ]
       }
     },
     "permutations": [
@@ -60,11 +73,132 @@
         }
       },
       {
+        //For changing the cabinent storage texture =>
+        "condition": "query.block_property('property:storage0') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage0",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage1",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage2",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage3",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 5",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage4",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 6",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage5",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 7",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage6",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 8",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage7",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage8",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage8",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
         //These are for whether or not the block is stripped =>
         "condition": "query.block_property('property:stripped') == 1",
         "components": {
           "minecraft:material_instances": {
-            "*": {
+            "drawer": {
               "texture": "kitchen_jungle_stripped",
               "ambient_occlusion": true,
               "render_method": "alpha_test"
@@ -76,7 +210,7 @@
         "condition": "query.block_property('property:stripped') == 0",
         "components": {
           "minecraft:material_instances": {
-            "*": {
+            "drawer": {
               "texture": "kitchen_jungle",
               "ambient_occlusion": true,
               "render_method": "alpha_test"
@@ -88,7 +222,7 @@
         //This permutations is a dummy to prevent multiple storage entities from spawning when the property:animated resets to 0. Maybe a bug? =>
         "condition": "query.block_property('property:animated') == 0",
         "components": {
-          "minecraft:geometry": "geometry.cabinent_wood_closed",
+          "minecraft:geometry": "geometry.cabinent_closed",
           "minecraft:queued_ticking": {
             "looping": false,
             "interval_range": [0.25, 0.25],
@@ -99,13 +233,9 @@
         }
       },
       {
-        //This is for if the doors are closed then the storage entity hitbox is 0, to be more realistic =>
+        //This is for if the doors are closed then the storage entity hit box is 0, to be more realistic =>
         "condition": "query.block_property('property:timer') == 1",
         "components": {
-          "minecraft:selection_box": {
-            "origin": [-8, 0, -8],
-            "size": [16, 16, 16]
-          },
           "minecraft:queued_ticking": {
             "looping": true,
             "interval_range": [0.01, 0.01],
@@ -119,17 +249,21 @@
         //These permutations are for changing what doors are opened, if any =>
         "condition": "query.block_property('property:animated') == 1",
         "components": {
-          "minecraft:geometry": "geometry.cabinent_wood_closed"
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -7.5],
+            "size": [16, 16, 13]
+          },
+          "minecraft:geometry": "geometry.cabinent_closed"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 2",
         "components": {
           "minecraft:selection_box": {
-            "origin": [-8, 0, -8],
+            "origin": [-8, 0, -7.5],
             "size": [16, 16, 13]
           },
-          "minecraft:geometry": "geometry.cabinent_wood_opened"
+          "minecraft:geometry": "geometry.cabinent_opened"
         }
       }
       //After this permutation the block resets property:animated back to 1, not 0 read why above @ property:animated = 0 comment =>
@@ -141,7 +275,7 @@
       },
       "minecraft:collision_box": {
         "origin": [-8, 0, -8],
-        "size": [16, 16, 10]
+        "size": [16, 16, 16]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -162,6 +296,16 @@
           "texture": "kitchen_jungle",
           "ambient_occlusion": true,
           "render_method": "alpha_test"
+        },
+        "drawer": {
+          "texture": "kitchen_jungle",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        },
+        "storage0": {
+          "texture": "drawer_storage_empty",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
         }
       },
       "minecraft:map_color": "#7d7d7d"
@@ -175,12 +319,13 @@
           ]
         },
         "set_block_property": {
-          "property:animated": 1,
-          "property:stripped": 0,
-          "property:timer": 1
+          "property:animated": 1, //Drawers closed =>
+          "property:stripped": 0, //Normal log texture  =>
+          "property:timer": 1, //Are doors opened? =>
+          "property:storage0": 0 //Do you want to see items inside the block? =>
         }
       },
-      //Event for changing the inventory entity hit box if drawer is not open =>
+      //Event for changing the inventory entity hit box if cabinent is not open =>
       "event:are_doors_open": {
         "sequence": [
           {
@@ -207,16 +352,27 @@
           "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
         }
       },
-      //Cycles through the property:color and property:animated to save space on code =>
       "event:cycle_properties": {
         "sequence": [
           {
+            //For changing cabinent storage texture =>
+            "condition": "query.is_sneaking == true",
+            "set_block_property": {
+              "property:storage0": "q.block_property('property:storage0') == 9 ? 0 :q.block_property('property:storage0')+1"
+            },
+            "run_command": {
+              "command": ["/playsound interact.drawer_fill @p"]
+            }
+          },
+          {
+            //For playing closing sound when the property:animated is reset to 1 =>
             "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && !q.is_sneaking && q.block_property('property:animated') == 2",
             "run_command": {
               "command": ["/playsound drawer.close @p"]
             }
           },
           {
+            //For playing closing sound when the property:animated is changed to 2 =>
             "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && !q.is_sneaking && q.block_property('property:animated') >= 1",
             "set_block_property": {
               "property:animated": "q.block_property('property:animated') == 2 ? 1 :q.block_property('property:animated')+1"
@@ -226,6 +382,7 @@
             }
           },
           {
+            //For playing stripping sound when the property:stripped is reset to 1 =>
             "condition": "q.is_sneaking && q.block_property('property:stripped') == 0 && q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe')",
             "set_block_property": {
               "property:stripped": 1

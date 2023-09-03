@@ -40,6 +40,19 @@
           2, //Right Door Opened
           3, //Left Door Opened
           4 //Both Doors Opened
+        ],
+        "property:timer": [0, 1], //Timer for changing inventory entity hit box to 0 =>
+        "property:storage0": [
+          0, //Drawer storage variant 0 =>
+          1, //Drawer storage variant 1 =>
+          2, //Drawer storage variant 2 =>
+          3, //Drawer storage variant 3 =>
+          4, //Drawer storage variant 4 =>
+          5, //Drawer storage variant 5 =>
+          6, //Drawer storage variant 6 =>
+          7, //Drawer storage variant 7 =>
+          8, //Drawer storage variant 8 =>
+          9 //Drawer storage variant 9 =>
         ]
       }
     },
@@ -78,12 +91,158 @@
         }
       },
       {
+        //For changing the half_cupboard storage texture =>
+        "condition": "query.block_property('property:storage0') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage_empty",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage0",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage1",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage2",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage3",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 5",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage4",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 6",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage5",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 7",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage6",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 8",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage7",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage8",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage8",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        //This is for if the doors are closed then the storage entity hit box is 0, to be more realistic =>
+        "condition": "query.block_property('property:timer') == 1",
+        "components": {
+          "minecraft:queued_ticking": {
+            "looping": true,
+            "interval_range": [0.01, 0.01],
+            "on_tick": {
+              "event": "event:are_doors_open"
+            }
+          }
+        }
+      },
+      {
         //These permutations are for changing the color of the block =>
         "condition": "query.block_property('property:block_color') == 0",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_white",
+            "drawer": {
+              "texture": "kitchen_terracotta_white",
               "render_method": "opaque"
             }
           }
@@ -93,8 +252,8 @@
         "condition": "query.block_property('property:block_color') == 1",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_black",
+            "drawer": {
+              "texture": "kitchen_terracotta_black",
               "render_method": "opaque"
             }
           }
@@ -104,8 +263,8 @@
         "condition": "query.block_property('property:block_color') == 2",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_blue",
+            "drawer": {
+              "texture": "kitchen_terracotta_blue",
               "render_method": "opaque"
             }
           }
@@ -115,8 +274,8 @@
         "condition": "query.block_property('property:block_color') == 3",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_brown",
+            "drawer": {
+              "texture": "kitchen_terracotta_brown",
               "render_method": "opaque"
             }
           }
@@ -126,8 +285,8 @@
         "condition": "query.block_property('property:block_color') == 4",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_cyan",
+            "drawer": {
+              "texture": "kitchen_terracotta_cyan",
               "render_method": "opaque"
             }
           }
@@ -137,8 +296,8 @@
         "condition": "query.block_property('property:block_color') == 5",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_gray",
+            "drawer": {
+              "texture": "kitchen_terracotta_gray",
               "render_method": "opaque"
             }
           }
@@ -148,8 +307,8 @@
         "condition": "query.block_property('property:block_color') == 6",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_green",
+            "drawer": {
+              "texture": "kitchen_terracotta_green",
               "render_method": "opaque"
             }
           }
@@ -159,8 +318,8 @@
         "condition": "query.block_property('property:block_color') == 7",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_light_blue",
+            "drawer": {
+              "texture": "kitchen_terracotta_light_blue",
               "render_method": "opaque"
             }
           }
@@ -170,8 +329,8 @@
         "condition": "query.block_property('property:block_color') == 8",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_lime",
+            "drawer": {
+              "texture": "kitchen_terracotta_lime",
               "render_method": "opaque"
             }
           }
@@ -181,8 +340,8 @@
         "condition": "query.block_property('property:block_color') == 9",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_magenta",
+            "drawer": {
+              "texture": "kitchen_terracotta_magenta",
               "render_method": "opaque"
             }
           }
@@ -192,8 +351,8 @@
         "condition": "query.block_property('property:block_color') == 10",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_orange",
+            "drawer": {
+              "texture": "kitchen_terracotta_orange",
               "render_method": "opaque"
             }
           }
@@ -203,8 +362,8 @@
         "condition": "query.block_property('property:block_color') == 11",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_pink",
+            "drawer": {
+              "texture": "kitchen_terracotta_pink",
               "render_method": "opaque"
             }
           }
@@ -214,8 +373,8 @@
         "condition": "query.block_property('property:block_color') == 12",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_purple",
+            "drawer": {
+              "texture": "kitchen_terracotta_purple",
               "render_method": "opaque"
             }
           }
@@ -225,8 +384,8 @@
         "condition": "query.block_property('property:block_color') == 13",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_red",
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
               "render_method": "opaque"
             }
           }
@@ -236,8 +395,8 @@
         "condition": "query.block_property('property:block_color') == 14",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_light_gray",
+            "drawer": {
+              "texture": "kitchen_terracotta_light_gray",
               "render_method": "opaque"
             }
           }
@@ -247,8 +406,8 @@
         "condition": "query.block_property('property:block_color') == 15",
         "components": {
           "minecraft:material_instances": {
-            "*": {
-              "texture": "kitchen_sink_colored_yellow",
+            "drawer": {
+              "texture": "kitchen_terracotta_yellow",
               "render_method": "opaque"
             }
           }
@@ -272,40 +431,24 @@
         //These permutations are for changing what doors are opened, if any =>
         "condition": "query.block_property('property:animated') == 1",
         "components": {
-          "minecraft:selection_box": {
-            "origin": [-8, 0, -8],
-            "size": [16, 16, 10]
-          },
           "minecraft:geometry": "geometry.half_cupboard_closed"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 2",
         "components": {
-          "minecraft:selection_box": {
-            "origin": [-8, 9, -8],
-            "size": [16, 7, 10]
-          },
           "minecraft:geometry": "geometry.half_cupboard_right_opened"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 3",
         "components": {
-          "minecraft:selection_box": {
-            "origin": [-8, 9, -8],
-            "size": [16, 7, 10]
-          },
           "minecraft:geometry": "geometry.half_cupboard_left_opened"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 4",
         "components": {
-          "minecraft:selection_box": {
-            "origin": [-8, 9, -8],
-            "size": [16, 7, 10]
-          },
           "minecraft:geometry": "geometry.half_cupboard_both_opened"
         }
       }
@@ -314,11 +457,11 @@
     "components": {
       "minecraft:selection_box": {
         "origin": [-8, 0, -8],
-        "size": [16, 16, 10]
+        "size": [16, 16, 13]
       },
       "minecraft:collision_box": {
         "origin": [-8, 0, -8],
-        "size": [16, 16, 10]
+        "size": [16, 16, 11]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -331,15 +474,25 @@
         "target": "self"
       },
       "minecraft:geometry": "geometry.half_cupboard_closed",
-      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_half_cupboard.loot.json",
+      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_furniture_cupboard_loot/kitchen_cupboard_terracotta.loot.json",
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 15
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "kitchen_sink_colored_white",
+          "texture": "kitchen_terracotta_white",
           "ambient_occlusion": true,
-          "render_method": "opaque"
+          "render_method": "alpha_test"
+        },
+        "storage0": {
+          "texture": "drawer_storage_empty",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        },
+        "drawer": {
+          "texture": "kitchen_terracotta_white",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
         }
       },
       "minecraft:map_color": "#7d7d7d"
@@ -353,8 +506,32 @@
           ]
         },
         "set_block_property": {
-          "property:animated": 1
+          "property:animated": 1,
+          "property:timer": 1,
+          "property:block_color": 0,
+          "property:storage0": 0
         }
+      },
+      //Event for changing the inventory entity hit box if cupboard is not open =>
+      "event:are_doors_open": {
+        "sequence": [
+          {
+            "condition": "q.block_property('property:animated') <= 1",
+            "run_command": {
+              "command": [
+                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_no_hit_box"
+              ]
+            }
+          },
+          {
+            "condition": "q.block_property('property:animated') > 1",
+            "run_command": {
+              "command": [
+                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_hit_box"
+              ]
+            }
+          }
+        ]
       },
       //Determins what direction player is facing, and decides what rotation to apply via permutations =>
       "event:block_placed": {
@@ -367,13 +544,23 @@
       "event:cycle_properties": {
         "sequence": [
           {
-            "condition": "q.is_sneaking && q.block_property('property:animated') == 4",
+            //For channging cupboard storage texture =>
+            "condition": "query.is_sneaking == true",
+            "set_block_property": {
+              "property:storage0": "q.block_property('property:storage0') == 9 ? 0 :q.block_property('property:storage0')+1"
+            },
+            "run_command": {
+              "command": ["/playsound interact.drawer_fill @p"]
+            }
+          },
+          {
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:white_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:white_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:black_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:blue_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:brown_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cyan_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:gray_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:green_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:light_blue_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:lime_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:magenta_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:orange_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:pink_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:purple_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:red_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:light_gray_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:yellow_dye') && !q.is_sneaking && q.block_property('property:animated') == 4",
             "run_command": {
               "command": ["/playsound drawer.close @p"]
             }
           },
           {
-            "condition": "q.is_sneaking",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:white_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:white_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:black_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:blue_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:brown_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cyan_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:gray_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:green_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:light_blue_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:lime_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:magenta_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:orange_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:pink_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:purple_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:red_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:light_gray_dye') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:yellow_dye') && !q.is_sneaking",
             "set_block_property": {
               "property:animated": "q.block_property('property:animated') == 4 ? 1 :q.block_property('property:animated')+1"
             },

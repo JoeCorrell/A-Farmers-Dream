@@ -122,31 +122,31 @@
         //These permutations are for if the sink has water =>
         "condition": "query.block_property('property:animated') == 0",
         "components": {
-          "minecraft:geometry": "geometry.sink_wood_water_level_0"
+          "minecraft:geometry": "geometry.sink_water_level_0"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 1",
         "components": {
-          "minecraft:geometry": "geometry.sink_wood_water_level_1"
+          "minecraft:geometry": "geometry.sink_water_level_1"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 2",
         "components": {
-          "minecraft:geometry": "geometry.sink_wood_water_level_2"
+          "minecraft:geometry": "geometry.sink_water_level_2"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 3",
         "components": {
-          "minecraft:geometry": "geometry.sink_wood_water_level_3"
+          "minecraft:geometry": "geometry.sink_water_level_3"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 4",
         "components": {
-          "minecraft:geometry": "geometry.sink_wood_water_level_4"
+          "minecraft:geometry": "geometry.sink_water_level_4"
         }
       }
       //After this permutation the block resets property:animated back to 1, not 0 read why above @ property:animated = 0 comment =>

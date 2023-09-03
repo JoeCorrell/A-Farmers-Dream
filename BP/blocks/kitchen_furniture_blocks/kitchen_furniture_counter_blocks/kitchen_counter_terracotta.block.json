@@ -99,7 +99,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_white",
+              "texture": "kitchen_terracotta_white",
               "render_method": "opaque"
             }
           }
@@ -110,7 +110,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_black",
+              "texture": "kitchen_terracotta_black",
               "render_method": "opaque"
             }
           }
@@ -121,7 +121,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_blue",
+              "texture": "kitchen_terracotta_blue",
               "render_method": "opaque"
             }
           }
@@ -132,7 +132,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_brown",
+              "texture": "kitchen_terracotta_brown",
               "render_method": "opaque"
             }
           }
@@ -143,7 +143,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_cyan",
+              "texture": "kitchen_terracotta_cyan",
               "render_method": "opaque"
             }
           }
@@ -154,7 +154,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_gray",
+              "texture": "kitchen_terracotta_gray",
               "render_method": "opaque"
             }
           }
@@ -165,7 +165,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_green",
+              "texture": "kitchen_terracotta_green",
               "render_method": "opaque"
             }
           }
@@ -176,7 +176,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_light_blue",
+              "texture": "kitchen_terracotta_light_blue",
               "render_method": "opaque"
             }
           }
@@ -187,7 +187,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_lime",
+              "texture": "kitchen_terracotta_lime",
               "render_method": "opaque"
             }
           }
@@ -198,7 +198,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_magenta",
+              "texture": "kitchen_terracotta_magenta",
               "render_method": "opaque"
             }
           }
@@ -209,7 +209,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_orange",
+              "texture": "kitchen_terracotta_orange",
               "render_method": "opaque"
             }
           }
@@ -220,7 +220,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_pink",
+              "texture": "kitchen_terracotta_pink",
               "render_method": "opaque"
             }
           }
@@ -231,7 +231,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_purple",
+              "texture": "kitchen_terracotta_purple",
               "render_method": "opaque"
             }
           }
@@ -242,7 +242,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_red",
+              "texture": "kitchen_terracotta_red",
               "render_method": "opaque"
             }
           }
@@ -253,7 +253,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_light_gray",
+              "texture": "kitchen_terracotta_light_gray",
               "render_method": "opaque"
             }
           }
@@ -264,7 +264,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_sink_colored_yellow",
+              "texture": "kitchen_terracotta_yellow",
               "render_method": "opaque"
             }
           }
@@ -303,18 +303,7 @@
       }
     ],
     "components": {
-      "minecraft:selection_box": {
-        "origin": [
-          -8,
-          7,
-          -8
-        ],
-        "size": [
-          16,
-          9,
-          16
-        ]
-      },
+      "minecraft:selection_box": true,
       "minecraft:collision_box": {
         "origin": [
           -8,
@@ -338,13 +327,13 @@
         "target": "self"
       },
       "minecraft:geometry": "geometry.counter",
-      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_counter.loot.json",
+      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_furniture_counter_loot/kitchen_counter_terracotta.loot.json",
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 15
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "kitchen_sink_colored_white",
+          "texture": "kitchen_terracotta_white",
           "ambient_occlusion": true,
           "render_method": "opaque"
         }
