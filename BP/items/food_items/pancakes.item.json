@@ -5,13 +5,26 @@
       "identifier": "item:pancakes"
     },
     "components": {
+      "tag:stove_recipes": {},
       "minecraft:icon": {
         "texture": "pancakes"
       },
-      "minecraft:use_duration": 32,
+      "minecraft:use_duration": 1.6,
+      "minecraft:use_animation": "eat",
+
       "minecraft:food": {
         "nutrition": 4,
-        "saturation_modifier": 1
+        "saturation_modifier": 2,
+        "using_converts_to": "bowl"
+      }
+    },
+    "events": {
+      "event:player_ate_item": {
+        /*"run_command": {
+          "command": [
+            "/effect @p saturation 1 5 true"
+          ]
+        }*/
       }
     }
   }

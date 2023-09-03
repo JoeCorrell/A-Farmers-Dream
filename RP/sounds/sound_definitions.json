@@ -63,6 +63,15 @@
           "volume": 4
         }
       ]
+    },
+    "interact.drawer_fill": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/interactions/drawer_fill",
+          "volume": 1
+        }
+      ]
     }
   }
 }

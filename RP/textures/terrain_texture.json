@@ -81,6 +81,9 @@
     "kitchen_birch_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_wood_stripped_textures/kitchen_birch_stripped"
     },
+    "kitchen_oak_stripped": {
+      "textures": "textures/blocks/kitchen_furniture_textures/kitchen_wood_stripped_textures/kitchen_oak_stripped"
+    },
     "kitchen_dark_oak_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_wood_stripped_textures/kitchen_dark_oak_stripped"
     },
@@ -341,6 +344,33 @@
     },
     "crate_side": {
       "textures": "textures/blocks/crop_crates_textures/crate_side"
+    },
+    "drawer_storage0": {
+      "textures": "textures/blocks/kitchen_furniture_textures/drawer_storage_textures/drawer_storage0"
+    },
+    "drawer_storage1": {
+      "textures": "textures/blocks/kitchen_furniture_textures/drawer_storage_textures/drawer_storage1"
+    },
+    "drawer_storage2": {
+      "textures": "textures/blocks/kitchen_furniture_textures/drawer_storage_textures/drawer_storage2"
+    },
+    "drawer_storage3": {
+      "textures": "textures/blocks/kitchen_furniture_textures/drawer_storage_textures/drawer_storage3"
+    },
+    "drawer_storage4": {
+      "textures": "textures/blocks/kitchen_furniture_textures/drawer_storage_textures/drawer_storage4"
+    },
+    "drawer_storage5": {
+      "textures": "textures/blocks/kitchen_furniture_textures/drawer_storage_textures/drawer_storage5"
+    },
+    "drawer_storage6": {
+      "textures": "textures/blocks/kitchen_furniture_textures/drawer_storage_textures/drawer_storage6"
+    },
+    "drawer_storage7": {
+      "textures": "textures/blocks/kitchen_furniture_textures/drawer_storage_textures/drawer_storage7"
+    },
+    "drawer_storage8": {
+      "textures": "textures/blocks/kitchen_furniture_textures/drawer_storage_textures/drawer_storage8"
     }
     /*Misc block textures =>
     "rich_farmland": {

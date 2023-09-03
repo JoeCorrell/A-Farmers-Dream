@@ -5,12 +5,14 @@
       "identifier": "item:egg_cooked"
     },
     "components": {
+      "tag:stove_recipes": {},
       "minecraft:icon": {
         "texture": "egg_cooked"
       },
-      "minecraft:use_duration": 32,
+      "minecraft:use_duration": 1.6,
+      "minecraft:use_animation": "eat",
       "minecraft:food": {
-        "nutrition": 4,
+        "nutrition": 1.5,
         "saturation_modifier": 1
       }
     }

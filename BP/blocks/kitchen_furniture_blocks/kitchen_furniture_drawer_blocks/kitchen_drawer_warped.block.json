@@ -23,8 +23,26 @@
           3, //Left Door Opened
           4 //Both Doors Opened
         ],
-        "property:stripped": [0, 1],
-        "property:timer": [0, 1]
+        "property:stripped": [
+          0,
+          1
+        ],
+        "property:timer": [
+          0,
+          1
+        ],
+        "property:storage0": [
+          0, //None
+          1, //Corn
+          2, //Tomato
+          3, //Cabbage
+          4, //Flour
+          5, //Onion
+          6,
+          7,
+          8,
+          9
+        ]
       }
     },
     "permutations": [
@@ -33,7 +51,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 0",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 0, 0]
+            "rotation": [
+              0,
+              0,
+              0
+            ]
           }
         }
       },
@@ -41,7 +63,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 1",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 180, 0]
+            "rotation": [
+              0,
+              180,
+              0
+            ]
           }
         }
       },
@@ -49,7 +75,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 2",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 90, 0]
+            "rotation": [
+              0,
+              90,
+              0
+            ]
           }
         }
       },
@@ -57,7 +87,132 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 3",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 270, 0]
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        //For changing the drawer storage texture =>
+        "condition": "query.block_property('property:storage0') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage0",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage1",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage2",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage3",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 5",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage4",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 6",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage5",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 7",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage6",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 8",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage7",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage8",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage8",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
           }
         }
       },
@@ -66,7 +221,20 @@
         "condition": "query.block_property('property:stripped') == 1",
         "components": {
           "minecraft:material_instances": {
-            "*": {
+            "drawer": {
+              "texture": "kitchen_warped_stripped",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        //These are for whether or not the block is stripped =>
+        "condition": "query.block_property('property:stripped') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "drawer": {
               "texture": "kitchen_warped_stripped",
               "ambient_occlusion": true,
               "render_method": "alpha_test"
@@ -78,7 +246,7 @@
         "condition": "query.block_property('property:stripped') == 0",
         "components": {
           "minecraft:material_instances": {
-            "*": {
+            "drawer": {
               "texture": "kitchen_warped",
               "ambient_occlusion": true,
               "render_method": "alpha_test"
@@ -93,7 +261,10 @@
           "minecraft:geometry": "geometry.drawer_wood_closed",
           "minecraft:queued_ticking": {
             "looping": false,
-            "interval_range": [0.25, 0.25],
+            "interval_range": [
+              0.25,
+              0.25
+            ],
             "on_tick": {
               "event": "event:place_inventory" //Sets property:animated to 1 so no more storage entities spawn =>
             }
@@ -105,12 +276,23 @@
         "condition": "query.block_property('property:timer') == 1",
         "components": {
           "minecraft:selection_box": {
-            "origin": [-8, 0, -8],
-            "size": [16, 16, 16]
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
           },
           "minecraft:queued_ticking": {
             "looping": true,
-            "interval_range": [0.01, 0.01],
+            "interval_range": [
+              0.01,
+              0.01
+            ],
             "on_tick": {
               "event": "event:are_doors_open"
             }
@@ -128,8 +310,16 @@
         "condition": "query.block_property('property:animated') == 2",
         "components": {
           "minecraft:selection_box": {
-            "origin": [-8, 0, -8],
-            "size": [16, 16, 13]
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              13
+            ]
           },
           "minecraft:geometry": "geometry.drawer_wood_right_opened"
         }
@@ -138,8 +328,16 @@
         "condition": "query.block_property('property:animated') == 3",
         "components": {
           "minecraft:selection_box": {
-            "origin": [-8, 0, -8],
-            "size": [16, 16, 13]
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              13
+            ]
           },
           "minecraft:geometry": "geometry.drawer_wood_left_opened"
         }
@@ -148,8 +346,16 @@
         "condition": "query.block_property('property:animated') == 4",
         "components": {
           "minecraft:selection_box": {
-            "origin": [-8, 0, -8],
-            "size": [16, 16, 13]
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              13
+            ]
           },
           "minecraft:geometry": "geometry.drawer_wood_both_opened"
         }
@@ -158,12 +364,28 @@
     ],
     "components": {
       "minecraft:selection_box": {
-        "origin": [-8, 0, -8],
-        "size": [16, 16, 16]
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
       },
       "minecraft:collision_box": {
-        "origin": [-8, 0, -8],
-        "size": [16, 16, 10]
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          10
+        ]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -180,7 +402,7 @@
         "explosion_resistance": 15
       },
       "minecraft:material_instances": {
-        "*": {
+        "drawer": {
           "texture": "kitchen_warped",
           "ambient_occlusion": true,
           "render_method": "alpha_test"
@@ -199,7 +421,8 @@
         "set_block_property": {
           "property:animated": 1,
           "property:stripped": 0,
-          "property:timer": 1
+          "property:timer": 1,
+          "property:storage0": 0
         }
       },
       //Event for changing the inventory entity hit box if drawer is not open =>
@@ -229,22 +452,30 @@
           "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
         }
       },
-      //Cycles through the property:color and property:animated to save space on code =>
       "event:cycle_properties": {
         "sequence": [
           {
-            "condition":"!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && !q.is_sneaking && q.block_property('property:animated') == 4",
+            //For channging drawer storage texture =>
+            "condition": "query.is_sneaking == true",
+            "set_block_property": {
+              "property:storage0": "q.block_property('property:storage0') == 9 ? 0 :q.block_property('property:storage0')+1"
+            },
             "run_command": {
-              "command": ["/playsound drawer.close @p"]
+              "command": [
+                "/playsound interact.drawer_fill @p"
+              ]
             }
           },
           {
+            //Cycles through the property:color and property:animated to save space on code =>
             "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && !q.is_sneaking && q.block_property('property:animated') >= 1",
             "set_block_property": {
               "property:animated": "q.block_property('property:animated') == 4 ? 1 :q.block_property('property:animated')+1"
             },
             "run_command": {
-              "command": ["/playsound drawer.open @p"]
+              "command": [
+                "/playsound drawer.open @p"
+              ]
             }
           },
           {
@@ -253,7 +484,9 @@
               "property:stripped": 1
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           }
         ]
