@@ -32,23 +32,54 @@
           "can_be_siphoned_from": true
         }
       },
-      "component_group:kitchen_half_cupboard_inventory": {
-        "minecraft:inventory": {
-          "container_type": "hopper",
-          "can_be_siphoned_from": true
-        }
-      },*/
+     */
       "component_group:despawn": {
         "minecraft:instant_despawn": {}
+      },
+      "component_group:no_hit_box": {
+        "minecraft:inventory": {
+          "private": true,
+          "container_type": "inventory",
+          "inventory_size": 18,
+          "can_be_siphoned_from": false
+        },
+        "minecraft:custom_hit_test": {
+          "hitboxes": [
+            {
+              "width": 0.0,
+              "height": 0,
+              "pivot": [
+                0,
+                0,
+                10
+              ]
+            }
+          ]
+        }
+      },
+      "component_group:hit_box": {
+        "minecraft:inventory": {
+          "private": false,
+          "container_type": "inventory",
+          "inventory_size": 18,
+          "can_be_siphoned_from": false
+        },
+        "minecraft:custom_hit_test": {
+          "hitboxes": [
+            {
+              "width": 0.7,
+              "height": 0.5,
+              "pivot": [
+                -0.03,
+                -0,
+                0.03
+              ]
+            }
+          ]
+        }
       }
     },
     "components": {
-      "minecraft:inventory": {
-        "container_type": "inventory",
-        "inventory_size": 18,
-        "can_be_siphoned_from": true
-      },
-      //
       "minecraft:environment_sensor": {
         "triggers": [
           {
@@ -100,18 +131,9 @@
       "minecraft:inside_block_notifier": {
         "block_list": [
           {
-            "block": "block:kitchen_drawer_white",
+            "block": "block:kitchen_drawer_oak",
             "entered_block_event": {
               "event": "event:switch_storage_size_to_drawer"
-            },
-            "exited_block_event": {
-              "event": "event:despawn"
-            }
-          },
-          {
-            "block": "block:kitchen_sink_white",
-            "entered_block_event": {
-              "event": "event:switch_storage_size_to_sink"
             },
             "exited_block_event": {
               "event": "event:despawn"
@@ -127,9 +149,576 @@
             }
           },
           {
+            "block": "block:kitchen_sink_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_spruce",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_spruce",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_spruce",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_spruce",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_spruce",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_spruce",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_jungle",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_jungle",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_jungle",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_jungle",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_jungle",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_jungle",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_crimson",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_crimson",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_crimson",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_crimson",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_crimson",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_crimson",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_birch",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_birch",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_birch",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_birch",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_birch",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_birch",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_mangrove",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_mangrove",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_mangrove",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_mangrove",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_mangrove",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_mangrove",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_dark_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_dark_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_dark_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_dark_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_dark_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_dark_oak",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_bamboo",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_bamboo",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_bamboo",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_bamboo",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_bamboo",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_bamboo",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_acacia",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_acacia",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_acacia",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_acacia",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_acacia",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_acacia",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_warped",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_warped",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_warped",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_warped",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_warped",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_warped",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
             "block": "block:kitchen_drawer_cherry",
             "entered_block_event": {
               "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_cherry",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_cherry",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cabinent_cherry",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cabinent"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_cherry",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_cherry",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_half_cupboard"
             },
             "exited_block_event": {
               "event": "event:despawn"
@@ -157,6 +746,24 @@
             "block": "block:kitchen_half_cupboard_white",
             "entered_block_event": {
               "event": "event:switch_storage_size_to_half_cupboard"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_white",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_drawer"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_white",
+            "entered_block_event": {
+              "event": "event:switch_storage_size_to_sink"
             },
             "exited_block_event": {
               "event": "event:despawn"
@@ -191,12 +798,10 @@
       }
     },
     "events": {
-      "event:player_is_in_ui": {
-        "run_command": {
-          "command": [
-            "/say opened",
-            "/playsound drawer.open @p[tag=!sound]",
-            "/tag @p add sound"
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "component_group:hit_box"
           ]
         }
       },
@@ -229,13 +834,31 @@
           ]
         }
       },
-      "event:switch_storage_size_to_half_cupboard": {
+     ,*/
+      "event:inventory_has_no_hit_box": {
         "add": {
           "component_groups": [
-            "component_group:kitchen_half_cupboard_inventory"
+            "component_group:no_hit_box"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "component_group:hit_box"
           ]
         }
-      },*/
+      },
+      "event:inventory_has_hit_box": {
+        "remove": {
+          "component_groups": [
+            "component_group:no_hit_box"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "component_group:hit_box"
+          ]
+        }
+      },
       "event:despawn": {
         "add": {
           "component_groups": [

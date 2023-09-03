@@ -272,24 +272,40 @@
         //These permutations are for changing what doors are opened, if any =>
         "condition": "query.block_property('property:animated') == 1",
         "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 16, 10]
+          },
           "minecraft:geometry": "geometry.half_cupboard_closed"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 2",
         "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 9, -8],
+            "size": [16, 7, 10]
+          },
           "minecraft:geometry": "geometry.half_cupboard_right_opened"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 3",
         "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 9, -8],
+            "size": [16, 7, 10]
+          },
           "minecraft:geometry": "geometry.half_cupboard_left_opened"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 4",
         "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 9, -8],
+            "size": [16, 7, 10]
+          },
           "minecraft:geometry": "geometry.half_cupboard_both_opened"
         }
       }
@@ -297,12 +313,12 @@
     ],
     "components": {
       "minecraft:selection_box": {
-        "origin": [-8, 7, -8],
-        "size": [16, 9, 16]
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 10]
       },
       "minecraft:collision_box": {
         "origin": [-8, 0, -8],
-        "size": [16, 16, 16]
+        "size": [16, 16, 10]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -333,7 +349,7 @@
       "event:place_inventory": {
         "run_command": {
           "command": [
-            "/summon entity:kitchen_furniture_inventory half_cupboard_white ~ ~-0.25 ~"
+            "/summon entity:kitchen_furniture_inventory half_cupboard_white ~~-0.25~"
           ]
         },
         "set_block_property": {

@@ -21,6 +21,10 @@
           2, //Corner South
           3, //Corner East
           4 //Corner West
+        ],
+        "property:stripped": [
+          0,
+          1
         ]
       }
     },
@@ -30,7 +34,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 0",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 0, 0]
+            "rotation": [
+              0,
+              0,
+              0
+            ]
           }
         }
       },
@@ -38,7 +46,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 1",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 180, 0]
+            "rotation": [
+              0,
+              180,
+              0
+            ]
           }
         }
       },
@@ -46,7 +58,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 2",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 90, 0]
+            "rotation": [
+              0,
+              90,
+              0
+            ]
           }
         }
       },
@@ -54,7 +70,36 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 3",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 270, 0]
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        //These are for whether or not the block is stripped =>
+        "condition": "query.block_property('property:stripped') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "kitchen_acacia_stripped",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:stripped') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "kitchen_acacia",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            }
           }
         }
       },
@@ -92,12 +137,28 @@
     ],
     "components": {
       "minecraft:selection_box": {
-        "origin": [-8, 7, -8],
-        "size": [16, 9, 16]
+        "origin": [
+          -8,
+          7,
+          -8
+        ],
+        "size": [
+          16,
+          9,
+          16
+        ]
       },
       "minecraft:collision_box": {
-        "origin": [-8, 0, -8],
-        "size": [16, 16, 16]
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -134,12 +195,23 @@
       "event:cycle_properties": {
         "sequence": [
           {
-            "condition": "q.is_sneaking && q.block_property('property:animated') == 4"
+            "condition": "!q.is_sneaking && q.block_property('property:animated') == 4"
           },
           {
-            "condition": "q.is_sneaking",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && !q.is_sneaking",
             "set_block_property": {
               "property:animated": "q.block_property('property:animated') == 4 ? 0 :q.block_property('property:animated')+1"
+            }
+          },
+          {
+            "condition": "q.is_sneaking && q.block_property('property:stripped') == 0 && q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe')",
+            "set_block_property": {
+              "property:stripped": 1
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           }
         ]

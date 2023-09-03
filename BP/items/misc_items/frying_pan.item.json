@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "item:frying_pan"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "frying_pan"
+      }
+    }
+  }
+}

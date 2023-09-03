@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "item:chef_knife"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "chef_knife"
+      }
+    }
+  }
+}

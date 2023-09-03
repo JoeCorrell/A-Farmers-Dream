@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "item:turkey_sandwich"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "turkey_sandwich"
+      },
+      "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+//bridge-file-version: #23
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "tbar:water_canteen_0",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:use_duration": 1.6,
+			"minecraft:icon": {
+				"texture": "stick"
+			},
+			"minecraft:use_animation": "drink",
+			"minecraft:render_offsets": "apple",
+			"minecraft:display_name": {
+				"value": "item.tbar:water_canteen"
+			},
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			}
+		},
+		"events": {
+			"tbar:on_consume": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"function drink"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

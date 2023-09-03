@@ -7,6 +7,7 @@
         "category": "construction"
       },
       "properties": {
+        //Property for whether or not the block should have a stripped texture =>
         //Property for determining the rotation the block will have when placed =>
         "property:direction_player_is_facing": [
           0, //North
@@ -19,7 +20,9 @@
           0, //Dummy value but also closed v1
           1, //Closed
           2 //Opened
-        ]
+        ],
+        "property:stripped": [0, 1],
+        "property:timer": [0, 1]
       }
     },
     "permutations": [
@@ -57,6 +60,31 @@
         }
       },
       {
+        //These are for whether or not the block is stripped =>
+        "condition": "query.block_property('property:stripped') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "kitchen_spruce_stripped",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:stripped') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "kitchen_spruce",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
         //This permutations is a dummy to prevent multiple storage entities from spawning when the property:animated resets to 0. Maybe a bug? =>
         "condition": "query.block_property('property:animated') == 0",
         "components": {
@@ -71,6 +99,23 @@
         }
       },
       {
+        //This is for if the doors are closed then the storage entity hitbox is 0, to be more realistic =>
+        "condition": "query.block_property('property:timer') == 1",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 16, 16]
+          },
+          "minecraft:queued_ticking": {
+            "looping": true,
+            "interval_range": [0.01, 0.01],
+            "on_tick": {
+              "event": "event:are_doors_open"
+            }
+          }
+        }
+      },
+      {
         //These permutations are for changing what doors are opened, if any =>
         "condition": "query.block_property('property:animated') == 1",
         "components": {
@@ -80,6 +125,10 @@
       {
         "condition": "query.block_property('property:animated') == 2",
         "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 16, 13]
+          },
           "minecraft:geometry": "geometry.cabinent_wood_opened"
         }
       }
@@ -87,12 +136,12 @@
     ],
     "components": {
       "minecraft:selection_box": {
-        "origin": [-8, 7, -8],
-        "size": [16, 9, 16]
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
       },
       "minecraft:collision_box": {
         "origin": [-8, 0, -8],
-        "size": [16, 16, 16]
+        "size": [16, 16, 10]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -104,7 +153,6 @@
         "event": "event:cycle_properties",
         "target": "self"
       },
-      "minecraft:geometry": "geometry.cabinent_wood_closed",
       "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_furniture_cabinent_loot/kitchen_cabinent_spruce.loot.json",
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 15
@@ -123,14 +171,37 @@
       "event:place_inventory": {
         "run_command": {
           "command": [
-            "/summon entity:kitchen_furniture_inventory cabinent_white ~ ~-0.25 ~"
+            "/summon entity:kitchen_furniture_inventory drawer ~ ~-0.25 ~"
           ]
         },
         "set_block_property": {
-          "property:animated": 1
+          "property:animated": 1,
+          "property:stripped": 0,
+          "property:timer": 1
         }
       },
-      //Determins what direction player is facing, and decides what rotation to apply via permutations =>
+      //Event for changing the inventory entity hit box if drawer is not open =>
+      "event:are_doors_open": {
+        "sequence": [
+          {
+            "condition": "q.block_property('property:animated') <= 1",
+            "run_command": {
+              "command": [
+                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_no_hit_box"
+              ]
+            }
+          },
+          {
+            "condition": "q.block_property('property:animated') > 1",
+            "run_command": {
+              "command": [
+                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_hit_box"
+              ]
+            }
+          }
+        ]
+      },
+      //Determines what direction player is facing, and decides what rotation to apply via permutations =>
       "event:block_placed": {
         "set_block_property": {
           "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
@@ -140,18 +211,27 @@
       "event:cycle_properties": {
         "sequence": [
           {
-            "condition": "q.is_sneaking && q.block_property('property:animated') == 2",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && !q.is_sneaking && q.block_property('property:animated') == 2",
             "run_command": {
               "command": ["/playsound drawer.close @p"]
             }
           },
           {
-            "condition": "q.is_sneaking",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && !q.is_sneaking && q.block_property('property:animated') >= 1",
             "set_block_property": {
               "property:animated": "q.block_property('property:animated') == 2 ? 1 :q.block_property('property:animated')+1"
             },
             "run_command": {
               "command": ["/playsound drawer.open @p"]
+            }
+          },
+          {
+            "condition": "q.is_sneaking && q.block_property('property:stripped') == 0 && q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe')",
+            "set_block_property": {
+              "property:stripped": 1
+            },
+            "run_command": {
+              "command": ["/playsound use.wood @p"]
             }
           }
         ]
