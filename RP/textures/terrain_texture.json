@@ -341,13 +341,13 @@
     },
     "crate_side": {
       "textures": "textures/blocks/crop_crates_textures/crate_side"
-    },
-    //Misc block textures =>
+    }
+    /*Misc block textures =>
     "rich_farmland": {
       "textures": "textures/blocks/misc_blocks/rich_farmland"
     },
     "rich_compost": {
       "textures": "textures/blocks/misc_blocks/rich_compost"
-    }
+    }*/
   }
 }
