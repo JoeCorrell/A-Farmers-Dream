@@ -374,6 +374,9 @@
     },
     "drawer_storage_empty": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_storage_textures/drawer_storage_empty"
+    },
+    "cutting_board": {
+      "textures": "textures/blocks/kitchen_furniture_textures/kitchen_cutting_board/cutting_board"
     }
     /*Misc block textures =>
     "rich_farmland": {

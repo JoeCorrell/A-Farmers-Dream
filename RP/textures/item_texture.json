@@ -68,6 +68,39 @@
     "chicken_sandwich": {
       "textures": "textures/items/food_item_textures/chicken_sandwich"
     },
+    "fried_rice": {
+      "textures": "textures/items/food_item_textures/fried_rice" //Need texture
+    },
+    "fish_stew": {
+      "textures": "textures/items/food_item_textures/fish_stew" //Need texture
+    },
+    "fruit_salad": {
+      "textures": "textures/items/food_item_textures/fruit_salad" //Need texture
+    },
+    "steak_and_potatoes": {
+      "textures": "textures/items/food_item_textures/steak_and_potatoes" //Need texture
+    },
+    "pumpkin_slice": {
+      "textures": "textures/items/food_item_textures/pumpkin_slice" //Need texture
+    },
+    "egg_sandwich": {
+      "textures": "textures/items/food_item_textures/egg_sandwich" //Need texture
+    },
+    "cornbread": {
+      "textures": "textures/items/food_item_textures/cornbread" //Need texture
+    },
+    "creamed_corn": {
+      "textures": "textures/items/food_item_textures/creamed_corn" //Need texture
+    },
+    "fish_taco": {
+      "textures": "textures/items/food_item_textures/fish_taco" //Need texture
+    },
+    "taco": {
+      "textures": "textures/items/food_item_textures/fish_taco" //Need texture
+    },
+    "bacon_sandwich": {
+      "textures": "textures/items/food_item_textures/bacon_sandwich" //Need texture
+    },
     //Ingredient item textures =>
     "flour": {
       "textures": "textures/items/ingredient_textures/flour"

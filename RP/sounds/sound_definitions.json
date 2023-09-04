@@ -72,6 +72,24 @@
           "volume": 1
         }
       ]
+    },
+    "interact.cutting_board_chop": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/interactions/cutting_board_chop",
+          "volume": 1
+        }
+      ]
+    },
+    "interact.cutting_board_wood_chop": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/interactions/cutting_board_wood_chop",
+          "volume": 1
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,439 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:kitchen_cutting_board",
+      "menu_category": {
+        "category": "construction"
+      },
+      "properties": {
+        //Property for determining the rotation the block will have when placed =>
+        "property:direction_player_is_facing": [
+          0, //North
+          1, //South
+          2, //West
+          3 //East
+        ],
+        //Property for what item is on the cutting board =>
+        "property:item_on_cutting_board": [
+          0, //None
+          1, //Beef
+          2, //porkchop
+          3, //Mutton
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    "permutations": [
+      { //These permutations are for what direction the player is facing =>
+        "condition": "query.block_property('property:direction_player_is_facing')== 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:item_on_cutting_board') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cutting_board",
+            "bone_visibility": {
+              "board": true,
+              "beef": true,
+              "mutton": false,
+              "porkchop": false,
+              "oak_log": false,
+              "oak_log_stripped": false,
+              "spruce_log": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:item_on_cutting_board') == 2",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cutting_board",
+            "bone_visibility": {
+              "board": true,
+              "beef": false,
+              "mutton": false,
+              "porkchop": true,
+              "oak_log": false,
+              "oak_log_stripped": false,
+              "spruce_log": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:item_on_cutting_board') == 3",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cutting_board",
+            "bone_visibility": {
+              "board": true,
+              "beef": false,
+              "mutton": true,
+              "porkchop": false,
+              "oak_log": false,
+              "oak_log_stripped": false,
+              "spruce_log": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:item_on_cutting_board') == 4",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cutting_board",
+            "bone_visibility": {
+              "board": true,
+              "beef": false,
+              "mutton": false,
+              "porkchop": false,
+              "oak_log": true,
+              "oak_log_stripped": false,
+              "spruce_log": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:item_on_cutting_board') == 5",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cutting_board",
+            "bone_visibility": {
+              "board": true,
+              "beef": false,
+              "mutton": false,
+              "porkchop": false,
+              "oak_log": false,
+              "oak_log_stripped": true,
+              "spruce_log": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:item_on_cutting_board') == 6",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cutting_board",
+            "bone_visibility": {
+              "board": true,
+              "beef": false,
+              "mutton": false,
+              "porkchop": false,
+              "oak_log": true,
+              "oak_log_stripped": false,
+              "spruce_log": false
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:selection_box": {
+        "origin": [
+          -7,
+          0,
+          -7
+        ],
+        "size": [
+          14,
+          1,
+          14
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -7,
+          0,
+          -7
+        ],
+        "size": [
+          14,
+          1,
+          14
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:on_interact": {
+        "event": "event:interactions",
+        "target": "self"
+      },
+      "minecraft:on_player_placing": {
+        "event": "event:block_placed"
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.cutting_board",
+        "bone_visibility": {
+          "board": true,
+          "beef": false,
+          "mutton": false,
+          "porkchop": false,
+          "oak_log": false,
+          "oak_log_stripped": false,
+          "spruce_log": false
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cutting_board",
+          "ambient_occlusion": false,
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_cutting_board_loot/kitchen_cutting_board.loot.json",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:map_color": "#7d7d7d"
+    },
+    "events": {
+      "event:block_placed": {
+        "set_block_property": {
+          "property:direction_player_is_facing": "q.cardinal_facing_2d-2",
+          "property:item_on_cutting_board": 0
+        }
+      },
+      "event:interactions": {
+        "sequence": [
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:beef')",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 1
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:porkchop')",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 2
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mutton')",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 3
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log')",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 4
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p"
+              ]
+            }
+          },
+          {
+            //Slicing the beef =>
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 1",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_chop @p",
+                "/function cutting_board_functions/cutting_board_beef_patty"
+              ]
+            }
+          },
+          {
+            //Slicing the porkchop =>
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 2",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_chop @p",
+                "/function cutting_board_functions/cutting_board_bacon"
+              ]
+            }
+          },
+          {
+            //Slicing the mutton =>
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 3",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_chop @p",
+                "/function cutting_board_functions/cutting_board_mutton_chops"
+              ]
+            }
+          },
+          {
+            //Slicing the wood =>
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:item_on_cutting_board') == 4",
+            "set_block_property": {
+              "property:item_on_cutting_board": 5
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_wood_chop @p"
+              ]
+            }
+          },
+          {
+            //Slicing the wood =>
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:item_on_cutting_board') == 5",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_wood_chop @p",
+                "/function cutting_board_functions/cutting_board_stripped_oak_log"
+              ]
+            }
+          },
+          {
+            //For giving the player back their beaf =>
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 1",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_beef"
+              ]
+            }
+          },
+          {
+            //For giving the player back their porkchop =>
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 2",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_porkchop"
+              ]
+            }
+          },
+          {
+            //For giving the player back their mutton =>
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 3",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_mutton"
+              ]
+            }
+          },
+          {
+            //For giving the player back their mutton =>
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:item_on_cutting_board') == 4",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_oak_log"
+              ]
+            }
+          },
+          {
+            //For giving the player back their wood =>
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:item_on_cutting_board') == 5",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_stripped_oak_log"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

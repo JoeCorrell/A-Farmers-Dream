@@ -22,7 +22,10 @@
           3, //3Bucket
           4 //4Bucket
         ],
-        "property:stripped": [0, 1] //Should texture appear stripped =>
+        "property:stripped": [
+          0,
+          1
+        ]
       }
     },
     "permutations": [
@@ -31,7 +34,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 0",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 0, 0]
+            "rotation": [
+              0,
+              0,
+              0
+            ]
           }
         }
       },
@@ -39,7 +46,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 1",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 180, 0]
+            "rotation": [
+              0,
+              180,
+              0
+            ]
           }
         }
       },
@@ -47,7 +58,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 2",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 90, 0]
+            "rotation": [
+              0,
+              90,
+              0
+            ]
           }
         }
       },
@@ -55,7 +70,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 3",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 270, 0]
+            "rotation": [
+              0,
+              270,
+              0
+            ]
           }
         }
       },
@@ -89,7 +108,10 @@
         "components": {
           "minecraft:queued_ticking": {
             "looping": true,
-            "interval_range": [20, 20],
+            "interval_range": [
+              20,
+              20
+            ],
             "on_tick": {
               "event": "event:spawn_particles_entity"
             }
@@ -106,52 +128,24 @@
       {
         "condition": "query.block_property('property:animated') == 1",
         "components": {
-          "minecraft:material_instances": {
-            "water": {
-              "texture": "sink_water_animated",
-              "ambient_occlusion": true,
-              "render_method": "alpha_test"
-            }
-          },
           "minecraft:geometry": "geometry.sink_water_level_1"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 2",
         "components": {
-          "minecraft:material_instances": {
-            "water": {
-              "texture": "sink_water_animated",
-              "ambient_occlusion": true,
-              "render_method": "alpha_test"
-            }
-          },
           "minecraft:geometry": "geometry.sink_water_level_2"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 3",
         "components": {
-          "minecraft:material_instances": {
-            "water": {
-              "texture": "sink_water_animated",
-              "ambient_occlusion": true,
-              "render_method": "alpha_test"
-            }
-          },
           "minecraft:geometry": "geometry.sink_water_level_3"
         }
       },
       {
         "condition": "query.block_property('property:animated') == 4",
         "components": {
-          "minecraft:material_instances": {
-            "water": {
-              "texture": "sink_water_animated",
-              "ambient_occlusion": true,
-              "render_method": "alpha_test"
-            }
-          },
           "minecraft:geometry": "geometry.sink_water_level_4"
         }
       }
@@ -159,12 +153,28 @@
     ],
     "components": {
       "minecraft:selection_box": {
-        "origin": [-8, 7, -8],
-        "size": [16, 9, 16]
+        "origin": [
+          -8,
+          7,
+          -8
+        ],
+        "size": [
+          16,
+          9,
+          16
+        ]
       },
       "minecraft:collision_box": {
-        "origin": [-8, 0, -8],
-        "size": [16, 16, 16]
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -181,7 +191,7 @@
         "explosion_resistance": 15
       },
       "minecraft:material_instances": {
-        "sink": {
+        "*": {
           "texture": "kitchen_cherry_sink",
           "ambient_occlusion": true,
           "render_method": "alpha_test"
@@ -190,7 +200,7 @@
       "minecraft:map_color": "#7d7d7d"
     },
     "events": {
-      //Determines what direction player is facing, and decides what rotation to apply via permutations =>
+      //Determins what direction player is facing, and decides what rotation to apply via permutations =>
       "event:block_placed": {
         "set_block_property": {
           "property:direction_player_is_facing": "q.cardinal_facing_2d-2",
@@ -200,7 +210,9 @@
       //Summons a dummy entity that makes water particles appear
       "event:spawn_particles_entity": {
         "run_command": {
-          "command": ["/summon entity:sink_particles ~ ~ ~"]
+          "command": [
+            "/summon entity:sink_particles ~ ~ ~"
+          ]
         }
       },
       //Cycles through the property:color and property:animated to save space on code =>
@@ -225,7 +237,9 @@
               "property:stripped": 1
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {

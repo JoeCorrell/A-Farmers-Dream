@@ -1,52 +1,26 @@
 {
-	"format_version": 2,
-	"metadata": {
-		"authors": [
-			"ProfMags"
-		],
-		"generated_with": {
-			"bridge": [
-				"2.6.1"
-			],
-			"dash": [
-				"0.10.10"
-			]
-		}
-	},
-	"header": {
-		"name": "addon.name",
-		"description": "addon.description",
-		"min_engine_version": [
-			1,
-			20,
-			0
-		],
-		"uuid": "8cfe6f02-75d4-4022-b98b-da7478794c43",
-		"version": [
-			1,
-			0,
-			0
-		]
-	},
-	"modules": [
-		{
-			"type": "resources",
-			"uuid": "893de646-1aa3-4770-9f6d-da01c091718d",
-			"version": [
-				1,
-				0,
-				0
-			]
-		}
-	],
-	"dependencies": [
-		{
-			"uuid": "d481ada9-d0ca-4105-b760-8f3171488d7c",
-			"version": [
-				1,
-				0,
-				0
-			]
-		}
-	]
+  "format_version": 2,
+  "metadata": {
+    "authors": ["ProfMags"]
+  },
+  "header": {
+    "name": "addon.name",
+    "description": "addon.description",
+    "min_engine_version": [1, 20, 0],
+    "uuid": "8cfe6f02-75d4-4022-b98b-da7478794c43",
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "893de646-1aa3-4770-9f6d-da01c091718d",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "d481ada9-d0ca-4105-b760-8f3171488d7c",
+      "version": [1, 0, 0]
+    }
+  ]
 }
