@@ -1,1 +1,1 @@
-loot give @p loot "kitchen_furniture_loot/kitchen_cutting_board_loot/kitchen_cutting_board_mutton_chops.loot"
+loot spawn ~~~ loot "kitchen_furniture_loot/kitchen_cutting_board_loot/kitchen_cutting_board_mutton_chops.loot"

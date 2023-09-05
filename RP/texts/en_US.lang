@@ -1,16 +1,12 @@
-#Addon info
 
 addon.name=A Farmer's Dream
 addon.description=Dive into a tastier Minecraft! Grow new crops, cook delicious foods, and decorate with stylish furniture for an enriched gameplay experience.
 
-#Hunger icons
 
 hunger.fullbar=
 hunger.halfbar=
 hunger.hungryfull=
 hunger.hungryhalf=
-
-#Seed items
 
 item.item:tomato_seed=Tomato Seed
 item.item:corn_seed=Corn Seed
@@ -18,22 +14,16 @@ item.item:cabbage_seed=Cabbage Seed
 item.item:onion_seed=Onion Seed
 item.item:rice_seed=Rice Seed
 
-#Crop items
-
 item.item:corn=Corn
 item.item:cabbage=Cabbage
 item.item:onion=Onion
 item.item:rice=Rice
 item.item:tomato=Tomato
 
-#Ingredient items
-
 item.item:butter=Butter
 item.item:milk_bottle=Bottle of Milk
 item.item:dough=Dough
 item.item:flour=Flower
-
-#Food items 
 
 item.item:beef_patty_raw=Raw Beef Patty
 item.item:beef_patty_cooked=Cooked Beef Patty
@@ -56,13 +46,10 @@ item.item:cornbread=Corn Bread
 item.item:creamed_corn=Creamed Corn
 item.item:fish_taco=Fish Taco
 item.item:taco=Taco
-
-#Cookware items
+item.item:bacon_sandwich=Bacon Sandwich
 
 item.item:frying_pan=Frying Pan
 item.item:chef_knife=Chef's Cooking Knife
-
-#Crate blocks
 
 tile.block:corn_crate.name=Crate of Corn
 tile.block:cabbage_crate.name=Crate of Cabbage
@@ -72,7 +59,7 @@ tile.block:rice_crate.name=Crate of Rice
 tile.block:carrot_crate.name=Crate of Carrot
 tile.block:potato_crate.name=Crate of Potato
 
-#Terracotta kitchen furniture
+
 
 tile.block:kitchen_drawer_white.name=Kitchen Drawer White
 tile.block:kitchen_counter_white.name=Kitchen Counter White
@@ -80,7 +67,6 @@ tile.block:kitchen_cabinent_white.name=Kitchen Cabinent White
 tile.block:kitchen_cupboard_white.name=Kitchen Cupboard White
 tile.block:kitchen_half_cupboard_white.name=Kitchen Half Cupboard White
 
-#Spruce kitchen furniture
 
 tile.block:kitchen_drawer_spruce.name=Kitchen Drawer Spruce
 tile.block:kitchen_counter_spruce.name=Kitchen Counter Spruce
@@ -89,16 +75,12 @@ tile.block:kitchen_cupboard_spruce.name=Kitchen Cupboard Spruce
 tile.block:kitchen_half_cupboard_spruce.name=Kitchen Half Cupboard Spruce
 tile.block:kitchen_sink_spruce.name=Kitchen Sink Spruce
 
-#Bamboo kitchen furniture
-
 tile.block:kitchen_drawer_bamboo.name=Kitchen Drawer Bamboo
 tile.block:kitchen_counter_bamboo.name=Kitchen Counter Bamboo
 tile.block:kitchen_cabinent_bamboo.name=Kitchen Cabinent Bamboo
 tile.block:kitchen_cupboard_bamboo.name=Kitchen Cupboard Bamboo
 tile.block:kitchen_half_cupboard_bamboo.name=Kitchen Half Cupboard Bamboo
 tile.block:kitchen_sink_bamboo.name=Kitchen Sink Bamboo
-
-#Jungle kitchen furniture
 
 tile.block:kitchen_drawer_jungle.name=Kitchen Drawer Jungle
 tile.block:kitchen_counter_jungle.name=Kitchen Counter Jungle
@@ -107,16 +89,12 @@ tile.block:kitchen_cupboard_jungle.name=Kitchen Cupboard Jungle
 tile.block:kitchen_half_cupboard_jungle.name=Kitchen Half Cupboard Jungle
 tile.block:kitchen_sink_jungle.name=Kitchen Sink Jungle
 
-#Mangrove kitchen furniture
-
 tile.block:kitchen_drawer_mangrove.name=Kitchen Drawer Mangrove
 tile.block:kitchen_counter_mangrove.name=Kitchen Counter Mangrove
 tile.block:kitchen_cabinent_mangrove.name=Kitchen Cabinent Mangrove
 tile.block:kitchen_cupboard_mangrove.name=Kitchen Cupboard Mangrove
 tile.block:kitchen_half_cupboard_mangrove.name=Kitchen Half Cupboard Mangrove
 tile.block:kitchen_sink_mangrove.name=Kitchen Sink Mangrove
-
-#Dark Oak kitchen furniture
 
 tile.block:kitchen_drawer_dark_oak.name=Kitchen Drawer Dark Oak
 tile.block:kitchen_counter_dark_oak.name=Kitchen Counter Dark Oak
@@ -125,16 +103,12 @@ tile.block:kitchen_cupboard_dark_oak.name=Kitchen Cupboard Dark Oak
 tile.block:kitchen_half_cupboard_dark_oak.name=Kitchen Half Cupboard Dark Oak
 tile.block:kitchen_sink_dark_oak.name=Kitchen Sink Dark Oak
 
-#Birch kitchen furniture
-
 tile.block:kitchen_drawer_birch.name=Kitchen Drawer Birch
 tile.block:kitchen_counter_birch.name=Kitchen Counter Birch
 tile.block:kitchen_cabinent_birch.name=Kitchen Cabinent Birch
 tile.block:kitchen_cupboard_birch.name=Kitchen Cupboard Birch
 tile.block:kitchen_half_cupboard_birch.name=Kitchen Half Cupboard Birch
 tile.block:kitchen_sink_birch.name=Kitchen Sink Birch
-
-#Warped kitchen furniture
 
 tile.block:kitchen_drawer_warped.name=Kitchen Drawer Warped
 tile.block:kitchen_counter_warped.name=Kitchen Counter Warped
@@ -143,16 +117,12 @@ tile.block:kitchen_cupboard_warped.name=Kitchen Cupboard Warped
 tile.block:kitchen_half_cupboard_warped.name=Kitchen Half Cupboard Warped
 tile.block:kitchen_sink_warped.name=Kitchen Sink Warped
 
-#Acacia kitchen furniture
-
 tile.block:kitchen_drawer_acacia.name=Kitchen Drawer Acacia
 tile.block:kitchen_counter_acacia.name=Kitchen Counter acacia
 tile.block:kitchen_cabinent_acacia.name=Kitchen Cabinent Acacia
 tile.block:kitchen_cupboard_acacia.name=Kitchen Cupboard Acacia
 tile.block:kitchen_half_cupboard_acacia.name=Kitchen Half Cupboard Acacia
 tile.block:kitchen_sink_acacia.name=Kitchen Sink Acacia
-
-#Crimson kitchen furniture
 
 tile.block:kitchen_drawer_crimson.name=Kitchen Drawer Crimson
 tile.block:kitchen_counter_crimson.name=Kitchen Counter Crimson
@@ -161,8 +131,6 @@ tile.block:kitchen_cupboard_crimson.name=Kitchen Cupboard Crimson
 tile.block:kitchen_half_cupboard_crimson.name=Kitchen Half Cupboard Crimson
 tile.block:kitchen_sink_crimson.name=Kitchen Sink Crimson
 
-#Cherry kitchen furniture
-
 tile.block:kitchen_drawer_cherry.name=Kitchen Drawer Cherry
 tile.block:kitchen_counter_cherry.name=Kitchen Counter Cherry
 tile.block:kitchen_cabinent_cherry.name=Kitchen Cabinent Cherry
@@ -170,16 +138,12 @@ tile.block:kitchen_cupboard_cherry.name=Kitchen Cupboard Cherry
 tile.block:kitchen_half_cupboard_cherry.name=Kitchen Half Cupboard Cherry
 tile.block:kitchen_sink_cherry.name=Kitchen Sink Cherry
 
-#Oak kitchen furniture
-
 tile.block:kitchen_drawer_oak.name=Kitchen Drawer Oak
 tile.block:kitchen_counter_oak.name=Kitchen Counter Oak
 tile.block:kitchen_cabinent_oak.name=Kitchen Cabinent Oak
 tile.block:kitchen_cupboard_oak.name=Kitchen Cupboard Oak
 tile.block:kitchen_half_cupboard_oak.name=Kitchen Half Cupboard Oak
 tile.block:kitchen_sink_oak.name=Kitchen Sink Oak
-
-#Misc blocks
 
 tile.block:stove.name=Kitchen Stove
 tile.block:kitchen_cutting_board.name=Oak Cutting Board

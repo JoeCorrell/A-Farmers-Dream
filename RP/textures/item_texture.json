@@ -86,6 +86,12 @@
     "egg_sandwich": {
       "textures": "textures/items/food_item_textures/egg_sandwich" //Need texture
     },
+    "mutton_chops_raw": {
+      "textures": "textures/items/food_item_textures/mutton_chops_raw" //Need texture
+    },
+    "mutton_chops_cooked": {
+      "textures": "textures/items/food_item_textures/mutton_chops_cooked" //Need texture
+    },
     "cornbread": {
       "textures": "textures/items/food_item_textures/cornbread" //Need texture
     },
@@ -93,10 +99,10 @@
       "textures": "textures/items/food_item_textures/creamed_corn" //Need texture
     },
     "fish_taco": {
-      "textures": "textures/items/food_item_textures/fish_taco" //Need texture
+      "textures": "textures/items/food_item_textures/creamed_corn" //Need texture
     },
     "taco": {
-      "textures": "textures/items/food_item_textures/fish_taco" //Need texture
+      "textures": "textures/items/food_item_textures/creamed_corn" //Need texture
     },
     "bacon_sandwich": {
       "textures": "textures/items/food_item_textures/bacon_sandwich" //Need texture
