@@ -1,0 +1,7 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/kitchen_furniture_textures/sink_water_animated",
+    "atlas_tile": "sink_animated",
+    "frames": 16
+  }
+]

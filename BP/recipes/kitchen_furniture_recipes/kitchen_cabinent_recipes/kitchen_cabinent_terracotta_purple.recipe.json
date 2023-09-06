@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_cabinent_terracotta_purple"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "LLL",
+      "LCL",
+      "LCL"
+    ],
+    "key": {
+      "L": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": "block:kitchen_cabinent_terracotta_purple"
+  }
+}

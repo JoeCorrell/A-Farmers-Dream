@@ -1,0 +1,565 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:kitchen_cupboard_terracotta_red",
+      "menu_category": {
+        "category": "construction",
+        "group": "itemGroup.name.cupboard"
+      },
+      "properties": {
+        "property:direction_player_is_facing": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "property:animated": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "property:timer": [
+          0,
+          1
+        ],
+        "property:storage0": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage_empty",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage0",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage1",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage2",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage3",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 5",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage4",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 6",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage5",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 7",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage6",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 8",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage7",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:storage0') == 9",
+        "components": {
+          "minecraft:material_instances": {
+            "storage0": {
+              "texture": "drawer_storage8",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            },
+            "*": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            },
+            "drawer": {
+              "texture": "kitchen_terracotta_red",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.cupboard_closed",
+          "minecraft:queued_ticking": {
+            "looping": false,
+            "interval_range": [
+              0.25,
+              0.25
+            ],
+            "on_tick": {
+              "event": "event:place_inventory"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:timer') == 1",
+        "components": {
+          "minecraft:queued_ticking": {
+            "looping": true,
+            "interval_range": [
+              0.01,
+              0.01
+            ],
+            "on_tick": {
+              "event": "event:are_doors_open"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 0",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          },
+          "minecraft:geometry": "geometry.cupboard_closed"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 1",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              1,
+              -8
+            ],
+            "size": [
+              16,
+              15,
+              12
+            ]
+          },
+          "minecraft:geometry": "geometry.cupboard_closed"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 2",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              1,
+              -8
+            ],
+            "size": [
+              16,
+              15,
+              12
+            ]
+          },
+          "minecraft:geometry": "geometry.cupboard_right_opened"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 3",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              1,
+              -8
+            ],
+            "size": [
+              16,
+              15,
+              12
+            ]
+          },
+          "minecraft:geometry": "geometry.cupboard_left_opened"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 4",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              1,
+              -8
+            ],
+            "size": [
+              16,
+              15,
+              12
+            ]
+          },
+          "minecraft:geometry": "geometry.cupboard_both_opened"
+        }
+      }
+    ],
+    "components": {
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:on_player_placing": {
+        "event": "event:block_placed"
+      },
+      "minecraft:on_interact": {
+        "event": "event:cycle_properties",
+        "target": "self"
+      },
+      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_cupboard_loot/kitchen_cupboard_terracotta_red.loot.json",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "kitchen_terracotta_red",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        },
+        "drawer": {
+          "texture": "kitchen_terracotta_red",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        },
+        "storage0": {
+          "texture": "drawer_storage_empty",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:map_color": "#7d7d7d"
+    },
+    "events": {
+      "event:place_inventory": {
+        "run_command": {
+          "command": [
+            "/summon entity:kitchen_furniture_inventory drawer ~ ~-0.25 ~"
+          ]
+        },
+        "set_block_property": {
+          "property:animated": 1,
+          "property:timer": 1,
+          "property:storage0": 0
+        }
+      },
+      "event:are_doors_open": {
+        "sequence": [
+          {
+            "condition": "q.block_property('property:animated') <= 1",
+            "run_command": {
+              "command": [
+                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_no_hit_box"
+              ]
+            }
+          },
+          {
+            "condition": "q.block_property('property:animated') > 1",
+            "run_command": {
+              "command": [
+                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_hit_box"
+              ]
+            }
+          }
+        ]
+      },
+      "event:block_placed": {
+        "set_block_property": {
+          "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
+        }
+      },
+      "event:cycle_properties": {
+        "sequence": [
+          {
+            "condition": "query.is_sneaking == True",
+            "set_block_property": {
+              "property:storage0": "q.block_property('property:storage0') == 9 ? 0 :q.block_property('property:storage0')+1"
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.drawer_fill @p"
+              ]
+            }
+          },
+          {
+            "condition": "!q.is_sneaking && q.block_property('property:animated') == 4",
+            "run_command": {
+              "command": [
+                "/playsound drawer.close @p"
+              ]
+            }
+          },
+          {
+            "condition": "!q.is_sneaking && q.block_property('property:animated') >= 1",
+            "set_block_property": {
+              "property:animated": "q.block_property('property:animated') == 4 ? 1 :q.block_property('property:animated')+1"
+            },
+            "run_command": {
+              "command": [
+                "/playsound drawer.open @p"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

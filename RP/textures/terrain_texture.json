@@ -121,70 +121,70 @@
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_wood_textures/kitchen_oak"
     },
     //Kitchen wooden sink textures =>
-    "kitchen_jungle_stripped_sink": {
+    "kitchen_sink_wood_jungle_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_jungle_stripped_sink"
     },
-    "kitchen_acacia_stripped_sink": {
+    "kitchen_sink_wood_acacia_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_acacia_stripped_sink"
     },
-    "kitchen_warped_stripped_sink": {
+    "kitchen_sink_wood_warped_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_warped_stripped_sink"
     },
-    "kitchen_cherry_stripped_sink": {
+    "kitchen_sink_wood_cherry_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_cherry_stripped_sink"
     },
-    "kitchen_mangrove_stripped_sink": {
+    "kitchen_sink_wood_mangrove_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_mangrove_stripped_sink"
     },
-    "kitchen_crimson_stripped_sink": {
+    "kitchen_sink_wood_crimson_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_crimson_stripped_sink"
     },
     "kitchen_bamboo_stripped_sink": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_bamboo_stripped_sink"
     },
-    "kitchen_spruce_stripped_sink": {
+    "kitchen_sink_wood_spruce_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_spruce_stripped_sink"
     },
-    "kitchen_birch_stripped_sink": {
+    "kitchen_sink_wood_birch_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_birch_stripped_sink"
     },
-    "kitchen_dark_oak_stripped_sink": {
+    "kitchen_sink_wood_dark_oak_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_dark_oak_stripped_sink"
     },
-    "kitchen_oak_stripped_sink": {
+    "kitchen_sink_wood_oak_stripped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_oak_stripped_sink"
     },
-    "kitchen_jungle_sink": {
+    "kitchen_sink_wood_jungle": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_jungle_sink"
     },
-    "kitchen_acacia_sink": {
+    "kitchen_sink_wood_acacia": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_acacia_sink"
     },
-    "kitchen_warped_sink": {
+    "kitchen_sink_wood_warped": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_warped_sink"
     },
-    "kitchen_cherry_sink": {
+    "kitchen_sink_wood_cherry": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_cherry_sink"
     },
-    "kitchen_mangrove_sink": {
+    "kitchen_sink_wood_mangrove": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_mangrove_sink"
     },
-    "kitchen_crimson_sink": {
+    "kitchen_sink_wood_crimson": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_crimson_sink"
     },
-    "kitchen_bamboo_sink": {
+    "kitchen_sink_wood_bamboo": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_bamboo_sink"
     },
-    "kitchen_spruce_sink": {
+    "kitchen_sink_wood_spruce": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_spruce_sink"
     },
-    "kitchen_birch_sink": {
+    "kitchen_sink_wood_birch": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_birch_sink"
     },
-    "kitchen_dark_oak_sink": {
+    "kitchen_sink_wood_dark_oak": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_dark_oak_sink"
     },
-    "kitchen_oak_sink": {
+    "kitchen_sink_wood_oak": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_sink_wood_textures/kitchen_oak_sink"
     },
     //Kitchen sink textures =>
@@ -377,6 +377,12 @@
     },
     "cutting_board": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_cutting_board/cutting_board"
+    },
+    "sink_animated": {
+      "textures": "textures/blocks/kitchen_furniture_textures/sink_water_animated"
+    },
+    "sink_empty": {
+      "textures": "textures/blocks/kitchen_furniture_textures/sink_empty"
     }
     /*Misc block textures =>
     "rich_farmland": {

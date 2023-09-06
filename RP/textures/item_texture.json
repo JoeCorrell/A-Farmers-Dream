@@ -2,7 +2,32 @@
   "resource_pack_name": "A-Farmers-Dream",
   "texture_name": "atlas.items",
   "texture_data": {
-    //Crop item textures =>
+
+
+    
+    "roasted_salmon": {
+      "textures": "textures/items/food_item_textures/roasted_salmon"
+    },
+
+    "salad": {
+      "textures": "textures/items/food_item_textures/salad"
+    },
+    "pumpkin_soup": {
+      "textures": "textures/items/food_item_textures/pumpkin_soup"
+    },
+
+    "chicken_soup": {
+      "textures": "textures/items/food_item_textures/chicken_soup"
+    },
+
+    "tomato_soup": {
+      "textures": "textures/items/food_item_textures/tomato_soup"
+    },
+
+    "ramen": {
+      "textures": "textures/items/food_item_textures/ramen"
+    },
+
     "corn_item": {
       "textures": "textures/items/food_item_textures/corn"
     },
@@ -18,7 +43,7 @@
     "cabbage_item": {
       "textures": "textures/items/food_item_textures/cabbage"
     },
-    //Crop seed item textures =>
+
     "corn_seed": {
       "textures": "textures/items/seed_item_textures/corn_seed"
     },
@@ -34,7 +59,7 @@
     "cabbage_seed": {
       "textures": "textures/items/seed_item_textures/cabbage_seed"
     },
-    //Food item textures =>
+
     "beef_patty_raw": {
       "textures": "textures/items/food_item_textures/beef_patty_raw"
     },

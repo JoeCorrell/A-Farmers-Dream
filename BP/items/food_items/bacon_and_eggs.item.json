@@ -17,14 +17,6 @@
         "using_converts_to": "bowl"
       }
     },
-    "events": {
-      "event:player_ate_item": {
-        /*"run_command": {
-          "command": [
-            "/effect @p saturation 1 5 true"
-          ]
-        }*/
-      }
-    }
+    "events": {}
   }
 }
