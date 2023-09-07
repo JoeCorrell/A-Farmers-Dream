@@ -5,7 +5,7 @@
           "entries": [
               {
                   "type": "item",
-                  "name": "item:drumstick_raw",
+                  "name": "minecraft:muttonRaw",
                   "weight": 1,
                   "functions": [
                       {

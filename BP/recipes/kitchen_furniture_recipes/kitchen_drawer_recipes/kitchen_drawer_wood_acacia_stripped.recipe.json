@@ -15,7 +15,7 @@
     ],
     "key": {
       "L": {
-        "item": "minecraft:stick"
+        "item": "minecraft:acacia_stripped"
       }
     },
     "result": "block:kitchen_drawer_wood_acacia_stripped"

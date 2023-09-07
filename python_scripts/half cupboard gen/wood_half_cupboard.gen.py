@@ -548,7 +548,7 @@ for color in colors:
             "pattern": ["LLL", "LCL", "LCL"],
             "key": {
                 # Ingredient set to minecraft:stick
-                "L": {"item": "minecraft:stick"}
+                "L": {"item": f"minecraft:{color}"}
             },
             "result": f"block:kitchen_half_cupboard_wood_{color}",
         },

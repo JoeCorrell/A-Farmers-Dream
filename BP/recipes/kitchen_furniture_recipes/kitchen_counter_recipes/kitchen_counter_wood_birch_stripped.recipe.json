@@ -15,7 +15,7 @@
     ],
     "key": {
       "L": {
-        "item": "minecraft:stick"
+        "item": "minecraft:birch_stripped"
       }
     },
     "result": "block:kitchen_counter_wood_birch_stripped"

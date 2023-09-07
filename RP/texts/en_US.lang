@@ -478,3 +478,6 @@ tile.block:kitchen_cupboard_wood_birch_stripped.name=Kitchen Cupboard Wood Birch
 tile.block:kitchen_cupboard_wood_jungle_stripped.name=Kitchen Cupboard Wood Jungle Stripped
 tile.block:kitchen_counter_wood_spruce_stripped.name=Kitchen Counter Wood Spruce Stripped
 tile.block:kitchen_cabinent_terracotta_blue.name=Kitchen Cabinent Terracotta Blue
+tile.block:kitchen_drawer_terracotta_green.name=Kitchen Drawer Terracotta Green
+tile.block:kitchen_counter_terracotta_green.name=Kitchen Counter Terracotta Green
+tile.block:kitchen_cabinent_terracotta_green.name=Kitchen Cabinent Terracotta Green

@@ -15,7 +15,7 @@
     ],
     "key": {
       "L": {
-        "item": "minecraft:stick"
+        "item": "minecraft:light_gray"
       }
     },
     "result": "block:kitchen_sink_terracotta_light_gray"

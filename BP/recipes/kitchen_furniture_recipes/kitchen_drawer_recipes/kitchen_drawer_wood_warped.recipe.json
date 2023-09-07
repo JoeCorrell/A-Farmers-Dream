@@ -15,7 +15,7 @@
     ],
     "key": {
       "L": {
-        "item": "minecraft:stick"
+        "item": "minecraft:warped"
       }
     },
     "result": "block:kitchen_drawer_wood_warped"

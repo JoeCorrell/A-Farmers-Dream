@@ -71,7 +71,7 @@ def create_loot_table(color, loot_table_output_directory):
 
 # List of colors to generate files for
 colors = [
-    "black", "blue", "brown", "gray", "cyan", "light_blue",
+    "black", "green", "blue", "brown", "gray", "cyan", "light_blue",
     "light_gray", "lime", "magenta", "orange", "pink", "purple",
     "red", "white", "yellow"
 ]
@@ -244,7 +244,7 @@ for color in colors:
             "pattern": ["LLL", "LCL", "LCL"],
             "key": {
                 # Ingredient set to minecraft:stick
-                "L": {"item": "minecraft:stick"}
+                "L": {"item": f"minecraft:{color}"}
             },
             "result": f"block:kitchen_counter_terracotta_{color}",
         },

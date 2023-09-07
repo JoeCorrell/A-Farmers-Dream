@@ -2,25 +2,7 @@
   "resource_pack_name": "farming",
   "texture_name": "atlas.items",
   "texture_data": {
-    "bacon_and_eggs": {
-      "textures": "textures/items/food_item_textures/bacon_and_eggs"
-    },
-    "salad": {
-      "textures": "textures/items/food_item_textures/salad"
-    },
-    //Ingredient item textures =>
-    "pumpkin_soup": {
-      "textures": "textures/items/food_item_textures/pumpkin_soup"
-    },
-    "chicken_soup": {
-      "textures": "textures/items/food_item_textures/chicken_soup"
-    },
-    "tomato_soup": {
-      "textures": "textures/items/food_item_textures/tomato_soup"
-    },
-    "ramen": {
-      "textures": "textures/items/food_item_textures/ramen"
-    },
+    //Crop items =>
     "corn_item": {
       "textures": "textures/items/food_item_textures/corn"
     },
@@ -36,6 +18,7 @@
     "cabbage_item": {
       "textures": "textures/items/food_item_textures/cabbage"
     },
+    //Seed items =>
     "corn_seed": {
       "textures": "textures/items/seed_item_textures/corn_seed"
     },
@@ -51,6 +34,7 @@
     "cabbage_seed": {
       "textures": "textures/items/seed_item_textures/cabbage_seed"
     },
+    //Meats =>
     "beef_patty_raw": {
       "textures": "textures/items/food_item_textures/beef_patty_raw"
     },
@@ -63,6 +47,13 @@
     "ham_cooked": {
       "textures": "textures/items/food_item_textures/ham_cooked"
     },
+    "mutton_chops_raw": {
+      "textures": "textures/items/food_item_textures/mutton_chops_raw" //Need texture
+    },
+    "mutton_chops_cooked": {
+      "textures": "textures/items/food_item_textures/mutton_chops_cooked" //Need texture
+    },
+
     "bacon_cooked": {
       "textures": "textures/items/food_item_textures/bacon_cooked"
     },
@@ -72,6 +63,7 @@
     "egg_cooked": {
       "textures": "textures/items/food_item_textures/egg_cooked"
     },
+    //Foods =>
     "pancakes": {
       "textures": "textures/items/food_item_textures/pancakes"
     },
@@ -81,45 +73,7 @@
     "chicken_sandwich": {
       "textures": "textures/items/food_item_textures/chicken_sandwich"
     },
-    "fried_rice": {
-      "textures": "textures/items/food_item_textures/fried_rice" //Need texture
-    },
-    "fish_stew": {
-      "textures": "textures/items/food_item_textures/fish_stew" //Need texture
-    },
-    "fruit_salad": {
-      "textures": "textures/items/food_item_textures/fruit_salad" //Need texture
-    },
-    "steak_and_potatoes": {
-      "textures": "textures/items/food_item_textures/steak_and_potatoes" //Need texture
-    },
-    "pumpkin_slice": {
-      "textures": "textures/items/food_item_textures/pumpkin_slice" //Need texture
-    },
-    "egg_sandwich": {
-      "textures": "textures/items/food_item_textures/egg_sandwich" //Need texture
-    },
-    "mutton_chops_raw": {
-      "textures": "textures/items/food_item_textures/mutton_chops_raw" //Need texture
-    },
-    "mutton_chops_cooked": {
-      "textures": "textures/items/food_item_textures/mutton_chops_cooked" //Need texture
-    },
-    "cornbread": {
-      "textures": "textures/items/food_item_textures/cornbread" //Need texture
-    },
-    "creamed_corn": {
-      "textures": "textures/items/food_item_textures/creamed_corn" //Need texture
-    },
-    "fish_taco": {
-      "textures": "textures/items/food_item_textures/creamed_corn" //Need texture
-    },
-    "taco": {
-      "textures": "textures/items/food_item_textures/creamed_corn" //Need texture
-    },
-    "bacon_sandwich": {
-      "textures": "textures/items/food_item_textures/bacon_sandwich" //Need texture
-    },
+
     //Ingredient item textures =>
     "flour": {
       "textures": "textures/items/ingredient_textures/flour"
