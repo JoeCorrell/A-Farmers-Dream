@@ -179,7 +179,7 @@ for color in colors:
                     "target": "self"
                 },
                 "minecraft:geometry": "geometry.counter",
-                "minecraft:loot": f"loot_tables/kitchen_furniture_loot/kitchen_counter_loot/kitchen_counter_{color}.loot.json",
+                "minecraft:loot": f"loot_tables/kitchen_furniture_loot/kitchen_counter_loot/kitchen_counter_terracotta_{color}.loot.json",
                 "minecraft:destructible_by_explosion": {
                     "explosion_resistance": 15
                 },

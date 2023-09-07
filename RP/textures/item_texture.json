@@ -1,33 +1,26 @@
 {
-  "resource_pack_name": "A-Farmers-Dream",
+  "resource_pack_name": "farming",
   "texture_name": "atlas.items",
   "texture_data": {
-
-
-    
-    "roasted_salmon": {
-      "textures": "textures/items/food_item_textures/roasted_salmon"
+    "bacon_and_eggs": {
+      "textures": "textures/items/food_item_textures/bacon_and_eggs"
     },
-
     "salad": {
       "textures": "textures/items/food_item_textures/salad"
     },
+    //Ingredient item textures =>
     "pumpkin_soup": {
       "textures": "textures/items/food_item_textures/pumpkin_soup"
     },
-
     "chicken_soup": {
       "textures": "textures/items/food_item_textures/chicken_soup"
     },
-
     "tomato_soup": {
       "textures": "textures/items/food_item_textures/tomato_soup"
     },
-
     "ramen": {
       "textures": "textures/items/food_item_textures/ramen"
     },
-
     "corn_item": {
       "textures": "textures/items/food_item_textures/corn"
     },
@@ -43,7 +36,6 @@
     "cabbage_item": {
       "textures": "textures/items/food_item_textures/cabbage"
     },
-
     "corn_seed": {
       "textures": "textures/items/seed_item_textures/corn_seed"
     },
@@ -59,7 +51,6 @@
     "cabbage_seed": {
       "textures": "textures/items/seed_item_textures/cabbage_seed"
     },
-
     "beef_patty_raw": {
       "textures": "textures/items/food_item_textures/beef_patty_raw"
     },
@@ -80,9 +71,6 @@
     },
     "egg_cooked": {
       "textures": "textures/items/food_item_textures/egg_cooked"
-    },
-    "bacon_and_eggs": {
-      "textures": "textures/items/food_item_textures/bacon_and_eggs"
     },
     "pancakes": {
       "textures": "textures/items/food_item_textures/pancakes"

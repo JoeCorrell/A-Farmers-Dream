@@ -1133,9 +1133,10 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 1",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 1",
             "set_block_property": {
-              "property:log2_on_cutting_board": 1
+              "property:log2_on_cutting_board": 1,
+              "property:log_on_cutting_board": 0
             },
             "run_command": {
               "command": [
@@ -1146,9 +1147,10 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 2",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 2",
             "set_block_property": {
-              "property:log2_on_cutting_board": 2
+              "property:log2_on_cutting_board": 2,
+              "property:log_on_cutting_board": 0
             },
             "run_command": {
               "command": [
@@ -1159,9 +1161,10 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 3",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 3",
             "set_block_property": {
-              "property:log2_on_cutting_board": 3
+              "property:log2_on_cutting_board": 3,
+              "property:log_on_cutting_board": 0
             },
             "run_command": {
               "command": [
@@ -1172,9 +1175,10 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 4",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 4",
             "set_block_property": {
-              "property:log2_on_cutting_board": 4
+              "property:log2_on_cutting_board": 4,
+              "property:log_on_cutting_board": 0
             },
             "run_command": {
               "command": [
@@ -1185,9 +1189,10 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 5",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 5",
             "set_block_property": {
-              "property:log2_on_cutting_board": 5
+              "property:log2_on_cutting_board": 5,
+              "property:log_on_cutting_board": 0
             },
             "run_command": {
               "command": [
@@ -1198,9 +1203,10 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 6",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 6",
             "set_block_property": {
-              "property:log2_on_cutting_board": 6
+              "property:log2_on_cutting_board": 6,
+              "property:log_on_cutting_board": 0
             },
             "run_command": {
               "command": [
@@ -1211,9 +1217,10 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 7",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 7",
             "set_block_property": {
-              "property:log2_on_cutting_board": 7
+              "property:log2_on_cutting_board": 7,
+              "property:log_on_cutting_board": 0
             },
             "run_command": {
               "command": [
@@ -1224,9 +1231,10 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 8",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 8",
             "set_block_property": {
-              "property:log2_on_cutting_board": 8
+              "property:log2_on_cutting_board": 8,
+              "property:log_on_cutting_board": 0
             },
             "run_command": {
               "command": [
@@ -1237,9 +1245,10 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 9",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 9",
             "set_block_property": {
-              "property:log2_on_cutting_board": 9
+              "property:log2_on_cutting_board": 9,
+              "property:log_on_cutting_board": 0
             },
             "run_command": {
               "command": [
@@ -1250,9 +1259,11 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 10",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log_on_cutting_board') == 10",
             "set_block_property": {
-              "property:log2_on_cutting_board": 10
+              "property:log2_on_cutting_board": 10,
+              "property:log_on_cutting_board": 0
+              
             },
             "run_command": {
               "command": [

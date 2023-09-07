@@ -127,7 +127,7 @@
         "target": "self"
       },
       "minecraft:geometry": "geometry.counter",
-      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_counter_loot/kitchen_counter_gray.loot.json",
+      "minecraft:loot": "loot_tables/kitchen_furniture_loot/kitchen_counter_loot/kitchen_counter_terracotta_gray.loot.json",
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 15
       },
