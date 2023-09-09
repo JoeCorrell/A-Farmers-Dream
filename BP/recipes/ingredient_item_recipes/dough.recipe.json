@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:dough"
+    },
+    "priority": 0,
+    "tags": ["stove_recipes"],
+    "pattern": ["", "FW", ""],
+    "key": {
+      "W": {
+        "item": "minecraft:potion"
+      },
+      "F": {
+        "item": "item:flour"
+      }
+    },
+    "result": [
+      {
+        "item": "item:dough",
+        "count": 1
+      },
+      {
+        "item": "minecraft:glass_bottle",
+        "count": 1
+      }
+    ]
+  }
+}

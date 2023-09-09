@@ -23,7 +23,8 @@ item_template = {
     "format_version": "1.20.0",
     "minecraft:item": {
         "description": {
-            "identifier": f"item:{file_name}"
+            "identifier": f"item:{file_name}",
+            "category": "items"
         },
         "components": {
             "minecraft:icon": {

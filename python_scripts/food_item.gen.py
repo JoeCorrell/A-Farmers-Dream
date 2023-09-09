@@ -23,6 +23,7 @@ item_template = {
     "format_version": "1.20.0",
     "minecraft:item": {
         "description": {"identifier": f"item:{file_name}"},
+        "category": "items",
         "components": {
             "tag:stove_recipes": {},
             "minecraft:icon": {"texture": file_name},
@@ -145,7 +146,7 @@ for index, line in enumerate(lang_lines):
         line_exists = True
         break
 
-# If the line doesn't exist, append it 
+# If the line doesn't exist, append it
 if not line_exists:
     lang_lines.append(f'item.item:{file_name.lower()}={lang_entry}\n')
 

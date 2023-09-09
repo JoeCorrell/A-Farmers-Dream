@@ -5,17 +5,11 @@
       "identifier": "block:kitchen_counter_wood_acacia_stripped"
     },
     "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "pattern": ["SSS", "SSS", "SSS"],
     "key": {
-      "L": {
-        "item": "minecraft:acacia_stripped"
+      "S": {
+        "item": "minecraft:stripped_acacia_log"
       }
     },
     "result": "block:kitchen_counter_wood_acacia_stripped"

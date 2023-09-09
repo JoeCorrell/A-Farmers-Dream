@@ -86,10 +86,31 @@
       },
       {
         //These permutations are for logs put on cutting board ->
+        "condition": "query.block_property('property:log_on_cutting_board') == 0 && query.block_property('property:log2_on_cutting_board') == 0 && query.block_property('property:item_on_cutting_board') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
+          "minecraft:geometry": "geometry.cutting_board"
+        }
+      },
+      {
+        //These permutations are for logs put on cutting board ->
         "condition": "query.block_property('property:log_on_cutting_board') == 1",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -123,8 +144,15 @@
       {
         "condition": "query.block_property('property:log_on_cutting_board') == 2",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -158,8 +186,15 @@
       {
         "condition": "query.block_property('property:log_on_cutting_board') == 3",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -193,8 +228,15 @@
       {
         "condition": "query.block_property('property:log_on_cutting_board') == 4",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -228,8 +270,15 @@
       {
         "condition": "query.block_property('property:log_on_cutting_board') == 5",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -263,8 +312,15 @@
       {
         "condition": "query.block_property('property:log_on_cutting_board') == 6",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -298,8 +354,15 @@
       {
         "condition": "query.block_property('property:log_on_cutting_board') == 7",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -333,8 +396,15 @@
       {
         "condition": "query.block_property('property:log_on_cutting_board') == 8",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -368,8 +438,15 @@
       {
         "condition": "query.block_property('property:log_on_cutting_board') == 9",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -403,8 +480,15 @@
       {
         "condition": "query.block_property('property:log_on_cutting_board') == 10",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -439,8 +523,15 @@
         //These permutations are for stripped logs that are on cutting board =>
         "condition": "query.block_property('property:log2_on_cutting_board') == 1",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -474,8 +565,15 @@
       {
         "condition": "query.block_property('property:log2_on_cutting_board') == 2",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -509,8 +607,15 @@
       {
         "condition": "query.block_property('property:log2_on_cutting_board') == 3",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -544,8 +649,15 @@
       {
         "condition": "query.block_property('property:log2_on_cutting_board') == 4",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -579,8 +691,15 @@
       {
         "condition": "query.block_property('property:log2_on_cutting_board') == 5",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -614,8 +733,15 @@
       {
         "condition": "query.block_property('property:log2_on_cutting_board') == 6",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -649,8 +775,15 @@
       {
         "condition": "query.block_property('property:log2_on_cutting_board') == 7",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -684,8 +817,15 @@
       {
         "condition": "query.block_property('property:log2_on_cutting_board') == 8",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -719,8 +859,15 @@
       {
         "condition": "query.block_property('property:log2_on_cutting_board') == 9",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -754,8 +901,15 @@
       {
         "condition": "query.block_property('property:log2_on_cutting_board') == 10",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -790,8 +944,15 @@
         //These permutations are for items put on the cutting board =>
         "condition": "query.block_property('property:item_on_cutting_board') == 1",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": true,
@@ -825,8 +986,15 @@
       {
         "condition": "query.block_property('property:item_on_cutting_board') == 2",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -860,8 +1028,15 @@
       {
         "condition": "query.block_property('property:item_on_cutting_board') == 3",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -895,8 +1070,15 @@
       {
         "condition": "query.block_property('property:item_on_cutting_board') == 4",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": false,
+              "render_method": "alpha_test"
+            }
+          },
           "minecraft:geometry": {
-            "identifier": "geometry.cutting_board",
+            "identifier": "geometry.cutting_board_items",
             "bone_visibility": {
               "board": true,
               "beef": false,
@@ -948,7 +1130,7 @@
         "event": "event:block_placed"
       },
       "minecraft:geometry": {
-        "identifier": "geometry.cutting_board",
+        "identifier": "geometry.cutting_board_items",
         "bone_visibility": {
           "board": true,
           "beef": false,
@@ -979,7 +1161,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "cutting_board",
+          "texture": "cutting_board_items",
           "ambient_occlusion": false,
           "render_method": "alpha_test"
         }
@@ -1003,7 +1185,20 @@
         "sequence": [
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:beef') && q.block_property('property:item_on_cutting_board') <1",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 1
+            },
+            "run_command": {
+              "command": ["/playsound use.wood @p"]
+            }
+          },
+          {
+            //For if the player places oak log onto cutting board =>
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1016,7 +1211,7 @@
           },
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1029,7 +1224,7 @@
           },
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1042,7 +1237,7 @@
           },
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1055,7 +1250,7 @@
           },
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1068,7 +1263,7 @@
           },
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1081,7 +1276,7 @@
           },
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1094,7 +1289,7 @@
           },
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1107,7 +1302,7 @@
           },
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1120,7 +1315,7 @@
           },
           {
             //For if the player places oak log onto cutting board =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem')",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && q.block_property('property:log_on_cutting_board') <1 && q.block_property('property:log2_on_cutting_board') <1",
             "decrement_stack": {
               "ignore_game_mode": false
             },
@@ -1129,6 +1324,18 @@
             },
             "run_command": {
               "command": ["/playsound use.wood @p"]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 1",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_chop @p",
+                "/function cutting_board_functions/cutting_board_beef_patty"
+              ]
             }
           },
           {
@@ -1263,7 +1470,6 @@
             "set_block_property": {
               "property:log2_on_cutting_board": 10,
               "property:log_on_cutting_board": 0
-              
             },
             "run_command": {
               "command": [
@@ -1274,7 +1480,7 @@
           },
           {
             //Hitting stripped wood =>
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 1",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 1 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 1",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1288,7 +1494,7 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 2",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 2 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 2",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1302,7 +1508,7 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 3",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 3 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 3",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1316,7 +1522,7 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 4",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 4 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 4",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1330,7 +1536,7 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 5",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 5 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 5",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1344,7 +1550,7 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 6",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 6 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 6",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1358,7 +1564,7 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 7",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 7 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 7",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1372,7 +1578,7 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 8",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 8 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 8",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1386,7 +1592,7 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 9",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 9 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 9",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1400,7 +1606,7 @@
           },
           {
             //Turning the oak wood into stripped
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 10",
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log2_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && q.block_property('property:log2_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && q.block_property('property:log2_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && q.block_property('property:log2_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && q.block_property('property:log2_on_cutting_board') == 10 || q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') && q.block_property('property:log2_on_cutting_board') == 10",
             "set_block_property": {
               "property:log_on_cutting_board": 0,
               "property:log2_on_cutting_board": 0
@@ -1413,8 +1619,20 @@
             }
           },
           {
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 1",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_beef"
+              ]
+            }
+          },
+          {
             //For giving the player back their wood =>
-            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 1",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 1",
             "set_block_property": {
               "property:log_on_cutting_board": 0
             },
@@ -1427,7 +1645,7 @@
           },
           {
             //For giving the player back their wood =>
-            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 2",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 2",
             "set_block_property": {
               "property:log_on_cutting_board": 0
             },
@@ -1440,7 +1658,7 @@
           },
           {
             //For giving the player back their wood =>
-            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 3",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 3",
             "set_block_property": {
               "property:log_on_cutting_board": 0
             },
@@ -1453,7 +1671,7 @@
           },
           {
             //For giving the player back their wood =>
-            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 4",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 4",
             "set_block_property": {
               "property:log_on_cutting_board": 0
             },
@@ -1466,7 +1684,7 @@
           },
           {
             //For giving the player back their wood =>
-            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 5",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 5",
             "set_block_property": {
               "property:log_on_cutting_board": 0
             },
@@ -1479,7 +1697,7 @@
           },
           {
             //For giving the player back their wood =>
-            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 6",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 6",
             "set_block_property": {
               "property:log_on_cutting_board": 0
             },
@@ -1492,7 +1710,7 @@
           },
           {
             //For giving the player back their wood =>
-            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 7",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 7",
             "set_block_property": {
               "property:log_on_cutting_board": 0
             },
@@ -1505,7 +1723,7 @@
           },
           {
             //For giving the player back their wood =>
-            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 8",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 8",
             "set_block_property": {
               "property:log_on_cutting_board": 0
             },
@@ -1518,7 +1736,7 @@
           },
           {
             //For giving the player back their wood =>
-            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && q.block_property('property:log_on_cutting_board') == 9",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 9",
             "set_block_property": {
               "property:log_on_cutting_board": 0
             },
@@ -1526,6 +1744,19 @@
               "command": [
                 "/playsound use.wood @p",
                 "/function cutting_board_functions/cutting_board_crimson_log"
+              ]
+            }
+          },
+          {
+            //For giving the player back their wood =>
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'minecraft:oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:birch_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:acacia_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:spruce_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:jungle_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cherry_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mangrove_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:dark_oak_log') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:crimson_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:warped_stem') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe') &&  q.block_property('property:log_on_cutting_board') == 9",
+            "set_block_property": {
+              "property:log_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_warped_log"
               ]
             }
           }

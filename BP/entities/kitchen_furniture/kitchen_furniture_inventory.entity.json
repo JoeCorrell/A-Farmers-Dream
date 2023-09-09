@@ -48,11 +48,7 @@
             {
               "width": 0.0,
               "height": 0,
-              "pivot": [
-                0,
-                -3,
-                5
-              ]
+              "pivot": [0, -3, 5]
             }
           ]
         }
@@ -69,11 +65,7 @@
             {
               "width": 0.7,
               "height": 0.5,
-              "pivot": [
-                -0.03,
-                0.25,
-                0.03
-              ]
+              "pivot": [-0.03, 0.25, 0.03]
             }
           ]
         }
@@ -116,11 +108,7 @@
           {
             "width": 0.7,
             "height": 0.5,
-            "pivot": [
-              -0.03,
-              -0,
-              0.03
-            ]
+            "pivot": [-0.03, -0, 0.03]
           }
         ]
       },
@@ -130,6 +118,42 @@
       },
       "minecraft:inside_block_notifier": {
         "block_list": [
+          {
+            "block": "block:kitchen_cabinent_terracotta_green",
+            "entered_block_event": {
+              "event": "event:kitchen_cabinent_terracotta_green"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_drawer_terracotta_green",
+            "entered_block_event": {
+              "event": "event:kitchen_drawer_terracotta_green"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_cupboard_terracotta_green",
+            "entered_block_event": {
+              "event": "event:kitchen_cupboard_terracotta_green"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_half_cupboard_terracotta_green",
+            "entered_block_event": {
+              "event": "event:kitchen_half_cupboard_terracotta_green"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
           {
             "block": "block:kitchen_cabinent_terracotta_black",
             "entered_block_event": {
@@ -1457,9 +1481,7 @@
     "events": {
       "minecraft:entity_spawned": {
         "add": {
-          "component_groups": [
-            "component_group:hit_box"
-          ]
+          "component_groups": ["component_group:hit_box"]
         }
       },
       /*
@@ -1494,33 +1516,23 @@
      ,*/
       "event:inventory_has_no_hit_box": {
         "add": {
-          "component_groups": [
-            "component_group:no_hit_box"
-          ]
+          "component_groups": ["component_group:no_hit_box"]
         },
         "remove": {
-          "component_groups": [
-            "component_group:hit_box"
-          ]
+          "component_groups": ["component_group:hit_box"]
         }
       },
       "event:inventory_has_hit_box": {
         "remove": {
-          "component_groups": [
-            "component_group:no_hit_box"
-          ]
+          "component_groups": ["component_group:no_hit_box"]
         },
         "add": {
-          "component_groups": [
-            "component_group:hit_box"
-          ]
+          "component_groups": ["component_group:hit_box"]
         }
       },
       "event:despawn": {
         "add": {
-          "component_groups": [
-            "component_group:despawn"
-          ]
+          "component_groups": ["component_group:despawn"]
         }
       }
     }

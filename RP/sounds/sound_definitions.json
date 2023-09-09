@@ -64,6 +64,15 @@
         }
       ]
     },
+    "interact.stove_cook": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/interactions/stove_cook",
+          "volume": 4
+        }
+      ]
+    },
     "interact.drawer_fill": {
       "category": "block",
       "sounds": [

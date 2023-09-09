@@ -5,17 +5,14 @@
       "identifier": "block:kitchen_counter_wood_mangrove"
     },
     "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "pattern": ["LLL", "PPP", "PPP"],
     "key": {
       "L": {
-        "item": "minecraft:mangrove"
+        "item": "minecraft:mangrove_log"
+      },
+      "P": {
+        "item": "minecraft:mangrove_planks"
       }
     },
     "result": "block:kitchen_counter_wood_mangrove"

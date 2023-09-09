@@ -5,17 +5,16 @@
       "identifier": "block:kitchen_counter_wood_jungle"
     },
     "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "pattern": ["LLL", "PPP", "PPP"],
     "key": {
       "L": {
-        "item": "minecraft:jungle"
+        "item": "minecraft:jungle_log",
+        "data": 3
+      },
+      "P": {
+        "item": "minecraft:planks",
+        "data": 3
       }
     },
     "result": "block:kitchen_counter_wood_jungle"

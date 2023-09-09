@@ -2,6 +2,15 @@
   "resource_pack_name": "farming",
   "texture_name": "atlas.items",
   "texture_data": {
+    "bacon_and_eggs": {
+      "textures": "textures/items/food_item_textures/bacon_and_eggs"
+    },
+    "bacon_sandwich": {
+      "textures": "textures/items/food_item_textures/bacon_sandwich"
+    },
+    "turkey_sandwich": {
+      "textures": "textures/items/food_item_textures/turkey_sandwich"
+    },
     //Crop items =>
     "corn_item": {
       "textures": "textures/items/food_item_textures/corn"

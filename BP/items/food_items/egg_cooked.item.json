@@ -2,19 +2,22 @@
   "format_version": "1.20.0",
   "minecraft:item": {
     "description": {
-      "identifier": "item:egg_cooked"
+      "identifier": "item:egg_cooked",
+      "category": "items"
     },
     "components": {
       "tag:stove_recipes": {},
       "minecraft:icon": {
         "texture": "egg_cooked"
       },
+     
       "minecraft:use_duration": 1.6,
       "minecraft:use_animation": "eat",
       "minecraft:food": {
-        "nutrition": 1.5,
-        "saturation_modifier": 1
+        "nutrition": 5,
+        "saturation_modifier": 2
       }
-    }
+    },
+    "events": {}
   }
 }

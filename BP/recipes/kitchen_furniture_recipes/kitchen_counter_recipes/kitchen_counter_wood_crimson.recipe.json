@@ -5,17 +5,14 @@
       "identifier": "block:kitchen_counter_wood_crimson"
     },
     "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "pattern": ["LLL", "PPP", "PPP"],
     "key": {
       "L": {
-        "item": "minecraft:crimson"
+        "item": "minecraft:crimson_stem"
+      },
+      "P": {
+        "item": "minecraft:crimson_planks"
       }
     },
     "result": "block:kitchen_counter_wood_crimson"

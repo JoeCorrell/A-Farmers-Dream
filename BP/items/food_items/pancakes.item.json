@@ -2,7 +2,8 @@
   "format_version": "1.20.0",
   "minecraft:item": {
     "description": {
-      "identifier": "item:pancakes"
+      "identifier": "item:pancakes",
+      "category": "Items"
     },
     "components": {
       "tag:stove_recipes": {},

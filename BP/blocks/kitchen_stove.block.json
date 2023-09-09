@@ -9,7 +9,7 @@
       "properties": {
         "property:direction_player_is_facing": [0, 1, 2, 3],
         "property:powered": [true, false],
-        "property:has_pot": [true, false],
+        "property:has_pan": [true, false],
         "property:animated": [0, 1, 2]
       }
     },
@@ -78,7 +78,7 @@
         }
       },
       {
-        "condition": "query.block_property('property:powered') == false && query.block_property('property:has_pot') == false",
+        "condition": "query.block_property('property:powered') == false && query.block_property('property:has_pan') == false",
         "components": {
           "minecraft:on_interact": {
             "event": "event:interactions",
@@ -93,7 +93,7 @@
         }
       },
       {
-        "condition": "query.block_property('property:powered') == false && query.block_property('property:has_pot') == true",
+        "condition": "query.block_property('property:powered') == false && query.block_property('property:has_pan') == true",
         "components": {
           "minecraft:on_interact": {
             "event": "event:interactions",
@@ -102,14 +102,14 @@
 
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_stove_off_with_pot",
+              "texture": "kitchen_stove_off_with_pan",
               "render_method": "alpha_test"
             }
           }
         }
       },
       {
-        "condition": "query.block_property('property:powered') == true && query.block_property('property:has_pot') == false",
+        "condition": "query.block_property('property:powered') == true && query.block_property('property:has_pan') == false",
         "components": {
           "minecraft:on_interact": {
             "event": "event:interactions",
@@ -124,7 +124,7 @@
           },
           "minecraft:queued_ticking": {
             "looping": false,
-            "interval_range": [250, 250],
+            "interval_range": [2000, 2000],
             "on_tick": {
               "event": "event:stove_is_not_powered"
             }
@@ -132,25 +132,25 @@
         }
       },
       {
-        "condition": "query.block_property('property:powered') == true && query.block_property('property:has_pot') == true",
+        "condition": "query.block_property('property:powered') == true && query.block_property('property:has_pan') == true",
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "kitchen_stove_on_with_pot",
+              "texture": "kitchen_stove_on_with_pan",
               "render_method": "alpha_test"
             }
           },
           "minecraft:queued_ticking": {
             "looping": false,
-            "interval_range": [1000, 1000],
+            "interval_range": [2000, 2000],
             "on_tick": {
               "event": "event:stove_is_not_powered"
             }
           },
           "minecraft:crafting_table": {
-            "table_name": "stove",
+            "table_name": "Stove",
             "grid_size": 3,
-            "crafting_tags": ["stove"]
+            "crafting_tags": ["stove_recipes"]
           }
         }
       }
@@ -194,7 +194,7 @@
         "set_block_property": {
           "property:direction_player_is_facing": "q.cardinal_facing_2d-2",
           "property:powered": false,
-          "property:has_pot": false
+          "property:has_pan": false
         }
       },
       "event:interactions": {
@@ -215,15 +215,24 @@
             }
           },
           {
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:frying_pan')",
+            "condition": "q.block_property('property:has_pan') == false && q.is_item_name_any('slot.weapon.mainhand', 'item:frying_pan')",
             "decrement_stack": {
               "ignore_game_mode": false
             },
             "set_block_property": {
-              "property:has_pot": true
+              "property:has_pan": true
             },
             "run_command": {
               "command": ["/playsound interact.stove_pan @p[c=3] ~ ~ ~"]
+            }
+          },
+          {
+            "condition": "q.block_property('property:has_pan') == true && !q.is_item_name_any('slot.weapon.mainhand', 'item:frying_pan')",
+            "set_block_property": {
+              "property:has_pan": false
+            },
+            "run_command": {
+              "command": ["/function frying_pan_loot"]
             }
           },
           {

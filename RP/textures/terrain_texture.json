@@ -240,14 +240,14 @@
     "kitchen_stove_off": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_off"
     },
-    "kitchen_stove_off_with_pot": {
-      "textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_off_with_pot"
+    "kitchen_stove_off_with_pan": {
+      "textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_off_with_pan"
     },
     "kitchen_stove_on": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_on"
     },
-    "kitchen_stove_on_with_pot": {
-      "textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_on_with_pot"
+    "kitchen_stove_on_with_pan": {
+      "textures": "textures/blocks/kitchen_furniture_textures/kitchen_stove_block_textures/kitchen_stove_on_with_pan"
     },
     //Tomato crop textures =>
     "tomato_crop_block_stage_0": {
@@ -375,8 +375,14 @@
     "drawer_storage_empty": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_storage_textures/drawer_storage_empty"
     },
+    "kitchen_cooking_table": {
+      "textures": "textures/blocks/kitchen_furniture_textures/kitchen_cooking_table"
+    },
     "cutting_board": {
       "textures": "textures/blocks/kitchen_furniture_textures/kitchen_cutting_board/cutting_board"
+    },
+    "cutting_board_items": {
+      "textures": "textures/blocks/kitchen_furniture_textures/kitchen_cutting_board/cutting_board_items"
     },
     "sink_animated": {
       "textures": "textures/blocks/kitchen_furniture_textures/sink_water_animated"

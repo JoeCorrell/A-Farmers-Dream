@@ -5,17 +5,11 @@
       "identifier": "block:kitchen_counter_wood_warped_stripped"
     },
     "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "pattern": ["SSS", "SSS", "SSS"],
     "key": {
-      "L": {
-        "item": "minecraft:warped_stripped"
+      "S": {
+        "item": "minecraft:stripped_warped_stem"
       }
     },
     "result": "block:kitchen_counter_wood_warped_stripped"

@@ -4,20 +4,19 @@
     "description": {
       "identifier": "block:kitchen_counter_terracotta_magenta"
     },
-    "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "priority": 1,
+    "pattern": ["###", "CCC", "CCC"],
     "key": {
-      "L": {
-        "item": "minecraft:magenta"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 2
+      },
+      "C": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_counter_terracotta_magenta"
+    "result": "block:kitchen_counter_terracotta_magenta",
+    "count": 3
   }
 }

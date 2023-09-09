@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:bacon_and_eggs"
+    },
+    "priority": 0,
+    "tags": ["stove_recipes"],
+    "pattern": ["BB", "EE", "  C"],
+    "key": {
+      "B": {
+        "item": "item:bacon_cooked"
+      },
+      "E": {
+        "item": "item:egg_cooked"
+      },
+      "C": {
+        "item": "minecraft:bowl"
+      }
+    },
+    "result": [
+      {
+        "item": "item:bacon_and_eggs",
+        "count": 1
+      }
+    ]
+  }
+}

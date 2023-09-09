@@ -2,9 +2,11 @@
   "format_version": "1.20.0",
   "minecraft:item": {
     "description": {
-      "identifier": "item:milk_bottle"
+      "identifier": "item:milk_bottle",
+      "category": "Items"
     },
     "components": {
+      "tag:stove_recipes": {},
       "minecraft:icon": {
         "texture": "milk_bottle"
       }

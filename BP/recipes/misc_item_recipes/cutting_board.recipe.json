@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_cutting_board"
+    },
+    "priority": 0,
+    "tags": ["crafting_table"],
+    "pattern": ["", "SSS", ""],
+    "key": {
+      "S": {
+        "item": "minecraft:wooden_slab"
+      }
+    },
+    "result": [
+      {
+        "item": "block:kitchen_cutting_board",
+        "count": 1
+      }
+    ]
+  }
+}

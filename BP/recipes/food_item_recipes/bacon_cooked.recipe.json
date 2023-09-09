@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "item:bacon_cooked"
+    },
+    "tags": ["stove_recipes"],
+    "ingredients": [
+      {
+        "item": "item:bacon_raw"
+      }
+    ],
+    "result": [
+      {
+        "item": "item:bacon_cooked"
+      }
+    ]
+  }
+}

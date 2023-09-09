@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "item:bacon_sandwich"
+    },
+    "tags": ["stove_recipes"],
+    "ingredients": [
+      {
+        "item": "minecraft:bread"
+      },
+      {
+        "item": "item:tomato"
+      },
+      {
+        "item": "item:cabbage"
+      },
+      {
+        "item": "item:bacon_raw"
+      },
+      {
+        "item": "item:onion"
+      }
+    ],
+    "result": [
+      {
+        "item": "item:bacon_sandwich"
+      }
+    ]
+  }
+}

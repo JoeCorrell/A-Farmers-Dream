@@ -5,17 +5,16 @@
       "identifier": "block:kitchen_counter_wood_spruce"
     },
     "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "pattern": ["LLL", "PPP", "PPP"],
     "key": {
       "L": {
-        "item": "minecraft:spruce"
+        "item": "minecraft:spruce_log",
+        "data": 1
+      },
+      "P": {
+        "item": "minecraft:planks",
+        "data": 1
       }
     },
     "result": "block:kitchen_counter_wood_spruce"

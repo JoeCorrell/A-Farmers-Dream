@@ -239,15 +239,20 @@ for color in colors:
             "description": {
                 "identifier": f"block:kitchen_counter_terracotta_{color}"
             },
-            "priority": 0,
             "tags": ["crafting_table"],
-            "pattern": ["LLL", "LCL", "LCL"],
+            "priority": 1,
+            "pattern": ["###", "CCC", "CCC"],
             "key": {
-                # Ingredient set to minecraft:stick
-                "L": {"item": f"minecraft:{color}"}
+                "#": {
+                    "item": "minecraft:stained_hardened_clay",
+                    "data": 14
+                },
+                "C": {
+                    "item": "minecraft:concrete"
+                }
             },
-            "result": f"block:kitchen_counter_terracotta_{color}",
-        },
+            "result": f"block:kitchen_counter_terracotta_{color}"
+        }
 
     }
 

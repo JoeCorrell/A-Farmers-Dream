@@ -4,20 +4,19 @@
     "description": {
       "identifier": "block:kitchen_counter_terracotta_gray"
     },
-    "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "priority": 1,
+    "pattern": ["###", "CCC", "CCC"],
     "key": {
-      "L": {
-        "item": "minecraft:gray"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 7
+      },
+      "C": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_counter_terracotta_gray"
+    "result": "block:kitchen_counter_terracotta_gray",
+    "count": 3
   }
 }

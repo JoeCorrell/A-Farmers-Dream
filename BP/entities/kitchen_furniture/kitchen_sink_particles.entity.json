@@ -33,7 +33,97 @@
       "minecraft:inside_block_notifier": {
         "block_list": [
           {
-            "block": "block:kitchen_sink_white",
+            "block": "block:kitchen_sink_terracotta_green",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_black",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_blue",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_brown",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_gray",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_cyan",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_light_blue",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_light_gray",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_lime",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_magenta",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_orange",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_pink",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_purple",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_red",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_white",
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
+            "block": "block:kitchen_sink_terracotta_yellow",
             "exited_block_event": {
               "event": "event:despawn"
             }

@@ -5,17 +5,11 @@
       "identifier": "block:kitchen_counter_wood_dark_oak_stripped"
     },
     "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "pattern": ["SSS", "SSS", "SSS"],
     "key": {
-      "L": {
-        "item": "minecraft:dark_oak_stripped"
+      "S": {
+        "item": "minecraft:stripped_dark_oak_log"
       }
     },
     "result": "block:kitchen_counter_wood_dark_oak_stripped"

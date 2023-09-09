@@ -5,17 +5,16 @@
       "identifier": "block:kitchen_counter_wood_dark_oak"
     },
     "priority": 0,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
-    ],
+    "tags": ["crafting_table"],
+    "pattern": ["LLL", "PPP", "PPP"],
     "key": {
       "L": {
-        "item": "minecraft:dark_oak"
+        "item": "minecraft:dark_oak_log",
+        "data": 1
+      },
+      "P": {
+        "item": "minecraft:planks",
+        "data": 5
       }
     },
     "result": "block:kitchen_counter_wood_dark_oak"
