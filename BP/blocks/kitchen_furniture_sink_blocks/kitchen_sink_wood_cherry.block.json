@@ -77,17 +77,17 @@
           "minecraft:material_instances": {
             "water": {
               "texture": "sink_animated",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "sink": {
               "texture": "kitchen_sink_wood_cherry",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
               "texture": "kitchen_sink_wood_cherry",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -109,17 +109,17 @@
           "minecraft:material_instances": {
             "water": {
               "texture": "sink_empty",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "sink": {
               "texture": "kitchen_sink_wood_cherry",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
               "texture": "kitchen_sink_wood_cherry",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -203,7 +203,7 @@
         },
         "*": {
           "texture": "kitchen_sink_wood_cherry",
-          "ambient_occlusion": false,
+          "ambient_occlusion": true,
           "render_method": "alpha_test"
         }
       },

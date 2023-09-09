@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_drawer_terracotta_cyan"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "C#C",
+      "III"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:cyan"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 9
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "I": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_drawer_terracotta_cyan"
+    "result": "block:kitchen_drawer_terracotta_cyan",
+    "count": 3
   }
 }

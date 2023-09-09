@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_half_cupboard_terracotta_green"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "#H#",
+      "CCC"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:green"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 13
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      },
+      "C": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_half_cupboard_terracotta_green"
+    "result": "block:kitchen_half_cupboard_terracotta_green",
+    "count": 3
   }
 }

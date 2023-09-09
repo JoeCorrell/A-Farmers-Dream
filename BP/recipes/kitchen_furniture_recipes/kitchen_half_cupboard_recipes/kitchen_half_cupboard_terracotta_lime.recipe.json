@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_half_cupboard_terracotta_lime"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "#H#",
+      "CCC"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:lime"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 5
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      },
+      "C": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_half_cupboard_terracotta_lime"
+    "result": "block:kitchen_half_cupboard_terracotta_lime",
+    "count": 3
   }
 }

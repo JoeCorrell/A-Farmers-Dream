@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_cupboard_terracotta_black"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "H#H",
+      "CCC"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:black"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 15
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      },
+      "C": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_cupboard_terracotta_black"
+    "result": "block:kitchen_cupboard_terracotta_black",
+    "count": 3
   }
 }

@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_cabinent_terracotta_purple"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "#C#",
+      "VVV"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:purple"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 10
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "V": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_cabinent_terracotta_purple"
+    "result": "block:kitchen_cabinent_terracotta_purple",
+    "count": 3
   }
 }

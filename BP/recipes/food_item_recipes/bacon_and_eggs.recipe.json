@@ -6,7 +6,7 @@
     },
     "priority": 0,
     "tags": ["stove_recipes"],
-    "pattern": ["BB", "EE", "  C"],
+    "pattern": ["BB", "EE", " DC"],
     "key": {
       "B": {
         "item": "item:bacon_cooked"
@@ -16,6 +16,9 @@
       },
       "C": {
         "item": "minecraft:bowl"
+      },
+      "D": {
+        "item": "item:cooking_oil"
       }
     },
     "result": [

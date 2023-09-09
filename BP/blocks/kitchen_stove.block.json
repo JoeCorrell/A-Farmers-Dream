@@ -200,7 +200,7 @@
       "event:interactions": {
         "sequence": [
           {
-            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:coal_block') && q.block_property('property:powered') == false",
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:frying_pan') && q.is_item_name_any('slot.weapon.mainhand', 'minecraft:coal_block') && q.block_property('property:powered') == false",
             "decrement_stack": {
               "ignore_game_mode": false
             },

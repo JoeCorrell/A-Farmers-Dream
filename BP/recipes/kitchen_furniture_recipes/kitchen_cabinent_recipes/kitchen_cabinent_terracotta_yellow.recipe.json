@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_cabinent_terracotta_yellow"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "#C#",
+      "VVV"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:yellow"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 4
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "V": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_cabinent_terracotta_yellow"
+    "result": "block:kitchen_cabinent_terracotta_yellow",
+    "count": 3
   }
 }

@@ -4,9 +4,15 @@
     "description": {
       "identifier": "block:kitchen_counter_terracotta_magenta"
     },
-    "tags": ["crafting_table"],
+    "tags": [
+      "crafting_table"
+    ],
     "priority": 1,
-    "pattern": ["###", "CCC", "CCC"],
+    "pattern": [
+      "###",
+      "CCC",
+      "CCC"
+    ],
     "key": {
       "#": {
         "item": "minecraft:stained_hardened_clay",

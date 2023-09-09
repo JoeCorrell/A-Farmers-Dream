@@ -1,7 +1,6 @@
+# Function to create a directory if it doesn't exist
 import json
 import os
-
-# Function to create a directory if it doesn't exist
 
 
 def create_directory_if_not_exists(directory):
@@ -81,6 +80,26 @@ loot_table_output_directory = r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge
 
 # Ensure the loot table output directory exists
 create_directory_if_not_exists(loot_table_output_directory)
+
+# Define the color-to-data mapping
+color_data_map = {
+    "white": 0,
+    "light_gray": 8,
+    "gray": 7,
+    "black": 15,
+    "brown": 12,
+    "red": 14,
+    "orange": 1,
+    "yellow": 4,
+    "lime": 5,
+    "green": 13,
+    "cyan": 9,
+    "light_blue": 3,
+    "blue": 11,
+    "purple": 10,
+    "magenta": 2,
+    "pink": 6
+}
 
 for color in colors:
     # Define the JSON item template
@@ -476,7 +495,7 @@ for color in colors:
                 "event:place_inventory": {
                     "run_command": {
                         "command": [
-                            "/summon entity:kitchen_furniture_inventory drawer ~ ~-0.25 ~"
+                            f"/summon entity:kitchen_furniture_inventory drawer_{color} ~ ~-0.25 ~"
                         ]
                     },
                     "set_block_property": {
@@ -539,7 +558,10 @@ for color in colors:
                     ]
                 }
             }
-        }
+        },
+        # Add any desired attributes for the block
+        # Set the "data" value based on the color
+
     }
 
     # Specify the output directory for items
@@ -566,16 +588,28 @@ for color in colors:
             "description": {
                 "identifier": f"block:kitchen_drawer_terracotta_{color}"
             },
-            "priority": 0,
             "tags": ["crafting_table"],
-            "pattern": ["LLL", "LCL", "LCL"],
+            "priority": 1,
+            "pattern": [
+                "###",
+                "C#C",
+                "III"
+            ],
             "key": {
-                # Ingredient set to minecraft:stick
-                "L": {"item": f"minecraft:{color}"}
+                "#": {
+                    "item": "minecraft:stained_hardened_clay",
+                    "data": color_data_map[color]
+                },
+                "C": {
+                    "item": "minecraft:chest"
+                },
+                "I": {
+                    "item": "minecraft:concrete"
+                }
             },
             "result": f"block:kitchen_drawer_terracotta_{color}",
-        },
-
+            "count": 3
+        }
     }
 
     # Specify the directory where the recipe JSON file will be generated

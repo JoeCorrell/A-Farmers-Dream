@@ -1,7 +1,8 @@
 {
   // Alphabetical order please :)
   "ui_defs": [
-    "ui/oven_craft.json", //file name must be unique to avoid conflicts with other addons that also uses this
+    "ui/stove.json",
+    "ui/cooking_table.json",
     "ui/account_banned_screen.json",
     "ui/achievement_screen.json",
     "ui/add_external_server_screen.json",

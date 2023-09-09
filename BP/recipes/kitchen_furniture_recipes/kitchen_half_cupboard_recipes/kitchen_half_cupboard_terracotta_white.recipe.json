@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_half_cupboard_terracotta_white"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "#H#",
+      "CCC"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:white"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 0
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      },
+      "C": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_half_cupboard_terracotta_white"
+    "result": "block:kitchen_half_cupboard_terracotta_white",
+    "count": 3
   }
 }

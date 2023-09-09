@@ -1,21 +1,21 @@
 {
-  "namespace": "backpack_leather_chest",
+  "namespace": "farming_containers",
   "backpack_leather_ui@backpack_leather_ui_common": {
     "type": "image",
     "texture": "textures/ui/backpack_leather_ui",
     "layer": 1
   },
-  "cabinent_red_ui@cabinent_red_ui_common": {
+  "drawer_red_ui@drawer_red_ui_common": {
     "type": "image",
-    "texture": "textures/ui/cabinent_red_ui",
+    "texture": "textures/ui/drawer_red_ui",
     "layer": 1
   },
-  "cabinent_red_cell_image": {
+  "drawer_red_cell_image": {
     "type": "image",
-    "texture": "textures/ui/cabinent_red_ui_cell",
+    "texture": "textures/ui/drawer_red_ui_cell",
     "layer": 1
   },
-  "cabinent_red_grid": {
+  "drawer_red_grid": {
     "type": "grid",
     "size": [90, 54],
     "anchor_from": "top_left",
@@ -24,38 +24,38 @@
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
-  "cabinent_red_top_half": {
+  "drawer_red_top_half": {
     "type": "panel",
-    "$background_images": "cabinent_red_cell_image",
+    "$background_images": "drawer_red_cell_image",
     "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
-        "cabinent_red_grid@chest.cabinent_red_grid": {
+        "drawer_red_grid@chest.drawer_red_grid": {
           "offset": [42, 20]
         }
       }
     ]
   },
-  "cabinent_red_inventory@chest.inventory_contents": {
-    "$grid_template": "chest.cabinent_red_inventory_template"
+  "drawer_red_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.drawer_red_inventory_template"
   },
-  "cabinent_red_inventory_template@common.container_item": {
+  "drawer_red_inventory_template@common.container_item": {
     "$item_collection_name": "inventory_items"
   },
-  "cabinent_red_hotbar@chest.hotbar_contents": {
-    "$grid_template": "chest.cabinent_red_hotbar_template"
+  "drawer_red_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.drawer_red_hotbar_template"
   },
-  "cabinent_red_hotbar_template@common.container_item": {
+  "drawer_red_hotbar_template@common.container_item": {
     "$item_collection_name": "hotbar_items"
   },
-  "cabinent_red_root_panel@small_root_panel": {
-    "$hotbar_contents": "chest.cabinent_red_hotbar",
-    "$inventory_contents": "chest.cabinent_red_inventory",
-    "$dialog_background": "chest.cabinent_red_ui",
+  "drawer_red_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.drawer_red_hotbar",
+    "$inventory_contents": "chest.drawer_red_inventory",
+    "$dialog_background": "chest.drawer_red_ui",
     "size": [175, 187],
-    "$chest_panel": "chest.cabinent_red_top_half"
+    "$chest_panel": "chest.drawer_red_top_half"
   },
   "small_root_panel@common.root_panel": {
     "$chest_panel|default": "chest.small_chest_panel_top_half",
@@ -166,13 +166,78 @@
     "$container_size|default": 27,
     "variables": [
       {
-        "requires": "($container_title = 'cabinent')",
-        "$root_panel": "chest.cabinent_red_root_panel",
+        "requires": "($container_title = 'drawer_black')",
+        "$root_panel": "chest.cabinent_black_root_panel",
         "$container_size": 12
       },
       {
-        "requires": "($container_title = 'drawer')",
-        "$root_panel": "chest.cabinent_red_root_panel",
+        "requires": "($container_title = 'drawer_brown')",
+        "$root_panel": "chest.drawer_brown_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_blue')",
+        "$root_panel": "chest.drawer_blue_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_cyan')",
+        "$root_panel": "chest.drawer_cyan_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_gray')",
+        "$root_panel": "chest.drawer_gray_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_light_blue')",
+        "$root_panel": "chest.drawer_light_blue_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_light_gray')",
+        "$root_panel": "chest.drawer_light_gray_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_lime')",
+        "$root_panel": "chest.drawer_lime_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_magenta')",
+        "$root_panel": "chest.drawer_magenta_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_orange')",
+        "$root_panel": "chest.drawer_orange_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_purple')",
+        "$root_panel": "chest.drawer_purple_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_pink')",
+        "$root_panel": "chest.drawer_pink_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_red')",
+        "$root_panel": "chest.drawer_red_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_white')",
+        "$root_panel": "chest.drawer_white_root_panel",
+        "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'drawer_yellow')",
+        "$root_panel": "chest.drawer_yellow_root_panel",
         "$container_size": 12
       },
       {

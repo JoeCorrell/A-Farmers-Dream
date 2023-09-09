@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_drawer_terracotta_green"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "C#C",
+      "III"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:green"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 13
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "I": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_drawer_terracotta_green"
+    "result": "block:kitchen_drawer_terracotta_green",
+    "count": 3
   }
 }

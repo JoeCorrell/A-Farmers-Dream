@@ -2,14 +2,11 @@
   "resource_pack_name": "farming",
   "texture_name": "atlas.items",
   "texture_data": {
+    "cooking_oil": {
+      "textures": "textures/items/food_item_textures/cooking_oil"
+    },
     "bacon_and_eggs": {
       "textures": "textures/items/food_item_textures/bacon_and_eggs"
-    },
-    "bacon_sandwich": {
-      "textures": "textures/items/food_item_textures/bacon_sandwich"
-    },
-    "turkey_sandwich": {
-      "textures": "textures/items/food_item_textures/turkey_sandwich"
     },
     //Crop items =>
     "corn_item": {
@@ -62,7 +59,6 @@
     "mutton_chops_cooked": {
       "textures": "textures/items/food_item_textures/mutton_chops_cooked" //Need texture
     },
-
     "bacon_cooked": {
       "textures": "textures/items/food_item_textures/bacon_cooked"
     },
@@ -76,13 +72,9 @@
     "pancakes": {
       "textures": "textures/items/food_item_textures/pancakes"
     },
-    "turkey_sandwich": {
-      "textures": "textures/items/food_item_textures/turkey_sandwich"
-    },
     "chicken_sandwich": {
       "textures": "textures/items/food_item_textures/chicken_sandwich"
     },
-
     //Ingredient item textures =>
     "flour": {
       "textures": "textures/items/ingredient_textures/flour"

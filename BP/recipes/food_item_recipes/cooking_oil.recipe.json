@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:cooking_oil"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "LLL",
+      "LCL",
+      "LCL"
+    ],
+    "key": {
+      "L": {
+        "item": "no"
+      }
+    },
+    "result": "item:cooking_oil"
+  }
+}

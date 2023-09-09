@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_drawer_terracotta_magenta"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "C#C",
+      "III"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:magenta"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 2
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "I": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_drawer_terracotta_magenta"
+    "result": "block:kitchen_drawer_terracotta_magenta",
+    "count": 3
   }
 }

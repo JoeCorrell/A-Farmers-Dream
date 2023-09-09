@@ -15,6 +15,15 @@
         "array_name": "controls",
         "operation": "insert_back",
         "value": {
+          "cooking_table@cooking_table_ui.final_panel": {
+            "offset": [80, 0]
+          }
+        }
+      },
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": {
           "crafting_s@crafting.recipe_inventory_screen_content": {
             "bindings": [
               {

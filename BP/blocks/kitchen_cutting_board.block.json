@@ -91,7 +91,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -105,7 +105,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -147,7 +147,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -189,7 +189,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -231,7 +231,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -273,7 +273,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -315,7 +315,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -357,7 +357,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -399,7 +399,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -441,7 +441,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -483,7 +483,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -526,7 +526,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -568,7 +568,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -610,7 +610,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -652,7 +652,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -694,7 +694,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -736,7 +736,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -778,7 +778,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -820,7 +820,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -862,7 +862,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -904,7 +904,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -947,7 +947,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -989,7 +989,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -1031,7 +1031,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -1073,7 +1073,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "cutting_board_items",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           },
@@ -1162,7 +1162,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "cutting_board_items",
-          "ambient_occlusion": false,
+          "ambient_occlusion": true,
           "render_method": "alpha_test"
         }
       },

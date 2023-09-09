@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_sink_terracotta_brown"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "#C#",
+      "YYY"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:brown"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 12
+      },
+      "C": {
+        "item": "minecraft:cauldron"
+      },
+      "Y": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_sink_terracotta_brown"
+    "result": "block:kitchen_sink_terracotta_brown",
+    "count": 3
   }
 }

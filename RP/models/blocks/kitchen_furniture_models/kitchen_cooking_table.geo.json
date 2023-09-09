@@ -178,18 +178,6 @@
 							}
 						},
 						{
-							"origin": [-5.5, 16, -6],
-							"size": [11, 0.5, 11],
-							"uv": {
-								"north": {"uv": [3, 19], "uv_size": [10, 1], "material_instance": "crafting"},
-								"east": {"uv": [3, 19], "uv_size": [10, 1], "material_instance": "crafting"},
-								"south": {"uv": [3, 19], "uv_size": [10, 1], "material_instance": "crafting"},
-								"west": {"uv": [3, 19], "uv_size": [10, 1], "material_instance": "crafting"},
-								"up": {"uv": [13, 29], "uv_size": [-10, -10], "material_instance": "crafting"},
-								"down": {"uv": [13, 29], "uv_size": [-10, -10], "material_instance": "crafting"}
-							}
-						},
-						{
 							"origin": [-8, 15, -8],
 							"size": [16, 1, 16],
 							"uv": {
@@ -199,6 +187,18 @@
 								"west": {"uv": [0, 1], "uv_size": [16, -1]},
 								"up": {"uv": [0, 0], "uv_size": [16, 16]},
 								"down": {"uv": [0, 0], "uv_size": [16, 16]}
+							}
+						},
+						{
+							"origin": [-5.5, 16, -6],
+							"size": [11, 0.5, 11],
+							"uv": {
+								"north": {"uv": [3, 19], "uv_size": [10, 1], "material_instance": "crafting"},
+								"east": {"uv": [3, 19], "uv_size": [10, 1], "material_instance": "crafting"},
+								"south": {"uv": [3, 19], "uv_size": [10, 1], "material_instance": "crafting"},
+								"west": {"uv": [3, 19], "uv_size": [10, 1], "material_instance": "crafting"},
+								"up": {"uv": [13, 29], "uv_size": [-10, -10], "material_instance": "crafting"},
+								"down": {"uv": [13, 29], "uv_size": [-10, -10], "material_instance": "crafting"}
 							}
 						},
 						{

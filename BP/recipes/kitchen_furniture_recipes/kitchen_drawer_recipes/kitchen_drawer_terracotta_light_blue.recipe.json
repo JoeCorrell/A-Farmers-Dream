@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_drawer_terracotta_light_blue"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "C#C",
+      "III"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:light_blue"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 3
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "I": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_drawer_terracotta_light_blue"
+    "result": "block:kitchen_drawer_terracotta_light_blue",
+    "count": 3
   }
 }

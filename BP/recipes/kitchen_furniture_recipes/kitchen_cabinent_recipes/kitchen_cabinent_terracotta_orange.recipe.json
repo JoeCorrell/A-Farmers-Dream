@@ -4,20 +4,28 @@
     "description": {
       "identifier": "block:kitchen_cabinent_terracotta_orange"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "#C#",
+      "VVV"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:orange"
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 1
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "V": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_cabinent_terracotta_orange"
+    "result": "block:kitchen_cabinent_terracotta_orange",
+    "count": 3
   }
 }

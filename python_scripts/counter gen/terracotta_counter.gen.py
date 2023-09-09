@@ -1,7 +1,6 @@
+# Function to create a directory if it doesn't exist
 import json
 import os
-
-# Function to create a directory if it doesn't exist
 
 
 def create_directory_if_not_exists(directory):
@@ -81,6 +80,26 @@ loot_table_output_directory = r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge
 
 # Ensure the loot table output directory exists
 create_directory_if_not_exists(loot_table_output_directory)
+
+# Define the color-to-data mapping
+color_data_map = {
+    "white": 0,
+    "light_gray": 8,
+    "gray": 7,
+    "black": 15,
+    "brown": 12,
+    "red": 14,
+    "orange": 1,
+    "yellow": 4,
+    "lime": 5,
+    "green": 13,
+    "cyan": 9,
+    "light_blue": 3,
+    "blue": 11,
+    "purple": 10,
+    "magenta": 2,
+    "pink": 6
+}
 
 for color in colors:
     # Define the JSON item template
@@ -212,7 +231,12 @@ for color in colors:
                     ]
                 }
             }
+
         }
+
+        # Add any desired attributes for the block
+        # Set the "data" value based on the color
+
     }
 
     # Specify the output directory for items
@@ -245,15 +269,15 @@ for color in colors:
             "key": {
                 "#": {
                     "item": "minecraft:stained_hardened_clay",
-                    "data": 14
+                    "data": color_data_map[color]
                 },
                 "C": {
                     "item": "minecraft:concrete"
                 }
             },
-            "result": f"block:kitchen_counter_terracotta_{color}"
+            "result": f"block:kitchen_counter_terracotta_{color}",
+            "count": 3
         }
-
     }
 
     # Specify the directory where the recipe JSON file will be generated

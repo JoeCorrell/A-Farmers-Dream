@@ -94,7 +94,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage_empty",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -104,7 +104,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
@@ -116,7 +116,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage0",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -126,7 +126,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
@@ -138,7 +138,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage1",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -148,7 +148,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
@@ -160,7 +160,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage2",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -170,7 +170,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
@@ -182,7 +182,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage3",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -192,7 +192,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
@@ -204,7 +204,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage4",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -214,7 +214,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
@@ -226,7 +226,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage5",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -236,7 +236,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
@@ -248,7 +248,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage6",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -258,7 +258,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
@@ -270,7 +270,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage7",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -280,7 +280,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
@@ -292,7 +292,7 @@
           "minecraft:material_instances": {
             "storage0": {
               "texture": "drawer_storage8",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             },
             "*": {
@@ -302,7 +302,7 @@
             },
             "drawer": {
               "texture": "kitchen_birch",
-              "ambient_occlusion": false,
+              "ambient_occlusion": true,
               "render_method": "alpha_test"
             }
           }
