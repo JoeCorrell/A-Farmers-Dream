@@ -56,7 +56,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 0",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 0, 0]
+            "rotation": [
+              0,
+              0,
+              0
+            ]
           }
         }
       },
@@ -64,7 +68,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 1",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 180, 0]
+            "rotation": [
+              0,
+              180,
+              0
+            ]
           }
         }
       },
@@ -72,7 +80,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 2",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 90, 0]
+            "rotation": [
+              0,
+              90,
+              0
+            ]
           }
         }
       },
@@ -80,7 +92,11 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 3",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 270, 0]
+            "rotation": [
+              0,
+              270,
+              0
+            ]
           }
         }
       },
@@ -1112,12 +1128,28 @@
     ],
     "components": {
       "minecraft:selection_box": {
-        "origin": [-7, 0, -7],
-        "size": [14, 1, 14]
+        "origin": [
+          -7,
+          0,
+          -7
+        ],
+        "size": [
+          14,
+          1,
+          14
+        ]
       },
       "minecraft:collision_box": {
-        "origin": [-7, 0, -7],
-        "size": [14, 1, 14]
+        "origin": [
+          -7,
+          0,
+          -7
+        ],
+        "size": [
+          14,
+          1,
+          14
+        ]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -1193,7 +1225,51 @@
               "property:item_on_cutting_board": 1
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:porkchop') && q.block_property('property:item_on_cutting_board') <2",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 2
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:mutton') && q.block_property('property:item_on_cutting_board') <3",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 3
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:chicken') && q.block_property('property:item_on_cutting_board') <4",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 4
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1206,7 +1282,9 @@
               "property:log_on_cutting_board": 1
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1219,7 +1297,9 @@
               "property:log_on_cutting_board": 2
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1232,7 +1312,9 @@
               "property:log_on_cutting_board": 3
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1245,7 +1327,9 @@
               "property:log_on_cutting_board": 4
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1258,7 +1342,9 @@
               "property:log_on_cutting_board": 5
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1271,7 +1357,9 @@
               "property:log_on_cutting_board": 6
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1284,7 +1372,9 @@
               "property:log_on_cutting_board": 7
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1297,7 +1387,9 @@
               "property:log_on_cutting_board": 8
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1310,7 +1402,9 @@
               "property:log_on_cutting_board": 9
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1323,7 +1417,9 @@
               "property:log_on_cutting_board": 10
             },
             "run_command": {
-              "command": ["/playsound use.wood @p"]
+              "command": [
+                "/playsound use.wood @p"
+              ]
             }
           },
           {
@@ -1335,6 +1431,42 @@
               "command": [
                 "/playsound interact.cutting_board_chop @p",
                 "/function cutting_board_functions/cutting_board_beef_patty"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 2",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_chop @p",
+                "/function cutting_board_functions/cutting_board_bacon"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 3",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_chop @p",
+                "/function cutting_board_functions/cutting_board_mutton_chops"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 4",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_chop @p",
+                "/function cutting_board_functions/cutting_board_chicken_strip"
               ]
             }
           },
@@ -1627,6 +1759,42 @@
               "command": [
                 "/playsound use.wood @p",
                 "/function cutting_board_functions/cutting_board_beef"
+              ]
+            }
+          },
+          {
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 2",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_porkchop"
+              ]
+            }
+          },
+          {
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 3",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_mutton"
+              ]
+            }
+          },
+          {
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 4",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function cutting_board_functions/cutting_board_chicken"
               ]
             }
           },

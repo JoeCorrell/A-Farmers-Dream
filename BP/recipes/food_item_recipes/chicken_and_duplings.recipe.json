@@ -2,7 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "item:animal_fat"
+      "identifier": "item:chicken_and_duplings"
     },
     "priority": 0,
     "tags": [
@@ -15,9 +15,9 @@
     ],
     "key": {
       "L": {
-        "item": "stick"
+        "item": "no"
       }
     },
-    "result": "item:animal_fat"
+    "result": "item:chicken_and_duplings"
   }
 }

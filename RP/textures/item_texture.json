@@ -2,11 +2,35 @@
   "resource_pack_name": "farming",
   "texture_name": "atlas.items",
   "texture_data": {
+    "animal_fat": {
+      "textures": "textures/items/ingredient_item_textures/animal_fat"
+    },
+    "chicken_and_dumplings": {
+      "textures": "textures/items/food_item_textures/bowl_of_chicken_and_dumplings"
+    },
+    "fried_rice": {
+      "textures": "textures/items/food_item_textures/bowl_of_fried_rice"
+    },
+    "chicken_strip_cooked": {
+      "textures": "textures/items/food_item_textures/chicken_strip_cooked"
+    },
+    "chicken_strip_raw": {
+      "textures": "textures/items/food_item_textures/chicken_strip_raw"
+    },
+    "steak_and_potatoes": {
+      "textures": "textures/items/food_item_textures/bowl_of_steak_and_potatoes"
+    },
+    "scrambled_eggs": {
+      "textures": "textures/items/food_item_textures/bowl_of_scrambled_eggs"
+    },
     "cooking_oil": {
-      "textures": "textures/items/food_item_textures/cooking_oil"
+      "textures": "textures/items/ingredient_item_textures/cooking_oil"
     },
     "bacon_and_eggs": {
-      "textures": "textures/items/food_item_textures/bacon_and_eggs"
+      "textures": "textures/items/food_item_textures/bowl_of_bacon_and_eggs"
+    },
+    "bacon_sandwich": {
+      "textures": "textures/items/food_item_textures/bacon_sandwich"
     },
     //Crop items =>
     "corn_item": {
@@ -77,16 +101,16 @@
     },
     //Ingredient item textures =>
     "flour": {
-      "textures": "textures/items/ingredient_textures/flour"
+      "textures": "textures/items/ingredient_item_textures/flour"
     },
     "dough": {
-      "textures": "textures/items/ingredient_textures/dough"
+      "textures": "textures/items/ingredient_item_textures/dough"
     },
     "butter": {
-      "textures": "textures/items/ingredient_textures/butter"
+      "textures": "textures/items/ingredient_item_textures/butter"
     },
     "milk_bottle": {
-      "textures": "textures/items/ingredient_textures/milk_bottle"
+      "textures": "textures/items/ingredient_item_textures/milk_bottle"
     },
     //Misc item textures =>
     "frying_pan": {

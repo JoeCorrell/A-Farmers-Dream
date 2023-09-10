@@ -9,15 +9,19 @@
     ],
     "ingredients": [
       {
-        "item": "minecraft:potion"
+        "item": "item:animal_fat"
       },
       {
-        "item": "item:animal_fat"
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "minecraft:glass_bottle"
       }
     ],
     "result": [
       {
-        "item": "item:cooking_oil"
+        "item": "item:cooking_oil",
+        "count": 2
       }
     ]
   }

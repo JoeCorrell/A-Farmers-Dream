@@ -5,8 +5,14 @@
       "identifier": "item:milk_bottle"
     },
     "priority": 0,
-    "tags": ["stove_recipes"],
-    "pattern": [" G ", "GBG", " G "],
+    "tags": [
+      "stove_recipes"
+    ],
+    "pattern": [
+      "GGG",
+      "GB",
+      ""
+    ],
     "key": {
       "B": {
         "item": "minecraft:milk_bucket"

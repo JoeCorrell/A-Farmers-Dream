@@ -6,18 +6,35 @@
     },
     "priority": 0,
     "tags": [
-      "crafting_table"
+      "stove_recipes"
     ],
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "CF",
+      "OF",
+      " DB"
     ],
     "key": {
-      "L": {
-        "item": "stick"
+      "C": {
+        "item": "minecraft:chicken"
+      },
+      "F": {
+        "item": "item:dough"
+      },
+      "B": {
+        "item": "minecraft:bowl"
+      },
+      "O": {
+        "item": "item:onion"
+      },
+      "D": {
+        "item": "item:cooking_oil"
       }
     },
-    "result": "item:chicken_and_dumplings"
+    "result": [
+      {
+        "item": "item:chicken_and_dumplings",
+        "count": 1
+      }
+    ]
   }
 }
