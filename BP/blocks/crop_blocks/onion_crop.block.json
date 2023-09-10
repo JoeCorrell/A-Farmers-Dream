@@ -128,7 +128,7 @@
                     "minecraft:on_interact": {
                         "event": "event:harvest_crop"
                     },
-                    "minecraft:loot": "loot_tables/crop_block_loot/onion_crop_block_loot/onion_crop_block_stage_4.loot.json"
+                    "minecraft:loot": "loot_tables/crop_block_loot/onion_crop_block_loot/onion_crop_block_stage_3.loot.json"
                 }
             }
         ],
@@ -187,7 +187,7 @@
             },
             "event:crop_growth_stage_increase": {
                 "set_block_property": {
-                    "property:growth_stage": "(query.block_property('property:growth_stage')<3) ? query.block_property('property:growth_stage') + 1 : 4"
+                    "property:growth_stage": "(query.block_property('property:growth_stage')<3) ? query.block_property('property:growth_stage') + 1 : 3"
                 }
             },
             "event:harvest_crop": {
@@ -197,7 +197,7 @@
                             "property:growth_stage": 0
                         },
                         "spawn_loot": {
-                            "table": "loot_tables/crop_block_loot/onion_crop_block_loot/onion_crop_block_stage_4.loot.json"
+                            "table": "loot_tables/crop_block_loot/onion_crop_block_loot/onion_crop_block_stage_3.loot.json"
                         }
                     }
                 ]

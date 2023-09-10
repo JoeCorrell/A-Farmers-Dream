@@ -4,20 +4,24 @@
     "description": {
       "identifier": "block:kitchen_drawer_wood_cherry_stripped"
     },
-    "priority": 0,
     "tags": [
       "crafting_table"
     ],
+    "priority": 1,
     "pattern": [
-      "LLL",
-      "LCL",
-      "LCL"
+      "###",
+      "C#C",
+      "###"
     ],
     "key": {
-      "L": {
-        "item": "minecraft:cherry_stripped"
+      "#": {
+        "item": "minecraft:stripped_cherry_stripped_log"
+      },
+      "C": {
+        "item": "minecraft:chest"
       }
     },
-    "result": "block:kitchen_drawer_wood_cherry_stripped"
+    "result": "block:kitchen_drawer_wood_cherry_stripped",
+    "count": 3
   }
 }

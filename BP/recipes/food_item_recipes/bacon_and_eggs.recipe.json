@@ -5,8 +5,14 @@
       "identifier": "item:bacon_and_eggs"
     },
     "priority": 0,
-    "tags": ["stove_recipes"],
-    "pattern": ["BB", "EE", " DC"],
+    "tags": [
+      "stove_recipes"
+    ],
+    "pattern": [
+      "BB",
+      "EE",
+      " DC"
+    ],
     "key": {
       "B": {
         "item": "item:bacon_cooked"

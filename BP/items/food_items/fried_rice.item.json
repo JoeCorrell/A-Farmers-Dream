@@ -2,20 +2,22 @@
   "format_version": "1.20.0",
   "minecraft:item": {
     "description": {
-      "identifier": "item:chicken_sandwich",
+      "identifier": "item:fried_rice",
       "category": "items"
     },
     "components": {
       "tag:stove_recipes": {},
       "minecraft:icon": {
-        "texture": "chicken_sandwich"
+        "texture": "fried_rice"
       },
       "minecraft:use_duration": 1.6,
       "minecraft:use_animation": "eat",
       "minecraft:food": {
         "nutrition": 4,
-        "saturation_modifier": 2
+        "saturation_modifier": 2,
+        "using_converts_to": "bowl"
       }
-    }
+    },
+    "events": {}
   }
 }

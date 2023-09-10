@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:animal_fat"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "LLL",
+      "LCL",
+      "LCL"
+    ],
+    "key": {
+      "L": {
+        "item": "stick"
+      }
+    },
+    "result": "item:animal_fat"
+  }
+}

@@ -115,7 +115,7 @@
                             6
                         ]
                     },
-                    "minecraft:loot": "loot_tables/crop_block_loot/cabbage_crop_block_loot/cabbage_crop_block_stage_4.loot.json"
+                    "minecraft:loot": "loot_tables/crop_block_loot/cabbage_crop_block_loot/cabbage_crop_block_stage_3.loot.json"
                 }
             }
         ],
@@ -189,7 +189,7 @@
                             "property:growth_stage": 0
                         },
                         "spawn_loot": {
-                            "table": "loot_tables/crop_block_loot/cabbage_crop_block_loot/cabbage_crop_block_stage_4.loot.json"
+                            "table": "loot_tables/crop_block_loot/cabbage_crop_block_loot/cabbage_crop_block_stage_3.loot.json"
                         }
                     }
                 ]

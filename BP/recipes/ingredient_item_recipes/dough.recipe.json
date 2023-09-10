@@ -5,8 +5,14 @@
       "identifier": "item:dough"
     },
     "priority": 0,
-    "tags": ["stove_recipes"],
-    "pattern": ["", "FW", ""],
+    "tags": [
+      "stove_recipes"
+    ],
+    "pattern": [
+      "",
+      "FW",
+      ""
+    ],
     "key": {
       "W": {
         "item": "minecraft:potion"

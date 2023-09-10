@@ -2,20 +2,21 @@
   "format_version": "1.20.0",
   "minecraft:item": {
     "description": {
-      "identifier": "item:chicken_sandwich",
+      "identifier": "item:chicken_strip_cooked",
       "category": "items"
     },
     "components": {
       "tag:stove_recipes": {},
       "minecraft:icon": {
-        "texture": "chicken_sandwich"
+        "texture": "chicken_strip_cooked"
       },
       "minecraft:use_duration": 1.6,
       "minecraft:use_animation": "eat",
       "minecraft:food": {
-        "nutrition": 4,
-        "saturation_modifier": 2
+        "nutrition": 3,
+        "saturation_modifier": 1
       }
-    }
+    },
+    "events": {}
   }
 }

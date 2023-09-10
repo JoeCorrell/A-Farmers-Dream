@@ -4,7 +4,9 @@
     "description": {
       "identifier": "item:bacon_cooked"
     },
-    "tags": ["stove_recipes"],
+    "tags": [
+      "stove_recipes"
+    ],
     "ingredients": [
       {
         "item": "item:bacon_raw"

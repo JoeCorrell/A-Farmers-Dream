@@ -2,20 +2,22 @@
   "format_version": "1.20.0",
   "minecraft:item": {
     "description": {
-      "identifier": "item:chicken_sandwich",
+      "identifier": "item:steak_and_potatoes",
       "category": "items"
     },
     "components": {
       "tag:stove_recipes": {},
       "minecraft:icon": {
-        "texture": "chicken_sandwich"
+        "texture": "steak_and_potatoes"
       },
       "minecraft:use_duration": 1.6,
       "minecraft:use_animation": "eat",
       "minecraft:food": {
-        "nutrition": 4,
-        "saturation_modifier": 2
+        "nutrition": 6,
+        "saturation_modifier": 4,
+        "using_converts_to": "bowl"
       }
-    }
+    },
+    "events": {}
   }
 }
