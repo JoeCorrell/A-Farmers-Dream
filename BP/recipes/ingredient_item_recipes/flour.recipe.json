@@ -4,7 +4,7 @@
     "description": {
       "identifier": "item:flour"
     },
-    "tags": ["stove_recipes"],
+    "tags": ["cooking_table_recipes"],
     "ingredients": [
       {
         "item": "minecraft:wheat"

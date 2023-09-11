@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_cooking_table_terracotta_purple"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "priority": 1,
+    "pattern": [
+      "###",
+      "#C#",
+      "GGG"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 10
+      },
+      "C": {
+        "item": "minecraft:crafting_table"
+      },
+      "G": {
+        "item": "minecraft:concrete"
+      }
+    },
+    "result": "block:kitchen_cooking_table_terracotta_purple"
+  }
+}

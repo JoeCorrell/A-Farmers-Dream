@@ -5,7 +5,7 @@
       "identifier": "item:bacon_sandwich"
     },
     "tags": [
-      "stove_recipes"
+      "cooking_table_recipes"
     ],
     "ingredients": [
       {
@@ -18,7 +18,10 @@
         "item": "item:cabbage"
       },
       {
-        "item": "item:bacon_raw"
+        "item": "item:bacon_cooked"
+      },
+      {
+        "item": "item:bacon_cooked"
       },
       {
         "item": "item:onion"

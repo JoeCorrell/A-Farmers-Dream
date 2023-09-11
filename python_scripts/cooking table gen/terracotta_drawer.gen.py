@@ -1,7 +1,6 @@
+# Function to create a directory if it doesn't exist
 import json
 import os
-
-# Function to create a directory if it doesn't exist
 
 
 def create_directory_if_not_exists(directory):
@@ -60,7 +59,7 @@ def create_loot_table(color, loot_table_output_directory):
     }
 
     loot_table_json_file_path = os.path.join(
-        loot_table_output_directory, f"kitchen_cooking_table_terracotta_{color}.loot.json"
+        loot_table_output_directory, f"cooking_table_terracotta_{color}.loot.json"
     )
     save_json_to_file(loot_table_template, loot_table_json_file_path)
 
@@ -81,6 +80,26 @@ loot_table_output_directory = r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge
 
 # Ensure the loot table output directory exists
 create_directory_if_not_exists(loot_table_output_directory)
+
+# Define the color-to-data mapping
+color_data_map = {
+    "white": 0,
+    "light_gray": 8,
+    "gray": 7,
+    "black": 15,
+    "brown": 12,
+    "red": 14,
+    "orange": 1,
+    "yellow": 4,
+    "lime": 5,
+    "green": 13,
+    "cyan": 9,
+    "light_blue": 3,
+    "blue": 11,
+    "purple": 10,
+    "magenta": 2,
+    "pink": 6
+}
 
 for color in colors:
     # Define the JSON item template
@@ -190,7 +209,7 @@ for color in colors:
                     "event": "event:block_placed"
                 },
                 "minecraft:geometry": "geometry.kitchen_cooking_table",
-                "minecraft:loot": f"loot_tables/kitchen_furniture_loot/kitchen_cooking_table_loot/kitchen_cooking_table_terracotta_{color}.loot.json",
+                "minecraft:loot": f"loot_tables/kitchen_furniture_loot/kitchen_cooking_table_loot/cooking_table_terracotta_{color}.loot.json",
                 "minecraft:destructible_by_explosion": {
                     "explosion_resistance": 15
                 },
@@ -232,7 +251,7 @@ for color in colors:
 
     # Save the JSON item file in the specified directory, overwriting if it already exists
     item_json_file_path = os.path.join(
-        output_directory, f"kitchen_cooking_table_terracotta_{color}.block.json"
+        output_directory, f"cooking_table_terracotta_{color}.block.json"
     )
     save_json_to_file(block_template, item_json_file_path, overwrite=True)
 
@@ -247,16 +266,28 @@ for color in colors:
             "description": {
                 "identifier": f"block:kitchen_cooking_table_terracotta_{color}"
             },
-            "priority": 0,
             "tags": ["crafting_table"],
-            "pattern": ["LLL", "LCL", "LCL"],
+            "priority": 1,
+            "pattern": [
+                "###",
+                "#C#",
+                "GGG"
+            ],
             "key": {
-                # Ingredient set to minecraft:stick
-                "L": {"item": f"minecraft:{color}"}
+                "#": {
+                    "item": "minecraft:stained_hardened_clay",
+                    "data": color_data_map[color]
+                },
+                "C": {
+                    "item": "minecraft:crafting_table"
+                },
+                "G": {
+                    "item": "minecraft:concrete"
+                }
             },
-            "result": f"block:kitchen_cooking_table_terracotta_{color}",
-        },
+            "result": f"block:kitchen_cooking_table_terracotta_{color}"
 
+        }
     }
 
     # Specify the directory where the recipe JSON file will be generated
@@ -268,7 +299,7 @@ for color in colors:
 
     # Save the JSON recipe file in the specified directory, overwriting if it already exists
     recipe_json_file_path = os.path.join(
-        recipe_output_directory, f"kitchen_cooking_table_terracotta_{color}.recipe.json"
+        recipe_output_directory, f"cooking_table_terracotta_{color}.recipe.json"
     )
     save_json_to_file(recipe_template, recipe_json_file_path, overwrite=True)
 
