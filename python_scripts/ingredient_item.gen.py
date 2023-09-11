@@ -39,7 +39,7 @@ if converts_to_item:
     item_template["minecraft:item"]["components"]["minecraft:food"]["using_converts_to"] = converts_to_item
 
 # Specify the directory where the JSON files will be generated
-output_directory = r'C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\items\food_items'
+output_directory = r'C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\items\farming\ingredients'
 
 # Ensure the output directory exists
 os.makedirs(output_directory, exist_ok=True)
@@ -70,7 +70,7 @@ recipe_template = {
 }
 
 # Specify the directory where the recipe JSON file will be generated
-recipe_output_directory = r'C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\recipes\food_item_recipes'
+recipe_output_directory = r'C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\recipes\farming\ingredients'
 
 # Ensure the recipe output directory exists
 os.makedirs(recipe_output_directory, exist_ok=True)
@@ -101,7 +101,7 @@ for index, line in enumerate(lines):
     if line.strip() == '"texture_data": {':
         lines.insert(index + 1, f'    "{file_name}": {{\n')
         lines.insert(
-            index + 2, f'      "textures": "textures/items/food_item_textures/{file_name}"\n')
+            index + 2, f'      "textures": "textures/items/farming/foods/{file_name}"\n')
         lines.insert(index + 3, f'    }},\n')
         data_exists = True
         break
@@ -112,7 +112,7 @@ if not data_exists:
     lines.append('\n  "texture_data": {\n')
     lines.append(f'    "{file_name}": {{\n')
     lines.append(
-        f'      "textures": "textures/items/food_item_textures/{file_name}"\n')
+        f'      "textures": "textures/items/farming/foods/{file_name}"\n')
     lines.append('    },\n')
     lines.append('  },\n')
 

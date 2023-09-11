@@ -5,7 +5,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/kitchen_furniture/kitchen_drawer_open",
+          "name": "sounds/kitchen/furniture/drawer_open",
           "volume": 3
         }
       ]
@@ -14,7 +14,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/kitchen_furniture/kitchen_drawer_close",
+          "name": "sounds/kitchen/furniture/drawer_close",
           "volume": 3
         }
       ]
@@ -23,7 +23,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/interactions/dye_block",
+          "name": "sounds/kitchen/furniture/interactions/dye_block",
           "volume": 1
         }
       ]
@@ -32,7 +32,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/interactions/stove_turn_on",
+          "name": "sounds/kitchen/furniture/interactions/stove_turn_on",
           "volume": 1
         }
       ]
@@ -41,7 +41,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/interactions/stove_door_open",
+          "name": "sounds/kitchen/furniture/interactions/stove_door_open",
           "volume": 1
         }
       ]
@@ -50,7 +50,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/interactions/stove_door_close",
+          "name": "sounds/kitchen/furniture/interactions/stove_door_close",
           "volume": 1
         }
       ]
@@ -59,7 +59,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/interactions/stove_pan",
+          "name": "sounds/kitchen/furniture/interactions/stove_pan",
           "volume": 4
         }
       ]
@@ -68,7 +68,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/interactions/stove_cook",
+          "name": "sounds/kitchen/furniture/interactions/stove_cook",
           "volume": 4
         }
       ]
@@ -77,7 +77,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/interactions/drawer_fill",
+          "name": "sounds/kitchen/furniture/interactions/drawer_fill",
           "volume": 1
         }
       ]
@@ -86,7 +86,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/interactions/cutting_board_chop",
+          "name": "sounds/kitchen/furniture/interactions/cutting_board_chop",
           "volume": 1
         }
       ]
@@ -95,7 +95,7 @@
       "category": "block",
       "sounds": [
         {
-          "name": "sounds/interactions/cutting_board_wood_chop",
+          "name": "sounds/kitchen/furniture/interactions/cutting_board_wood_chop",
           "volume": 1
         }
       ]

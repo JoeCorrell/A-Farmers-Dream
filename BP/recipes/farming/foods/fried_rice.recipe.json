@@ -1,0 +1,47 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:fried_rice"
+    },
+    "priority": 0,
+    "tags": [
+      "stove_recipes"
+    ],
+    "pattern": [
+      "BE",
+      "FG",
+      " DC"
+    ],
+    "key": {
+      "B": {
+        "item": "item:onion"
+      },
+      "E": {
+        "item": "item:rice"
+      },
+      "F": {
+        "item": "minecraft:carrot"
+      },
+      "G": {
+        "item": "minecraft:egg"
+      },
+      "C": {
+        "item": "minecraft:bowl"
+      },
+      "D": {
+        "item": "item:cooking_oil"
+      }
+    },
+    "result": [
+      {
+        "item": "item:fried_rice",
+        "count": 1
+      },
+      {
+        "item": "minecraft:glass_bottle",
+        "count": 1
+      }
+    ]
+  }
+}

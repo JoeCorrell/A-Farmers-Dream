@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_cupboard_wood_acacia_stripped"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "H#H",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_acacia_log"
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      }
+    },
+    "result": "block:kitchen_cupboard_wood_acacia_stripped"
+  }
+}

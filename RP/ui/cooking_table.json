@@ -36,7 +36,7 @@
     ]
   },
   "cooking_table_ui@horse.overlay_image": {
-    "texture": "textures/ui/cooking_table_ui/cooking_table_ui.png",
+    "texture": "textures/ui/kitchen/furniture/cooking_table/cooking_table_ui.png",
     "alpha": 1
   },
   "input_grid_panel": {

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_half_cupboard_wood_cherry"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "#H#",
+      "VVV"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:cherry_log"
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      },
+      "V": {
+        "item": "minecraft:cherry_planks"
+      }
+    },
+    "result": "block:kitchen_half_cupboard_wood_cherry"
+  }
+}

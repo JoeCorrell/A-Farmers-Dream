@@ -1,0 +1,44 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:steak_and_potatoes"
+    },
+    "priority": 0,
+    "tags": [
+      "stove_recipes"
+    ],
+    "pattern": [
+      "BBZ",
+      "EE",
+      " DC"
+    ],
+    "key": {
+      "B": {
+        "item": "item:beef_patty_cooked"
+      },
+      "E": {
+        "item": "minecraft:potato"
+      },
+      "Z": {
+        "item": "item:onion"
+      },
+      "C": {
+        "item": "minecraft:bowl"
+      },
+      "D": {
+        "item": "item:cooking_oil"
+      }
+    },
+    "result": [
+      {
+        "item": "item:steak_and_potatoes",
+        "count": 1
+      },
+      {
+        "item": "minecraft:glass_bottle",
+        "count": 1
+      }
+    ]
+  }
+}

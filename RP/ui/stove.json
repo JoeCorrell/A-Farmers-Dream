@@ -51,15 +51,15 @@
     ]
   },
   "stove_bowl_icon@horse.overlay_image": {
-    "texture": "textures/ui/stove_ui/bowl_icon.png",
+    "texture": "textures/ui/kitchen/furniture/stove/bowl_icon.png",
     "alpha": 1
   },
   "stove_cooking_oil_icon@horse.overlay_image": {
-    "texture": "textures/ui/stove_ui/cooking_oil_icon.png",
+    "texture": "textures/ui/kitchen/furniture/stove/cooking_oil_icon.png",
     "alpha": 1
   },
   "stove_ui@horse.overlay_image": {
-    "texture": "textures/ui/stove_ui/stove_ui.png",
+    "texture": "textures/ui/kitchen/furniture/stove/stove_ui.png",
     "alpha": 1
   },
   "input_grid_panel": {

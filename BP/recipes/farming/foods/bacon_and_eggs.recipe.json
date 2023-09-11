@@ -1,0 +1,41 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:bacon_and_eggs"
+    },
+    "priority": 0,
+    "tags": [
+      "stove_recipes"
+    ],
+    "pattern": [
+      "BB",
+      "EE",
+      " DC"
+    ],
+    "key": {
+      "B": {
+        "item": "item:bacon_cooked"
+      },
+      "E": {
+        "item": "item:egg_cooked"
+      },
+      "C": {
+        "item": "minecraft:bowl"
+      },
+      "D": {
+        "item": "item:cooking_oil"
+      }
+    },
+    "result": [
+      {
+        "item": "item:bacon_and_eggs",
+        "count": 1
+      },
+      {
+        "item": "minecraft:glass_bottle",
+        "count": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:chicken_and_dumplings"
+    },
+    "priority": 0,
+    "tags": [
+      "stove_recipes"
+    ],
+    "pattern": [
+      "CCW",
+      "OFF",
+      " DB"
+    ],
+    "key": {
+      "C": {
+        "item": "item:chicken_strip_raw"
+      },
+      "F": {
+        "item": "item:dough"
+      },
+      "B": {
+        "item": "minecraft:bowl"
+      },
+      "W": {
+        "item": "minecraft:potion"
+      },
+      "O": {
+        "item": "item:onion"
+      },
+      "D": {
+        "item": "item:cooking_oil"
+      }
+    },
+    "result": [
+      {
+        "item": "item:chicken_and_dumplings",
+        "count": 1
+      },
+      {
+        "item": "minecraft:glass_bottle",
+        "count": 2
+      }
+    ]
+  }
+}

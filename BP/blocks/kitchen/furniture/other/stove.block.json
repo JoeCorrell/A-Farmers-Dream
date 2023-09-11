@@ -1,0 +1,364 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:kitchen_stove",
+      "menu_category": {
+        "category": "construction"
+      },
+      "properties": {
+        "property:direction_player_is_facing": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "property:powered": [
+          true,
+          false
+        ],
+        "property:has_pan": [
+          true,
+          false
+        ],
+        "property:animated": [
+          0,
+          1
+        ],
+        "property:interact_turns_stove_on": [
+          0,
+          1
+        ],
+        "property:activate_crafting": [
+          0,
+          1
+        ],
+        "property:fuel_level_coal": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:has_pan') == true",
+        "components": {
+          "minecraft:loot": "loot_tables/kitchen/furniture/stove/stove_with_pan.loot.json"
+        }
+      },
+      {
+        "condition": "query.block_property('property:activate_crafting') == 1",
+        "components": {
+          "minecraft:crafting_table": {
+            "table_name": "Stove",
+            "grid_size": 3,
+            "crafting_tags": [
+              "stove_recipes"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:interact_turns_stove_on') == 0",
+        "components": {
+          "minecraft:on_interact": {
+            "event": "event:interactions",
+            "target": "self"
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:fuel_level_coal') == 0",
+        "components": {
+          "minecraft:queued_ticking": {
+            "looping": true,
+            "interval_range": [
+              0.15,
+              0.15
+            ],
+            "on_tick": {
+              "event": "event:add_interaction"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:powered') == true && query.block_property('property:has_pan') == true && query.block_property('property:fuel_level_coal') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "kitchen_stove_on_with_pan",
+              "render_method": "alpha_test"
+            }
+          },
+          "minecraft:queued_ticking": {
+            "looping": false,
+            "interval_range": [
+              1000,
+              1000
+            ],
+            "on_tick": {
+              "condition": "query.block_property('property:fuel_level_coal') > 0",
+              "event": "event:fuel_level_reduce_coal"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:powered') == false && query.block_property('property:has_pan') == true && query.block_property('property:fuel_level_coal') > 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "kitchen_stove_off_with_pan",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:has_pan') == true && query.block_property('property:fuel_level_coal') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "kitchen_stove_off_with_pan",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:has_pan') == false && query.block_property('property:fuel_level_coal') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "kitchen_stove_off",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.stove_closed"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.stove_opened"
+        }
+      }
+    ],
+    "components": {
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:on_player_placing": {
+        "event": "event:block_placed"
+      },
+      "minecraft:loot": "loot_tables/kitchen/furniture/stove/stove.loot.json",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "kitchen_stove_off",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:map_color": "#7d7d7d"
+    },
+    "events": {
+      "event:block_placed": {
+        "set_block_property": {
+          "property:direction_player_is_facing": "q.cardinal_facing_2d-2",
+          "property:powered": false,
+          "property:has_pan": false,
+          "property:activate_crafting": 0,
+          "property:interact_turns_stove_on": 0,
+          "property:fuel_level_coal": 0
+        }
+      },
+      "event:interactions": {
+        "sequence": [
+          {
+            "condition": "q.block_property('property:has_pan') == true && !q.is_item_name_any('slot.weapon.mainhand', 'item:frying_pan') && q.block_property('property:fuel_level_coal') == 0 && q.is_item_name_any('slot.weapon.mainhand', 'minecraft:coal')",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:fuel_level_coal": 1
+            }
+          },
+          {
+            "condition": "q.block_property('property:has_pan') == true && !q.is_item_name_any('slot.weapon.mainhand', 'item:frying_pan') && q.block_property('property:fuel_level_coal') > 0 && q.block_property('property:fuel_level_coal') <=14 && q.is_item_name_any('slot.weapon.mainhand', 'minecraft:coal')",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:fuel_level_coal": "query.block_property('property:fuel_level_coal') + 1"
+            },
+            "run_command": {
+              "command": [
+                "/title @p actionbar Fuel Increased"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:frying_pan') && q.block_property('property:has_pan') == false",
+            "set_block_property": {
+              "property:has_pan": true
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.stove_pan @p"
+              ]
+            },
+            "decrement_stack": {}
+          },
+          {
+            "condition": "!q.is_sneaking && q.block_property('property:animated') == 0 && !q.is_item_name_any('slot.weapon.mainhand', 'item:frying_pan') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:coal')",
+            "set_block_property": {
+              "property:animated": 1
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.stove_door_open @p"
+              ]
+            }
+          },
+          {
+            "condition": "!q.is_sneaking && q.block_property('property:animated') == 1 && !q.is_item_name_any('slot.weapon.mainhand', 'item:frying_pan') && !q.is_item_name_any('slot.weapon.mainhand', 'minecraft:coal')",
+            "set_block_property": {
+              "property:animated": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.stove_door_close @p"
+              ]
+            }
+          },
+          {
+            "condition": "q.block_property('property:fuel_level_coal') > 0 && q.is_sneaking && q.block_property('property:interact_turns_stove_on') == 0",
+            "set_block_property": {
+              "property:activate_crafting": 1,
+              "property:interact_turns_stove_on": 1,
+              "property:powered": true
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.stove_turn_on @p[c=3] ~ ~ ~",
+                "/summon entity:stove_particles ~~-0.25 ~",
+                "/title @p actionbar Stove On"
+              ]
+            }
+          }
+        ]
+      },
+      "event:fuel_level_reduce_coal": {
+        "set_block_property": {
+          "property:fuel_level_coal": "(query.block_property('property:fuel_level_coal') > 0) ? query.block_property('property:fuel_level_coal') - 1"
+        }
+      },
+      "event:add_interaction": {
+        "set_block_property": {
+          "property:activate_crafting": 0,
+          "property:interact_turns_stove_on": 0,
+          "property:powered": false
+        },
+        "run_command": {
+          "command": [
+            "/event entity @e[type=entity:stove_particles,r=1] event:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

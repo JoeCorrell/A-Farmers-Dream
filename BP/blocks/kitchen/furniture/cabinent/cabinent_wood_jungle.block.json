@@ -427,7 +427,7 @@
         "event": "event:cycle_properties",
         "target": "self"
       },
-      "minecraft:loot": "loot_tables/kitchen_furniture_loot/cabinent_loot/cabinent_wood_jungle.loot.json",
+      "minecraft:loot": "loot_tables/kitchen/furniture/cabinent/cabinent_wood_jungle.loot.json",
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 15
       },

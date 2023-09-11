@@ -3,127 +3,127 @@
   "texture_name": "atlas.items",
   "texture_data": {
     "animal_fat": {
-      "textures": "textures/items/ingredient_item_textures/animal_fat"
+      "textures": "textures/items/farming/ingredients/animal_fat"
     },
     "chicken_and_dumplings": {
-      "textures": "textures/items/food_item_textures/bowl_of_chicken_and_dumplings"
+      "textures": "textures/items/farming/foods/bowl_of_chicken_and_dumplings"
     },
     "fried_rice": {
-      "textures": "textures/items/food_item_textures/bowl_of_fried_rice"
+      "textures": "textures/items/farming/foods/bowl_of_fried_rice"
     },
     "chicken_strip_cooked": {
-      "textures": "textures/items/food_item_textures/chicken_strip_cooked"
+      "textures": "textures/items/farming/foods/chicken_strip_cooked"
     },
     "chicken_strip_raw": {
-      "textures": "textures/items/food_item_textures/chicken_strip_raw"
+      "textures": "textures/items/farming/foods/chicken_strip_raw"
     },
     "steak_and_potatoes": {
-      "textures": "textures/items/food_item_textures/bowl_of_steak_and_potatoes"
+      "textures": "textures/items/farming/foods/bowl_of_steak_and_potatoes"
     },
     "scrambled_eggs": {
-      "textures": "textures/items/food_item_textures/bowl_of_scrambled_eggs"
+      "textures": "textures/items/farming/foods/bowl_of_scrambled_eggs"
     },
     "cooking_oil": {
-      "textures": "textures/items/ingredient_item_textures/cooking_oil"
+      "textures": "textures/items/farming/ingredients/cooking_oil"
     },
     "bacon_and_eggs": {
-      "textures": "textures/items/food_item_textures/bowl_of_bacon_and_eggs"
+      "textures": "textures/items/farming/foods/bowl_of_bacon_and_eggs"
     },
     "bacon_sandwich": {
-      "textures": "textures/items/food_item_textures/bacon_sandwich"
+      "textures": "textures/items/farming/foods/bacon_sandwich"
     },
     //Crop items =>
     "corn_item": {
-      "textures": "textures/items/food_item_textures/corn"
+      "textures": "textures/items/farming/foods/corn"
     },
     "tomato_item": {
-      "textures": "textures/items/food_item_textures/tomato"
+      "textures": "textures/items/farming/foods/tomato"
     },
     "rice_item": {
-      "textures": "textures/items/food_item_textures/rice"
+      "textures": "textures/items/farming/foods/rice"
     },
     "onion_item": {
-      "textures": "textures/items/food_item_textures/onion"
+      "textures": "textures/items/farming/foods/onion"
     },
     "cabbage_item": {
-      "textures": "textures/items/food_item_textures/cabbage"
+      "textures": "textures/items/farming/foods/cabbage"
     },
     //Seed items =>
     "corn_seed": {
-      "textures": "textures/items/seed_item_textures/corn_seed"
+      "textures": "textures/items/farming/seeds/corn_seed"
     },
     "tomato_seed": {
-      "textures": "textures/items/seed_item_textures/tomato_seed"
+      "textures": "textures/items/farming/seeds/tomato_seed"
     },
     "rice_seed": {
-      "textures": "textures/items/seed_item_textures/rice_seed"
+      "textures": "textures/items/farming/seeds/rice_seed"
     },
     "onion_seed": {
-      "textures": "textures/items/seed_item_textures/onion_seed"
+      "textures": "textures/items/farming/seeds/onion_seed"
     },
     "cabbage_seed": {
-      "textures": "textures/items/seed_item_textures/cabbage_seed"
+      "textures": "textures/items/farming/seeds/cabbage_seed"
     },
     //Meats =>
     "beef_patty_raw": {
-      "textures": "textures/items/food_item_textures/beef_patty_raw"
+      "textures": "textures/items/farming/foods/beef_patty_raw"
     },
     "beef_patty_cooked": {
-      "textures": "textures/items/food_item_textures/beef_patty_cooked"
+      "textures": "textures/items/farming/foods/beef_patty_cooked"
     },
     "ham_raw": {
-      "textures": "textures/items/food_item_textures/ham_raw"
+      "textures": "textures/items/farming/foods/ham_raw"
     },
     "ham_cooked": {
-      "textures": "textures/items/food_item_textures/ham_cooked"
+      "textures": "textures/items/farming/foods/ham_cooked"
     },
     "mutton_chops_raw": {
-      "textures": "textures/items/food_item_textures/mutton_chops_raw" //Need texture
+      "textures": "textures/items/farming/foods/mutton_chops_raw" //Need texture
     },
     "mutton_chops_cooked": {
-      "textures": "textures/items/food_item_textures/mutton_chops_cooked" //Need texture
+      "textures": "textures/items/farming/foods/mutton_chops_cooked" //Need texture
     },
     "bacon_cooked": {
-      "textures": "textures/items/food_item_textures/bacon_cooked"
+      "textures": "textures/items/farming/foods/bacon_cooked"
     },
     "bacon_raw": {
-      "textures": "textures/items/food_item_textures/bacon_raw"
+      "textures": "textures/items/farming/foods/bacon_raw"
     },
     "egg_cooked": {
-      "textures": "textures/items/food_item_textures/egg_cooked"
+      "textures": "textures/items/farming/foods/egg_cooked"
     },
     //Foods =>
     "pancakes": {
-      "textures": "textures/items/food_item_textures/pancakes"
+      "textures": "textures/items/farming/foods/pancakes"
     },
     "chicken_sandwich": {
-      "textures": "textures/items/food_item_textures/chicken_sandwich"
+      "textures": "textures/items/farming/foods/chicken_sandwich"
     },
     //Ingredient item textures =>
     "flour": {
-      "textures": "textures/items/ingredient_item_textures/flour"
+      "textures": "textures/items/farming/ingredients/flour"
     },
     "dough": {
-      "textures": "textures/items/ingredient_item_textures/dough"
+      "textures": "textures/items/farming/ingredients/dough"
     },
     "butter": {
-      "textures": "textures/items/ingredient_item_textures/butter"
+      "textures": "textures/items/farming/ingredients/butter"
     },
     "milk_bottle": {
-      "textures": "textures/items/ingredient_item_textures/milk_bottle"
+      "textures": "textures/items/farming/ingredients/milk_bottle"
     },
     //Misc item textures =>
     "frying_pan": {
-      "textures": "textures/items/misc_textures/frying_pan"
+      "textures": "textures/items/farming/other/frying_pan"
     },
     "frying_pan2": {
-      "textures": "textures/items/misc_textures/frying_pan2"
+      "textures": "textures/items/farming/other/frying_pan2"
     },
     "cutting_board": {
-      "textures": "textures/items/misc_textures/cutting_board"
+      "textures": "textures/items/farming/other/cutting_board"
     },
     "chef_knife": {
-      "textures": "textures/items/misc_textures/chef_knife"
+      "textures": "textures/items/farming/other/chef_knife"
     }
   }
 }
