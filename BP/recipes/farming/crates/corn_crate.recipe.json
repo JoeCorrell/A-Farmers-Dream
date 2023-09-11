@@ -1,0 +1,27 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "block:corn_crate"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "###",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "item:corn"
+            }
+        },
+        "result": [
+            {
+                "item": "block:corn_crate",
+                "count": 1
+            }
+        ]
+    }
+}

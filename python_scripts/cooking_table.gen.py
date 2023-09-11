@@ -1,6 +1,7 @@
-# Function to create a directory if it doesn't exist
 import json
 import os
+
+# Function to create a directory if it doesn't exist
 
 
 def create_directory_if_not_exists(directory):
@@ -10,9 +11,7 @@ def create_directory_if_not_exists(directory):
 
 
 def save_json_to_file(data, file_path, overwrite=True):
-    mode = "w"  # Use "w" for write mode
-    if not overwrite and os.path.exists(file_path):
-        mode = "x"  # Use "x" for exclusive creation, will raise an error if the file already exists
+    mode = "w" if overwrite else "x" if not os.path.exists(file_path) else "a"
     with open(file_path, mode) as json_file:
         json.dump(data, json_file, indent=2)
 
@@ -36,79 +35,28 @@ def add_or_replace_line(file_path, line_to_add_or_replace):
     with open(file_path, "w", encoding="utf-8") as file:
         file.writelines(lines)
 
-# Function to create and save a JSON loot table
 
-
-def create_loot_table(color, loot_table_output_directory):
-    loot_table_template = {
-        "pools": [
-            {
-                "rolls": 1,
-                "entries": [
-                    {
-                        "type": "item",
-                        "name": f"block:kitchen_cooking_table_terracotta_{color}",
-                        "weight": 1,
-                        "functions": [
-                            {"function": "set_count", "count": {"min": 1, "max": 1}}
-                        ],
-                    }
-                ],
-            }
-        ]
-    }
-
-    loot_table_json_file_path = os.path.join(
-        loot_table_output_directory, f"cooking_table_terracotta_{color}.loot.json"
-    )
-    save_json_to_file(loot_table_template, loot_table_json_file_path)
-
-    print(
-        f'JSON loot table file "kitchen_cooking_table_terracotta_{color}.loot.json" has been created in the directory "{loot_table_output_directory}".'
-    )
-
-
-# List of colors to generate files for
+# Define the list of colors
 colors = [
-    "black", "green", "blue", "brown", "gray", "cyan", "light_blue",
-    "light_gray", "lime", "magenta", "orange", "pink", "purple",
-    "red", "white", "yellow"
+    "terracotta_black", "terracotta_green", "terracotta_blue", "terracotta_brown", "terracotta_gray", "terracotta_cyan", "terracotta_light_blue",
+    "terracotta_light_gray", "terracotta_lime", "terracotta_magenta", "terracotta_orange", "terracotta_pink", "terracotta_purple",
+    "terracotta_red", "terracotta_white", "terracotta_yellow",  "wood_oak", "wood_dark_oak", "wood_spruce", "wood_acacia", "wood_mangrove", "wood_cherry",
+    "wood_bamboo", "wood_warped", "wood_crimson", "wood_birch", "wood_jungle",
+    "wood_oak_stripped", "wood_dark_oak_stripped", "wood_spruce_stripped", "wood_acacia_stripped", "wood_mangrove_stripped", "wood_cherry_stripped",
+    "wood_warped_stripped", "wood_crimson_stripped", "wood_birch_stripped", "wood_jungle_stripped"
 ]
 
-# Specify the directory where the loot table JSON files will be generated
-loot_table_output_directory = r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\loot_tables\kitchen_furniture_loot\kitchen_cooking_table_loot"
-
-# Ensure the loot table output directory exists
-create_directory_if_not_exists(loot_table_output_directory)
-
-# Define the color-to-data mapping
-color_data_map = {
-    "white": 0,
-    "light_gray": 8,
-    "gray": 7,
-    "black": 15,
-    "brown": 12,
-    "red": 14,
-    "orange": 1,
-    "yellow": 4,
-    "lime": 5,
-    "green": 13,
-    "cyan": 9,
-    "light_blue": 3,
-    "blue": 11,
-    "purple": 10,
-    "magenta": 2,
-    "pink": 6
-}
+# Specify the directory where files will be generated
+base_output_directory = r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\blocks\kitchen\furniture\cooking_table"
 
 for color in colors:
     # Define the JSON item template
-    formatted_file_name = f"kitchen_cooking_table_terracotta_{color}"
+    formatted_file_name = f"cooking_table_{color}"
     block_template = {
         "format_version": "1.20.0",
         "minecraft:block": {
             "description": {
-                "identifier": f"block:kitchen_cooking_table_terracotta_{color}",
+                "identifier": f"block:kitchen_cooking_table_{color}",
                 "menu_category": {
                     "category": "construction",
                     "group": "itemGroup.name.cooking_table"
@@ -200,7 +148,9 @@ for color in colors:
                 "minecraft:crafting_table": {
                     "table_name": "cooking",
                     "grid_size": 3,
-                    "crafting_tags": ["cooking_table_recipes"]
+                    "crafting_tags": [
+                        "cooking_table_recipes"
+                    ]
                 },
                 "minecraft:destructible_by_mining": {
                     "seconds_to_destroy": 0.3
@@ -209,7 +159,7 @@ for color in colors:
                     "event": "event:block_placed"
                 },
                 "minecraft:geometry": "geometry.kitchen_cooking_table",
-                "minecraft:loot": f"loot_tables/kitchen_furniture_loot/kitchen_cooking_table_loot/cooking_table_terracotta_{color}.loot.json",
+                "minecraft:loot": f"loot_tables/kitchen/furniture/cooking_table/cooking_table_{color}.loot.json",
                 "minecraft:destructible_by_explosion": {
                     "explosion_resistance": 15
                 },
@@ -220,12 +170,12 @@ for color in colors:
                         "render_method": "alpha_test"
                     },
                     "drawer": {
-                        "texture": f"kitchen_terracotta_{color}",
+                        "texture": f"kitchen_{color}",
                         "ambient_occlusion": True,
                         "render_method": "alpha_test"
                     },
                     "*": {
-                        "texture": f"kitchen_terracotta_{color}",
+                        "texture": f"kitchen_{color}",
                         "ambient_occlusion": True,
                         "render_method": "alpha_test"
                     }
@@ -243,87 +193,29 @@ for color in colors:
     }
 
     # Specify the output directory for items
-    output_directory = os.path.join(
-        r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\blocks\kitchen_furniture_cooking_table_blocks"
-    )
+    output_directory = os.path.join(base_output_directory)
 
     create_directory_if_not_exists(output_directory)
 
     # Save the JSON item file in the specified directory, overwriting if it already exists
     item_json_file_path = os.path.join(
-        output_directory, f"cooking_table_terracotta_{color}.block.json"
-    )
+        output_directory, f"{formatted_file_name}.block.json")
     save_json_to_file(block_template, item_json_file_path, overwrite=True)
 
-    print(
-        f'JSON file "kitchen_cooking_table_terracotta_{color}.block.json" has been created in the directory "{output_directory}".'
-    )
+    print(f'JSON file "{item_json_file_path}" has been created.')
 
-    # Define the JSON recipe template
-    recipe_template = {
-        "format_version": "1.20.0",
-        "minecraft:recipe_shaped": {
-            "description": {
-                "identifier": f"block:kitchen_cooking_table_terracotta_{color}"
-            },
-            "tags": ["crafting_table"],
-            "priority": 1,
-            "pattern": [
-                "###",
-                "#C#",
-                "GGG"
-            ],
-            "key": {
-                "#": {
-                    "item": "minecraft:stained_hardened_clay",
-                    "data": color_data_map[color]
-                },
-                "C": {
-                    "item": "minecraft:crafting_table"
-                },
-                "G": {
-                    "item": "minecraft:concrete"
-                }
-            },
-            "result": f"block:kitchen_cooking_table_terracotta_{color}"
-
-        }
-    }
-
-    # Specify the directory where the recipe JSON file will be generated
-    recipe_output_directory = os.path.join(
-        r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\recipes\kitchen_furniture_recipes\kitchen_cooking_table_recipes"
-    )
-
-    create_directory_if_not_exists(recipe_output_directory)
-
-    # Save the JSON recipe file in the specified directory, overwriting if it already exists
-    recipe_json_file_path = os.path.join(
-        recipe_output_directory, f"cooking_table_terracotta_{color}.recipe.json"
-    )
-    save_json_to_file(recipe_template, recipe_json_file_path, overwrite=True)
-
-    print(
-        f'JSON recipe file "kitchen_cooking_table_terracotta_{color}.recipe.json" has been created in the directory "{recipe_output_directory}".'
-    )
-
-    # Modify the color to have spaces between words and capitalize the second word
+    # Modify the file_name to have spaces between words and capitalize the second word
     formatted_file_name_for_lang = " ".join(
-        word.capitalize() for word in formatted_file_name.replace("_", " ").split()
-    )
+        word.capitalize() for word in formatted_file_name.replace("_", " ").split())
 
     # Specify the line number to insert the text (e.g., line 6)
     line_number = 6
 
     # Append data to another file (en_US.lang) with capitalized text or replace it if exists
     lang_file_path = os.path.join(
-        r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\RP\texts\en_US.lang"
-    )
+        base_output_directory, f"RP/texts/en_US.lang")
 
     line_to_add_or_replace = f"tile.block:{formatted_file_name.lower()}.name={formatted_file_name_for_lang}"
     add_or_replace_line(lang_file_path, line_to_add_or_replace)
 
     print(f'Line added or replaced in "{lang_file_path}".')
-
-    # Create and save the loot table for this color
-    create_loot_table(color, loot_table_output_directory)

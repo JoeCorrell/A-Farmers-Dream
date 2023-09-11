@@ -1,0 +1,27 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "block:cabbage_crate"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "###",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "item:cabbage"
+            }
+        },
+        "result": [
+            {
+                "item": "block:cabbage_crate",
+                "count": 1
+            }
+        ]
+    }
+}

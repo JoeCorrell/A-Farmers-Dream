@@ -46,7 +46,8 @@
           1, //Beef
           2, //porkchop
           3, //Mutton
-          4 //Chicken
+          4,
+          5 //Chicken
         ]
       }
     },
@@ -152,7 +153,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -194,7 +196,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -236,7 +239,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -278,7 +282,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -320,7 +325,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -362,7 +368,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -404,7 +411,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -446,7 +454,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": true,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -488,7 +497,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -530,7 +540,8 @@
               "warped_log": true,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -573,7 +584,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -615,7 +627,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -657,7 +670,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -699,7 +713,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -741,7 +756,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -783,7 +799,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -825,7 +842,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -867,7 +885,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": true
+              "dark_oak_log2": true,
+              "ham": false
             }
           }
         }
@@ -909,7 +928,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -951,7 +971,8 @@
               "warped_log": false,
               "warped_log2": true,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -994,7 +1015,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -1036,7 +1058,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -1078,7 +1101,8 @@
               "warped_log": false,
               "warped_log2": false,
               "dark_oak_log": false,
-              "dark_oak_log2": false
+              "dark_oak_log2": false,
+              "ham": false
             }
           }
         }
@@ -1100,6 +1124,50 @@
               "beef": false,
               "mutton": false,
               "chicken": true,
+              "porkchop": false,
+              "oak_log": false,
+              "oak_log2": false,
+              "spruce_log": false,
+              "spruce_log2": false,
+              "acacia_log": false,
+              "acacia_log2": false,
+              "mangrove_log": false,
+              "mangrove_log2": false,
+              "cherry_log": false,
+              "cherry_log2": false,
+              "birch_log": false,
+              "birch_log2": false,
+              "jungle_log": false,
+              "jungle_log2": false,
+              "crimson_log": false,
+              "crimson_log2": false,
+              "warped_log": false,
+              "warped_log2": false,
+              "dark_oak_log": false,
+              "dark_oak_log2": false,
+              "ham": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:item_on_cutting_board') == 5",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.cutting_board_items",
+            "bone_visibility": {
+              "board": true,
+              "beef": false,
+              "ham": true,
+              "mutton": false,
+              "chicken": false,
               "porkchop": false,
               "oak_log": false,
               "oak_log2": false,
@@ -1188,7 +1256,8 @@
           "warped_log": false,
           "warped_log2": false,
           "dark_oak_log": false,
-          "dark_oak_log2": false
+          "dark_oak_log2": false,
+          "ham": false
         }
       },
       "minecraft:material_instances": {
@@ -1265,6 +1334,20 @@
             },
             "set_block_property": {
               "property:item_on_cutting_board": 4
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:ham_raw') && q.block_property('property:item_on_cutting_board') <5",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 5
             },
             "run_command": {
               "command": [
@@ -1467,6 +1550,18 @@
               "command": [
                 "/playsound interact.cutting_board_chop @p",
                 "/function kitchen/furniture/cutting_board/cutting_board_chicken_strip"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 5",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_chop @p",
+                "/function kitchen/furniture/cutting_board/cutting_board_into_porkchop"
               ]
             }
           },
@@ -1795,6 +1890,18 @@
               "command": [
                 "/playsound use.wood @p",
                 "/function kitchen/furniture/cutting_board/cutting_board_chicken"
+              ]
+            }
+          },
+          {
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 5",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function kitchen/furniture/cutting_board/cutting_board_ham"
               ]
             }
           },
