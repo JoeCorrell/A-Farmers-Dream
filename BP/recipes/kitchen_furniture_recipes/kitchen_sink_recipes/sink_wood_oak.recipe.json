@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_sink_wood_oak"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "OCO",
+      "YYY"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:oak_log"
+      },
+      "C": {
+        "item": "minecraft:cauldron"
+      },
+      "Y": {
+        "item": "minecraft:planks"
+      },
+      "O": {
+        "item": "minecraft:concrete"
+      }
+    },
+    "result": "block:kitchen_sink_wood_oak"
+  }
+}

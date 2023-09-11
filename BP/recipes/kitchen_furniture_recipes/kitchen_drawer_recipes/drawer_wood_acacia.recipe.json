@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_drawer_wood_acacia"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "priority": 1,
+    "pattern": [
+      "###",
+      "C#C",
+      "PPP"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:acacia_log"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "P": {
+        "item": "minecraft:planks",
+        "data": 4
+      }
+    },
+    "result": "block:kitchen_drawer_wood_acacia",
+    "count": 3
+  }
+}

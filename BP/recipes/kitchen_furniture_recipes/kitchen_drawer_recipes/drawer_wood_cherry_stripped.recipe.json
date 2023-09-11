@@ -2,7 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "block:kitchen_cooking_table_wood_crimson_stripped"
+      "identifier": "block:kitchen_drawer_wood_cherry_stripped"
     },
     "tags": [
       "crafting_table"
@@ -10,17 +10,18 @@
     "priority": 1,
     "pattern": [
       "###",
-      "#C#",
+      "C#C",
       "###"
     ],
     "key": {
       "#": {
-        "item": "minecraft:stripped_crimson_stem"
+        "item": "minecraft:stripped_cherry_log"
       },
       "C": {
-        "item": "minecraft:crafting_table"
+        "item": "minecraft:chest"
       }
     },
-    "result": "block:kitchen_cooking_table_wood_crimson_stripped"
+    "result": "block:kitchen_drawer_wood_cherry_stripped",
+    "count": 3
   }
 }

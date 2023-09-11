@@ -2,28 +2,31 @@
   "format_version": "1.20.0",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "block:kitchen_cooking_table_wood_bamboo"
+      "identifier": "block:kitchen_sink_wood_bamboo"
     },
+    "priority": 0,
     "tags": [
       "crafting_table"
     ],
-    "priority": 1,
     "pattern": [
       "###",
-      "#C#",
-      "PPP"
+      "OCO",
+      "YYY"
     ],
     "key": {
       "#": {
         "item": "minecraft:bamboo_block"
       },
-      "P": {
+      "C": {
+        "item": "minecraft:cauldron"
+      },
+      "Y": {
         "item": "minecraft:bamboo_planks"
       },
-      "C": {
-        "item": "minecraft:crafting_table"
+      "O": {
+        "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_cooking_table_wood_bamboo"
+    "result": "block:kitchen_sink_wood_bamboo"
   }
 }
