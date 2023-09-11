@@ -1,1 +1,0 @@
-loot spawn ~~~ loot "kitchen_furniture_loot/kitchen_stove.loot"

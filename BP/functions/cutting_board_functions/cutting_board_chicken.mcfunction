@@ -1,1 +1,1 @@
-loot spawn ~~~ loot "kitchen_furniture_loot/kitchen_cutting_board_loot/kitchen_cutting_board_chicken.loot"
+loot spawn ~~~ loot "kitchen_furniture_loot/cutting_board_loot/cutting_board_chicken.loot"

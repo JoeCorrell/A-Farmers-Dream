@@ -1,0 +1,164 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:kitchen_counter_terracotta_green",
+      "menu_category": {
+        "category": "construction"
+      },
+      "properties": {
+        "property:direction_player_is_facing": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "property:animated": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.counter"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.counter_corner0"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.counter_corner1"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 3",
+        "components": {
+          "minecraft:geometry": "geometry.counter_corner2"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 4",
+        "components": {
+          "minecraft:geometry": "geometry.counter_corner3"
+        }
+      }
+    ],
+    "components": {
+      "minecraft:selection_box": true,
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:on_player_placing": {
+        "event": "event:block_placed"
+      },
+      "minecraft:on_interact": {
+        "event": "event:cycle_properties",
+        "target": "self"
+      },
+      "minecraft:geometry": "geometry.counter",
+      "minecraft:loot": "loot_tables/kitchen_furniture_loot/counter_loot/counter_terracotta_green.loot.json",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "kitchen_terracotta_green",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:map_color": "#7d7d7d"
+    },
+    "events": {
+      "event:block_placed": {
+        "set_block_property": {
+          "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
+        }
+      },
+      "event:cycle_properties": {
+        "sequence": [
+          {
+            "condition": "!q.is_sneaking&&q.block_property('property:animated')==4"
+          },
+          {
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand','minecraft:wooden_axe')&&!q.is_item_name_any('slot.weapon.mainhand','minecraft:stone_axe')&&!q.is_item_name_any('slot.weapon.mainhand','minecraft:iron_axe')&&!q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_axe')&&!q.is_item_name_any('slot.weapon.mainhand','minecraft:diamond_axe')&&!q.is_item_name_any('slot.weapon.mainhand','minecraft:netherite_axe')&&!q.is_sneaking",
+            "set_block_property": {
+              "property:animated": "q.block_property('property:animated') == 4 ? 0 :q.block_property('property:animated')+1"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

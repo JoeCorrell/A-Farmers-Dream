@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_cabinent_wood_birch"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "#C#",
+      "VVV"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:birch_log",
+        "data": 2
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "V": {
+        "item": "minecraft:planks",
+        "data": 2
+      }
+    },
+    "result": "block:kitchen_cabinent_wood_birch"
+  }
+}
