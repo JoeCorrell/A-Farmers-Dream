@@ -1,1 +1,0 @@
-loot give @p loot "kitchen_furniture_loot/cutting_board_loot/cutting_board_acacia_log.loot"

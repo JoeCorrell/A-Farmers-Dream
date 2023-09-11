@@ -1430,7 +1430,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_beef_patty"
+                "/function kitchen/furniture/cutting_board/cutting_board_beef_patty"
               ]
             }
           },
@@ -1442,7 +1442,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bacon"
+                "/function kitchen/furniture/cutting_board/cutting_board_bacon"
               ]
             }
           },
@@ -1454,7 +1454,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_mutton_chops"
+                "/function kitchen/furniture/cutting_board/cutting_board_mutton_chops"
               ]
             }
           },
@@ -1466,7 +1466,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_chicken_strip"
+                "/function kitchen/furniture/cutting_board/cutting_board_chicken_strip"
               ]
             }
           },
@@ -1480,7 +1480,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1494,7 +1494,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1508,7 +1508,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1522,7 +1522,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1536,7 +1536,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1550,7 +1550,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1564,7 +1564,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1578,7 +1578,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1592,7 +1592,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1606,7 +1606,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_bark"
+                "/function kitchen/furniture/cutting_board/cutting_board_bark"
               ]
             }
           },
@@ -1620,7 +1620,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_oak_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_oak_log"
               ]
             }
           },
@@ -1634,7 +1634,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_birch_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_birch_log"
               ]
             }
           },
@@ -1648,7 +1648,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_acacia_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_acacia_log"
               ]
             }
           },
@@ -1662,7 +1662,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_spruce_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_spruce_log"
               ]
             }
           },
@@ -1676,7 +1676,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_jungle_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_jungle_log"
               ]
             }
           },
@@ -1690,7 +1690,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_cherry_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_cherry_log"
               ]
             }
           },
@@ -1704,7 +1704,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_mangrove_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_mangrove_log"
               ]
             }
           },
@@ -1718,7 +1718,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_dark_oak_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_dark_oak_log"
               ]
             }
           },
@@ -1732,7 +1732,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_crimson_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_crimson_log"
               ]
             }
           },
@@ -1746,7 +1746,7 @@
             "run_command": {
               "command": [
                 "/playsound interact.cutting_board_chop @p",
-                "/function kitchen/cutting_board/cutting_board_stripped_warped_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_stripped_warped_log"
               ]
             }
           },
@@ -1758,7 +1758,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_beef"
+                "/function kitchen/furniture/cutting_board/cutting_board_beef"
               ]
             }
           },
@@ -1770,7 +1770,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_porkchop"
+                "/function kitchen/furniture/cutting_board/cutting_board_porkchop"
               ]
             }
           },
@@ -1782,7 +1782,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_mutton"
+                "/function kitchen/furniture/cutting_board/cutting_board_mutton"
               ]
             }
           },
@@ -1794,7 +1794,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_chicken"
+                "/function kitchen/furniture/cutting_board/cutting_board_chicken"
               ]
             }
           },
@@ -1807,7 +1807,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_oak_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_oak_log"
               ]
             }
           },
@@ -1820,7 +1820,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_birch_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_birch_log"
               ]
             }
           },
@@ -1833,7 +1833,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_acacia_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_acacia_log"
               ]
             }
           },
@@ -1846,7 +1846,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_spruce_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_spruce_log"
               ]
             }
           },
@@ -1859,7 +1859,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_jungle_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_jungle_log"
               ]
             }
           },
@@ -1872,7 +1872,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_cherry_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_cherry_log"
               ]
             }
           },
@@ -1885,7 +1885,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_mangrove_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_mangrove_log"
               ]
             }
           },
@@ -1898,7 +1898,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_dark_oak_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_dark_oak_log"
               ]
             }
           },
@@ -1911,7 +1911,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_crimson_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_crimson_log"
               ]
             }
           },
@@ -1924,7 +1924,7 @@
             "run_command": {
               "command": [
                 "/playsound use.wood @p",
-                "/function kitchen/cutting_board/cutting_board_warped_log"
+                "/function kitchen/furniture/cutting_board/cutting_board_warped_log"
               ]
             }
           }
