@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:hamburger"
+    },
+    "priority": 0,
+    "tags": ["cooking_table_recipes"],
+    "pattern": ["PCO", "B"],
+    "key": {
+      "P": {
+        "item": "item:beef_patty_cooked"
+      },
+      "C": {
+        "item": "item:cabbage"
+      },
+      "O": {
+        "item": "item:onion"
+      },
+      "B": {
+        "item": "minecraft:bread"
+      }
+    },
+    "result": [
+      {
+        "item": "item:hamburger",
+        "count": 1
+      }
+    ]
+  }
+}

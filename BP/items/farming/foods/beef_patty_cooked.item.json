@@ -10,11 +10,11 @@
       "minecraft:icon": {
         "texture": "beef_patty_cooked"
       },
-     
+
       "minecraft:use_duration": 1.6,
       "minecraft:use_animation": "eat",
       "minecraft:food": {
-        "nutrition": 5,
+        "nutrition": 4,
         "saturation_modifier": 2
       }
     },

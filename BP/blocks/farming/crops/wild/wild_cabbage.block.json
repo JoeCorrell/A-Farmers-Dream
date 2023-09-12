@@ -1,0 +1,56 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:wild_cabbage"
+    },
+    "components": {
+      "minecraft:geometry": "geometry.wild_cabbage",
+      "minecraft:collision_box": {
+        "origin": [-3, 2, -3],
+        "size": [6, 4, 6]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3, 2, -3],
+        "size": [6, 4, 6]
+      },
+      "minecraft:transformation": {
+        "scale": [1.5, 1.5, 1.5]
+      },
+      "minecraft:on_interact": {
+        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:chef_knife')",
+        "event": "event:harvest"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cabbage_crop_block_stage_2",
+          "ambient_occlusion": false,
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "minecraft:grass",
+              "minecraft:dirt",
+              "minecraft:podzol"
+            ],
+            "allowed_faces": ["up"]
+          }
+        ]
+      },
+      "minecraft:light_dampening": 0
+    },
+    "events": {
+      "event:harvest": {
+        "run_command": {
+          "command": ["/setblock ~~~ air"]
+        },
+        "spawn_loot": {
+          "table": "loot_tables/farming/crops/wild/wild_cabbage.loot.json"
+        }
+      }
+    }
+  }
+}

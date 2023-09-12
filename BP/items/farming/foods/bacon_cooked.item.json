@@ -10,12 +10,12 @@
       "minecraft:icon": {
         "texture": "bacon_cooked"
       },
-     
+
       "minecraft:use_duration": 1.6,
       "minecraft:use_animation": "eat",
       "minecraft:food": {
-        "nutrition": 5,
-        "saturation_modifier": 2
+        "nutrition": 4,
+        "saturation_modifier": 1
       }
     },
     "events": {}

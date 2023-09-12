@@ -8,6 +8,12 @@
     "components": {
       "minecraft:icon": {
         "texture": "animal_fat"
+      },
+      "minecraft:use_duration": 1.6,
+      "minecraft:use_animation": "eat",
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation_modifier": 0
       }
     }
   }

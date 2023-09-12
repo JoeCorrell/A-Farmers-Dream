@@ -4,7 +4,9 @@
     "description": {
       "identifier": "block:tomato_crop_block",
       "properties": {
-        "property:growth_stage": [0, 1, 2, 3, 4]
+        "property:direction_player_is_facing": [0, 1, 2, 3],
+        "property:growth_stage": [0, 1, 2, 3, 4],
+        "property:extra_tick": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
       },
       "menu_category": {
         "category": "nature"
@@ -12,18 +14,191 @@
     },
     "permutations": [
       {
+        "condition": "query.block_property('property:direction_player_is_facing')== 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 0",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_1"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 1",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_2"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 2",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_3"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 3",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_4"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 4",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_5"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 5",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_6"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 6",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_7"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 7",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_8"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 8",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_9"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 9",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_10"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 10",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_11"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 11",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:crop_growth_stage_increase"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 12",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:tick_go_to_13"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:extra_tick') == 13",
+        "components": {
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "event:crop_growth_stage_increase"
+            }
+          }
+        }
+      },
+      {
         "condition": "query.block_property('property:growth_stage') == 0",
         "components": {
           "minecraft:geometry": "geometry.tomato_crop_block_stage_0",
           "minecraft:material_instances": {
             "*": {
               "texture": "tomato_crop_block_stage_0",
+              "ambient_occlusion": false,
               "render_method": "alpha_test"
             }
           },
-          "minecraft:on_interact": {
-            "event": "event:player_used_bone_meal",
-            "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')"
+          "minecraft:selection_box": {
+            "origin": [-6, 0, -5],
+            "size": [11, 14, 12]
           },
           "minecraft:loot": "loot_tables/farming/crops/tomato_crop_block_loot/tomato_crop_block_stage_0.loot.json"
         }
@@ -35,12 +210,13 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "tomato_crop_block_stage_1",
+              "ambient_occlusion": false,
               "render_method": "alpha_test"
             }
           },
-          "minecraft:on_interact": {
-            "event": "event:player_used_bone_meal",
-            "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')"
+          "minecraft:selection_box": {
+            "origin": [-6, 0, -5],
+            "size": [11, 14, 12]
           },
           "minecraft:loot": "loot_tables/farming/crops/tomato_crop_block_loot/tomato_crop_block_stage_0.loot.json"
         }
@@ -52,12 +228,13 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "tomato_crop_block_stage_2",
+              "ambient_occlusion": false,
               "render_method": "alpha_test"
             }
           },
-          "minecraft:on_interact": {
-            "event": "event:player_used_bone_meal",
-            "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')"
+          "minecraft:selection_box": {
+            "origin": [-6, 0, -8],
+            "size": [11, 14, 14]
           },
           "minecraft:loot": "loot_tables/farming/crops/tomato_crop_block_loot/tomato_crop_block_stage_0.loot.json"
         }
@@ -69,12 +246,13 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "tomato_crop_block_stage_3",
+              "ambient_occlusion": false,
               "render_method": "alpha_test"
             }
           },
-          "minecraft:on_interact": {
-            "event": "event:player_used_bone_meal",
-            "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')"
+          "minecraft:selection_box": {
+            "origin": [-7, 0, -7],
+            "size": [14, 14, 14]
           },
           "minecraft:loot": "loot_tables/farming/crops/tomato_crop_block_loot/tomato_crop_block_stage_0.loot.json"
         }
@@ -86,26 +264,27 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "tomato_crop_block_stage_4",
+              "ambient_occlusion": false,
               "render_method": "alpha_test"
             }
           },
-          "minecraft:loot": "loot_tables/farming/crops/tomato_crop_block_loot/tomato_crop_block_stage_4.loot.json",
-          "minecraft:on_interact": {
-            "event": "event:harvest_crop"
-          }
+          "minecraft:selection_box": {
+            "origin": [-7, 0, -6.5],
+            "size": [13, 16, 13]
+          },
+          "minecraft:loot": "loot_tables/farming/crops/tomato_crop_block_loot/tomato_crop_block_stage_4.loot.json"
         }
       }
     ],
     "components": {
       "minecraft:geometry": "geometry.tomato_crop_block_stage_0",
-      "minecraft:random_ticking": {
-        "on_tick": {
-          "event": "event:crop_growth_stage_increase"
-        }
-      },
       "minecraft:collision_box": {
         "origin": [0, 0, 0],
         "size": [0, 0, 0]
+      },
+      "minecraft:on_interact": {
+        "event": "event:interactions",
+        "target": "self"
       },
       "minecraft:selection_box": true,
       "minecraft:placement_filter": {
@@ -123,38 +302,108 @@
       "minecraft:light_dampening": 0
     },
     "events": {
-      "event:player_used_bone_meal": {
+      "event:block_placed": {
+        "set_block_property": {
+          "property:direction_player_is_facing": "q.cardinal_facing_2d-2",
+          "property:extra_tick": 0
+        }
+      },
+      "event:tick_go_to_1": {
+        "set_block_property": {
+          "property:extra_tick": 1
+        }
+      },
+      "event:tick_go_to_2": {
+        "set_block_property": {
+          "property:extra_tick": 2
+        }
+      },
+      "event:tick_go_to_3": {
+        "set_block_property": {
+          "property:extra_tick": 3
+        }
+      },
+      "event:tick_go_to_4": {
+        "set_block_property": {
+          "property:extra_tick": 4
+        }
+      },
+      "event:tick_go_to_5": {
+        "set_block_property": {
+          "property:extra_tick": 5
+        }
+      },
+      "event:tick_go_to_6": {
+        "set_block_property": {
+          "property:extra_tick": 6
+        }
+      },
+      "event:tick_go_to_7": {
+        "set_block_property": {
+          "property:extra_tick": 7
+        }
+      },
+      "event:tick_go_to_8": {
+        "set_block_property": {
+          "property:extra_tick": 8
+        }
+      },
+      "event:tick_go_to_9": {
+        "set_block_property": {
+          "property:extra_tick": 9
+        }
+      },
+      "event:tick_go_to_10": {
+        "set_block_property": {
+          "property:extra_tick": 10
+        }
+      },
+      "event:tick_go_to_11": {
+        "set_block_property": {
+          "property:extra_tick": 11
+        }
+      },
+      "event:tick_go_to_12": {
+        "set_block_property": {
+          "property:extra_tick": 12
+        }
+      },
+      "event:tick_go_to_13": {
+        "set_block_property": {
+          "property:extra_tick": 13
+        }
+      },
+      "event:interactions": {
         "sequence": [
           {
-            "decrement_stack": {},
+            "condition": "q.block_property('property:growth_stage') <= 4 && query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')",
+            "set_block_property": {
+              "property:growth_stage": "q.block_property('property:growth_stage') + Math.random(1, 4 - q.block_property('property:growth_stage'))"
+            },
             "run_command": {
               "command": [
                 "particle minecraft:crop_growth_emitter ~~~",
                 "playsound item.bone_meal.use @a ~~~"
               ]
-            },
-            "trigger": {
-              "event": "event:crop_growth_stage_increase"
             }
-          }
-        ]
-      },
-      "event:crop_growth_stage_increase": {
-        "set_block_property": {
-          "property:growth_stage": "(query.block_property('property:growth_stage')<4) ? query.block_property('property:growth_stage') + 1 : 4"
-        }
-      },
-      "event:harvest_crop": {
-        "sequence": [
+          },
           {
+            "condition": "q.block_property('property:growth_stage') == 4 && !query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')",
             "set_block_property": {
-              "property:growth_stage": 3
+              "property:growth_stage": 3,
+              "property:extra_tick": 0
             },
             "spawn_loot": {
               "table": "loot_tables/farming/crops/tomato_crop_block_loot/tomato_crop_block_stage_4.loot.json"
             }
           }
         ]
+      },
+      "event:crop_growth_stage_increase": {
+        "set_block_property": {
+          "property:growth_stage": "(query.block_property('property:growth_stage')<4) ? query.block_property('property:growth_stage') + 1 : 4",
+          "property:extra_tick": 0
+        }
       }
     }
   }

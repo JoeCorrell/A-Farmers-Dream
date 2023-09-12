@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "item:rice",
+                    "name": "item:tomato_seed",
                     "weight": 1,
                     "functions": [
                         {

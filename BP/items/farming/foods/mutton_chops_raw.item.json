@@ -14,8 +14,8 @@
       "minecraft:use_duration": 1.6,
       "minecraft:use_animation": "eat",
       "minecraft:food": {
-        "nutrition": 5,
-        "saturation_modifier": 2
+        "nutrition": 2,
+        "saturation_modifier": 0
       }
     },
     "events": {}

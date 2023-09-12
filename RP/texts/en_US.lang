@@ -1,7 +1,7 @@
 
 addon.name=A Farmer's Dream
 addon.description=Dive into a tastier Minecraft! Grow new crops, cook delicious foods, and decorate with stylish furniture for an enriched gameplay experience.
-
+entity.entity:wandering_trader.name=Wandering Farmer
 
 
 
@@ -27,21 +27,21 @@ item.item:milk_bottle=Bottle of Milk
 item.item:dough=Dough
 item.item:flour=Flour
 
-item.item:beef_patty_raw=Raw Beef Patty
+item.item:beef_patty_raw=Raw Beef Patty
 item.item:beef_patty_cooked=Cooked Beef Patty
 item.item:ham_raw=Raw Ham
-item.item:ham_cooked=Cooked Ham
+item.item:ham_cooked=Cooked Ham
 item.item:bacon_raw=Raw Bacon
 item.item:bacon_cooked=Cooked Bacon
-item.item:bacon_and_eggs=Bowl Of Bacon And Eggs
-item.item:egg_cooked=Cooked Egg
-item.item:turkey_sandwich=Turkey Sandwich
-item.item:chicken_sandwich=Chicken Sandwich
+item.item:bacon_and_eggs=Bowl Of Bacon And Eggs
+item.item:egg_cooked=Cooked Egg
+item.item:chicken_sandwich=Chicken Sandwich
 item.item:pancakes=Pancakes
-item.item:fried_rice=Bowl of Fried Rice
-item.item:steak_and_potatoes=Bowl Of Steak And Potatoes
-item.item:bacon_sandwich=Bacon Sandwich
-
+item.item:fried_rice=Bowl of Fried Rice
+item.item:steak_and_potatoes=Bowl Of Steak And Potatoes 
+item.item:bacon_sandwich=Bacon Sandwich
+item.item:mutton_chop_raw=Raw Mutton Chop
+item.item:mutton_chop_cooked=Cooked Mutton Chop
 item.item:frying_pan=Frying Pan
 item.item:chef_knife=Chef's Cooking Knife
 
@@ -214,7 +214,7 @@ tile.block:kitchen_half_cupboard_wood_bamboo.name=Kitchen Half Cupboard Wood Bam
 
 tile.block:kitchen_half_cupboard_wood_cherry.name=Kitchen Half Cupboard Wood Cherry
 
-tile.block:kitchen_sink_wood_oak_stripped.name=Kitchen Sink Wood Oak Stripped
+tile.block:kitchen_sink_wood_oak_stripped.name=Kitchen Sink Wood Oak Stripped
 
 tile.block:kitchen_cabinent_wood_oak.name=Kitchen Cabinent Wood Oak
 
@@ -511,8 +511,16 @@ tile.block:kitchen_cooking_table_terracotta_red.name=Kitchen Cooking Table Terra
 tile.block:kitchen_cooking_table_terracotta_white.name=Kitchen Cooking Table Terracotta White
 tile.block:kitchen_cooking_table_terracotta_yellow.name=Kitchen Cooking Table Terracotta Yellow
 item.item:cooking_oil=Cooking Oil
-item.item:scrambled_eggs=Bowl Of Scrambled Eggs
-item.item:chicken_strip_raw=Chicken Strip Raw
-item.item:chicken_strip_cooked=Chicken Strip Cooked
-item.item:chicken_and_duplings=Bowl Chicken And Duplings
-item.item:animal_fat=Animal Fat
+item.item:scrambled_eggs=Bowl Of Scrambled Eggs
+item.item:chicken_strip_raw=Chicken Strip Raw
+item.item:chicken_strip_cooked=Chicken Strip Cooked
+item.item:chicken_and_dumplings=Bowl Chicken And Duplings
+item.item:animal_fat=Animal Fat
+item.item:broth=Vegetable Broth
+item.item:cod_stew=Cod Stew
+item.item:pumpkin_stew=Pumpkin Stew
+item.item:hamburger=Hamburger
+item.item:vegetable_stew=Vegetable Stew
+item.item:pumpkin_slice=Pumpkin Slice
+item.item:jam=Sweet Berry Jam
+item.item:bark=Bark

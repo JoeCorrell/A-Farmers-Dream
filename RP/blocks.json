@@ -2,6 +2,36 @@
   "kitchen_stove": {
     "sound": "metal"
   },
+  "wild_corn": {
+    "sound": "grass"
+  },
+  "wild_cabbage": {
+    "sound": "grass"
+  },
+  "wild_onion": {
+    "sound": "grass"
+  },
+  "wild_tomato": {
+    "sound": "grass"
+  },
+  "wild_rice": {
+    "sound": "grass"
+  },
+  "corn_crop_block": {
+    "sound": "grass"
+  },
+  "cabbage_crop_block": {
+    "sound": "grass"
+  },
+  "onion_crop_block": {
+    "sound": "grass"
+  },
+  "tomato_crop_block": {
+    "sound": "grass"
+  },
+  "rice_crop_block": {
+    "sound": "grass"
+  },
   //Terracotta kitchen furniture blocks =>
   "kitchen_drawer_white": {
     "sound": "wood"

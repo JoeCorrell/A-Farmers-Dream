@@ -5,14 +5,8 @@
       "identifier": "item:chicken_and_dumplings"
     },
     "priority": 0,
-    "tags": [
-      "stove_recipes"
-    ],
-    "pattern": [
-      "CCW",
-      "OFF",
-      " DB"
-    ],
+    "tags": ["stove_recipes"],
+    "pattern": ["CCW", "OFF", " DB"],
     "key": {
       "C": {
         "item": "item:chicken_strip_raw"
@@ -24,7 +18,7 @@
         "item": "minecraft:bowl"
       },
       "W": {
-        "item": "minecraft:potion"
+        "item": "item:broth"
       },
       "O": {
         "item": "item:onion"

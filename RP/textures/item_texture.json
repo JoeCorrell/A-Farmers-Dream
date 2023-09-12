@@ -2,6 +2,30 @@
   "resource_pack_name": "farming",
   "texture_name": "atlas.items",
   "texture_data": {
+    "bark": {
+      "textures": "textures/items/farming/ingredients/bark"
+    },
+    "pumpkin_slice": {
+      "textures": "textures/items/farming/foods/pumpkin_slice"
+    },
+    "vegetable_stew": {
+      "textures": "textures/items/farming/foods/vegetable_stew"
+    },
+    "jam": {
+      "textures": "textures/items/farming/foods/jam"
+    },
+    "hamburger": {
+      "textures": "textures/items/farming/foods/hamburger"
+    },
+    "pumpkin_stew": {
+      "textures": "textures/items/farming/foods/pumpkin_stew"
+    },
+    "cod_stew": {
+      "textures": "textures/items/farming/foods/cod_stew"
+    },
+    "broth": {
+      "textures": "textures/items/farming/ingredients/broth"
+    },
     "animal_fat": {
       "textures": "textures/items/farming/ingredients/animal_fat"
     },

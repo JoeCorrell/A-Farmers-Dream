@@ -1,0 +1,44 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "item:cod_stew"
+    },
+    "priority": 0,
+    "tags": ["stove_recipes"],
+    "pattern": ["CCX", "OQL", " DB"],
+    "key": {
+      "C": {
+        "item": "minecraft:cod"
+      },
+      "X": {
+        "item": "item:broth"
+      },
+      "O": {
+        "item": "item:onion"
+      },
+      "Q": {
+        "item": "item:cabbage"
+      },
+      "L": {
+        "item": "minecraft:carrot"
+      },
+      "B": {
+        "item": "minecraft:bowl"
+      },
+      "D": {
+        "item": "item:cooking_oil"
+      }
+    },
+    "result": [
+      {
+        "item": "item:cod_stew",
+        "count": 1
+      },
+      {
+        "item": "minecraft:glass_bottle",
+        "count": 2
+      }
+    ]
+  }
+}
