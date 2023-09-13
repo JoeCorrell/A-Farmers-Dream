@@ -47,7 +47,8 @@
           2, //porkchop
           3, //Mutton
           4,
-          5 //Chicken
+          5,
+          6
         ]
       }
     },
@@ -57,11 +58,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 0",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              0,
-              0
-            ]
+            "rotation": [0, 0, 0]
           }
         }
       },
@@ -69,11 +66,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 1",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              180,
-              0
-            ]
+            "rotation": [0, 180, 0]
           }
         }
       },
@@ -81,11 +74,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 2",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              90,
-              0
-            ]
+            "rotation": [0, 90, 0]
           }
         }
       },
@@ -93,11 +82,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 3",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              270,
-              0
-            ]
+            "rotation": [0, 270, 0]
           }
         }
       },
@@ -154,7 +139,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -197,7 +183,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -240,7 +227,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -283,7 +271,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -326,7 +315,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -369,7 +359,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -412,7 +403,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -455,7 +447,8 @@
               "warped_log2": false,
               "dark_oak_log": true,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -498,7 +491,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -541,7 +535,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -585,7 +580,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -628,7 +624,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -671,7 +668,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -714,7 +712,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -757,7 +756,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -800,7 +800,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -843,7 +844,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -886,7 +888,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": true,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -929,7 +932,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -972,7 +976,8 @@
               "warped_log2": true,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -1016,7 +1021,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -1059,7 +1065,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -1102,7 +1109,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -1145,7 +1153,8 @@
               "warped_log2": false,
               "dark_oak_log": false,
               "dark_oak_log2": false,
-              "ham": false
+              "ham": false,
+              "pumpkin": false
             }
           }
         }
@@ -1192,32 +1201,60 @@
             }
           }
         }
+      },
+      {
+        "condition": "query.block_property('property:item_on_cutting_board') == 6",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cutting_board_items",
+              "ambient_occlusion": true,
+              "render_method": "alpha_test"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.cutting_board_items",
+            "bone_visibility": {
+              "board": true,
+              "beef": false,
+              "ham": false,
+              "pumpkin": true,
+              "mutton": false,
+              "chicken": false,
+              "porkchop": false,
+              "oak_log": false,
+              "oak_log2": false,
+              "spruce_log": false,
+              "spruce_log2": false,
+              "acacia_log": false,
+              "acacia_log2": false,
+              "mangrove_log": false,
+              "mangrove_log2": false,
+              "cherry_log": false,
+              "cherry_log2": false,
+              "birch_log": false,
+              "birch_log2": false,
+              "jungle_log": false,
+              "jungle_log2": false,
+              "crimson_log": false,
+              "crimson_log2": false,
+              "warped_log": false,
+              "warped_log2": false,
+              "dark_oak_log": false,
+              "dark_oak_log2": false
+            }
+          }
+        }
       }
     ],
     "components": {
       "minecraft:selection_box": {
-        "origin": [
-          -7,
-          0,
-          -7
-        ],
-        "size": [
-          14,
-          1,
-          14
-        ]
+        "origin": [-7, 0, -7],
+        "size": [14, 1, 14]
       },
       "minecraft:collision_box": {
-        "origin": [
-          -7,
-          0,
-          -7
-        ],
-        "size": [
-          14,
-          1,
-          14
-        ]
+        "origin": [-7, 0, -7],
+        "size": [14, 1, 14]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -1257,7 +1294,8 @@
           "warped_log2": false,
           "dark_oak_log": false,
           "dark_oak_log2": false,
-          "ham": false
+          "ham": false,
+          "pumpkin": false
         }
       },
       "minecraft:material_instances": {
@@ -1294,9 +1332,7 @@
               "property:item_on_cutting_board": 1
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1308,9 +1344,7 @@
               "property:item_on_cutting_board": 2
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1322,9 +1356,7 @@
               "property:item_on_cutting_board": 3
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1336,9 +1368,7 @@
               "property:item_on_cutting_board": 4
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1350,9 +1380,19 @@
               "property:item_on_cutting_board": 5
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:pumpkin') && q.block_property('property:item_on_cutting_board') <6",
+            "decrement_stack": {
+              "ignore_game_mode": false
+            },
+            "set_block_property": {
+              "property:item_on_cutting_board": 6
+            },
+            "run_command": {
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1365,9 +1405,7 @@
               "property:log_on_cutting_board": 1
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1380,9 +1418,7 @@
               "property:log_on_cutting_board": 2
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1395,9 +1431,7 @@
               "property:log_on_cutting_board": 3
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1410,9 +1444,7 @@
               "property:log_on_cutting_board": 4
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1425,9 +1457,7 @@
               "property:log_on_cutting_board": 5
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1440,9 +1470,7 @@
               "property:log_on_cutting_board": 6
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1455,9 +1483,7 @@
               "property:log_on_cutting_board": 7
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1470,9 +1496,7 @@
               "property:log_on_cutting_board": 8
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1485,9 +1509,7 @@
               "property:log_on_cutting_board": 9
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1500,9 +1522,7 @@
               "property:log_on_cutting_board": 10
             },
             "run_command": {
-              "command": [
-                "/playsound use.wood @p"
-              ]
+              "command": ["/playsound use.wood @p"]
             }
           },
           {
@@ -1562,6 +1582,18 @@
               "command": [
                 "/playsound interact.cutting_board_chop @p",
                 "/function kitchen/furniture/cutting_board/cutting_board_into_porkchop"
+              ]
+            }
+          },
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 6",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound interact.cutting_board_chop @p",
+                "/function kitchen/furniture/cutting_board/cutting_board_pumpkin_slice"
               ]
             }
           },
@@ -1902,6 +1934,18 @@
               "command": [
                 "/playsound use.wood @p",
                 "/function kitchen/furniture/cutting_board/cutting_board_ham"
+              ]
+            }
+          },
+          {
+            "condition": "!q.is_item_name_any('slot.weapon.mainhand', 'item:chef_knife') && q.block_property('property:item_on_cutting_board') == 6",
+            "set_block_property": {
+              "property:item_on_cutting_board": 0
+            },
+            "run_command": {
+              "command": [
+                "/playsound use.wood @p",
+                "/function kitchen/furniture/cutting_board/cutting_board_pumpkin"
               ]
             }
           },
