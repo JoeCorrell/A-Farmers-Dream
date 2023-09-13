@@ -14,9 +14,22 @@
       "minecraft:use_animation": "eat",
       "minecraft:food": {
         "nutrition": 1,
-        "saturation_modifier": 0
+        "saturation_modifier": 0,
+        "on_consume": {
+          "event": "event:player_ate_me",
+          "target": "self"
+        }
       }
     },
-    "events": {}
+    "events": {
+      "event:player_ate_me": {
+        "add_mob_effect": {
+          "target": "holder",
+          "effect": "hunger",
+          "amplifier": 1,
+          "duration": 18
+        }
+      }
+    }
   }
 }

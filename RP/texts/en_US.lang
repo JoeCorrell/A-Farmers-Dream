@@ -29,19 +29,19 @@ item.item:flour=Flour
 
 item.item:beef_patty_raw=Raw Beef Patty
 item.item:beef_patty_cooked=Cooked Beef Patty
-item.item:ham_raw=Raw Ham
-item.item:ham_cooked=Cooked Ham
+item.item:ham_raw=Raw Ham
+item.item:ham_cooked=Cooked Ham
 item.item:bacon_raw=Raw Bacon
 item.item:bacon_cooked=Cooked Bacon
 item.item:bacon_and_eggs=Bowl Of Bacon And Eggs
-item.item:egg_cooked=Cooked Egg
-item.item:chicken_sandwich=Chicken Sandwich
+item.item:egg_cooked=Cooked Egg
+item.item:chicken_sandwich=Chicken Sandwich
 item.item:pancakes=Pancakes
-item.item:fried_rice=Bowl of Fried Rice
+item.item:fried_rice=Bowl of Fried Rice
 item.item:steak_and_potatoes=Bowl Of Steak And Potatoes 
 item.item:bacon_sandwich=Bacon Sandwich
-item.item:mutton_chop_raw=Raw Mutton Chop
-item.item:mutton_chop_cooked=Cooked Mutton Chop
+item.item:mutton_chops_raw=Raw Mutton Chop
+item.item:mutton_chops_cooked=Cooked Mutton Chop
 item.item:frying_pan=Frying Pan
 item.item:chef_knife=Chef's Cooking Knife
 

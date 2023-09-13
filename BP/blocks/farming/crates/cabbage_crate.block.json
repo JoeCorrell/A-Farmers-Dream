@@ -1,53 +1,45 @@
 {
-    "format_version": "1.20.0",
-    "minecraft:block": {
-        "description": {
-            "identifier": "block:cabbage_crate",
-            "menu_category": {
-                "category": "nature"
-            }
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:cabbage_crate",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:selection_box": true,
+      "minecraft:collision_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:unit_cube": {},
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:loot": "loot_tables/farming/crates/cabbage_crate.loot.json",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "cabbage_crate_top",
+          "render_method": "alpha_test"
         },
-        "components": {
-            "minecraft:selection_box": true,
-            "minecraft:collision_box": {
-                "origin": [
-                    -8,
-                    0,
-                    -8
-                ],
-                "size": [
-                    16,
-                    16,
-                    16
-                ]
-            },
-            "minecraft:unit_cube": {},
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 0.3
-            },
-            "minecraft:loot": "loot_tables/farming/crates/cabbage_crate.loot.json",
-            "minecraft:destructible_by_explosion": {
-                "explosion_resistance": 15
-            },
-            "minecraft:material_instances": {
-                "up": {
-                    "texture": "cabbage_crate_top",
-                    "render_method": "alpha_test"
-                },
-                "sides": {
-                    "texture": "crate_side",
-                    "render_method": "alpha_test"
-                },
-                "down": {
-                    "texture": "crate_side",
-                    "render_method": "alpha_test"
-                },
-                "north": "sides",
-                "south": "sides",
-                "east": "sides",
-                "west": "sides"
-            },
-            "minecraft:map_color": "#7d7d7d"
-        }
+        "sides": {
+          "texture": "crate_side",
+          "render_method": "alpha_test"
+        },
+        "down": {
+          "texture": "crate_side",
+          "render_method": "alpha_test"
+        },
+        "north": "sides",
+        "south": "sides",
+        "east": "sides",
+        "west": "sides"
+      },
+      "minecraft:map_color": "#7d7d7d"
     }
+  }
 }

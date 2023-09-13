@@ -1,4 +1,19 @@
 {
+  "cabbage_crate": {
+    "sound": "cloth"
+  },
+  "rice_crate": {
+    "sound": "cloth"
+  },
+  "corn_crate": {
+    "sound": "cloth"
+  },
+  "tomato_crate": {
+    "sound": "cloth"
+  },
+  "onion_crate": {
+    "sound": "cloth"
+  },
   "kitchen_stove": {
     "sound": "metal"
   },

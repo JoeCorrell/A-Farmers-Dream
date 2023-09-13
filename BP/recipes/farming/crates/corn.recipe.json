@@ -1,0 +1,19 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:recipe_shapeless": {
+      "description": {
+        "identifier": "item:corn"
+      },
+      "tags": ["crafting_table"],
+      "ingredients": [
+        {
+          "item": "block:corn_crate"
+        }
+      ],
+      "result": {
+        "item": "item:corn",
+        "count": 9
+      }
+    }
+  }
+  

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "item:cabbage"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "block:cabbage_crate"
+      }
+    ],
+    "result": {
+      "item": "item:cabbage",
+      "count": 9
+    }
+  }
+}
