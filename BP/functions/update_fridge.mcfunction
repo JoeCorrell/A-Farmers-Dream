@@ -1,0 +1,5 @@
+execute unless block ~ ~1 ~ air run fill ~ ~ ~ ~ ~ ~ air destroy
+execute if block ~ ~1 ~ air if block ~ ~ ~ block:kitchen_fridge_bottom["property:direction_player_is_facing":0] run setblock ~ ~1 ~ block:kitchen_fridge_top["property:direction_player_is_facing":0]
+execute if block ~ ~1 ~ air if block ~ ~ ~ block:kitchen_fridge_bottom["property:direction_player_is_facing":1] run setblock ~ ~1 ~ block:kitchen_fridge_top["property:direction_player_is_facing":1]
+execute if block ~ ~1 ~ air if block ~ ~ ~ block:kitchen_fridge_bottom["property:direction_player_is_facing":2] run setblock ~ ~1 ~ block:kitchen_fridge_top["property:direction_player_is_facing":2]
+execute if block ~ ~1 ~ air if block ~ ~ ~ block:kitchen_fridge_bottom["property:direction_player_is_facing":3] run setblock ~ ~1 ~ block:kitchen_fridge_top["property:direction_player_is_facing":3]

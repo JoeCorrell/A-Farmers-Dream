@@ -8,26 +8,10 @@
         "group": "itemGroup.name.fridge"
       },
       "properties": {
-        "property:direction_player_is_facing": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "property:animated": [
-          0,
-          1,
-          2
-        ],
-        "property:timer": [
-          0,
-          1
-        ],
-        "property:storage0": [
-          0,
-          1,
-          2
-        ]
+        "property:direction_player_is_facing": [0, 1, 2, 3],
+        "property:animated": [0, 1, 2],
+        "property:timer": [0, 1],
+        "property:storage0": [0, 1, 2]
       }
     },
     "permutations": [
@@ -35,11 +19,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 0",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              0,
-              0
-            ]
+            "rotation": [0, 0, 0]
           }
         }
       },
@@ -47,11 +27,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 1",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              180,
-              0
-            ]
+            "rotation": [0, 180, 0]
           }
         }
       },
@@ -59,11 +35,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 2",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              90,
-              0
-            ]
+            "rotation": [0, 90, 0]
           }
         }
       },
@@ -71,11 +43,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 3",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              270,
-              0
-            ]
+            "rotation": [0, 270, 0]
           }
         }
       },
@@ -136,10 +104,7 @@
           "minecraft:geometry": "geometry.fridge_bottom_closed",
           "minecraft:queued_ticking": {
             "looping": false,
-            "interval_range": [
-              0.25,
-              0.25
-            ],
+            "interval_range": [0.25, 0.25],
             "on_tick": {
               "event": "event:place_inventory"
             }
@@ -151,10 +116,7 @@
         "components": {
           "minecraft:queued_ticking": {
             "looping": true,
-            "interval_range": [
-              0.01,
-              0.01
-            ],
+            "interval_range": [0.01, 0.01],
             "on_tick": {
               "event": "event:are_doors_open"
             }
@@ -165,16 +127,8 @@
         "condition": "query.block_property('property:animated') == 0",
         "components": {
           "minecraft:selection_box": {
-            "origin": [
-              -8,
-              0,
-              -8
-            ],
-            "size": [
-              16,
-              16,
-              16
-            ]
+            "origin": [-8, 0, -8],
+            "size": [16, 16, 16]
           },
           "minecraft:geometry": "geometry.fridge_bottom_closed"
         }
@@ -183,16 +137,8 @@
         "condition": "query.block_property('property:animated') == 1",
         "components": {
           "minecraft:selection_box": {
-            "origin": [
-              -8,
-              1,
-              -8
-            ],
-            "size": [
-              16,
-              15,
-              12
-            ]
+            "origin": [-8, 1, -8],
+            "size": [16, 15, 12]
           },
           "minecraft:geometry": "geometry.fridge_bottom_closed"
         }
@@ -201,16 +147,8 @@
         "condition": "query.block_property('property:animated') == 2",
         "components": {
           "minecraft:selection_box": {
-            "origin": [
-              -8,
-              1,
-              -8
-            ],
-            "size": [
-              16,
-              15,
-              12
-            ]
+            "origin": [-8, 1, -8],
+            "size": [16, 15, 12]
           },
           "minecraft:geometry": "geometry.fridge_bottom_opened"
         }
@@ -218,28 +156,12 @@
     ],
     "components": {
       "minecraft:selection_box": {
-        "origin": [
-          -8,
-          0,
-          -8
-        ],
-        "size": [
-          16,
-          16,
-          16
-        ]
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
       },
       "minecraft:collision_box": {
-        "origin": [
-          -8,
-          0,
-          -7.5
-        ],
-        "size": [
-          16,
-          16,
-          15
-        ]
+        "origin": [-8, 0, -7.5],
+        "size": [16, 16, 15]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3
@@ -256,7 +178,7 @@
         "event": "event:block_destroyed",
         "target": "self"
       },
-      "minecraft:loot": "loot_tables/kitchen/furniture/other/fridge.loot.json",
+      "minecraft:loot": "loot_tables/kitchen/furniture/fridge.loot.json",
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 15
       },
@@ -281,9 +203,9 @@
             "condition": "q.block_property('property:direction_player_is_facing') == 0",
             "run_command": {
               "command": [
-                "/setblock ~~+1~ block:kitchen_fridge_top [\"property:direction_player_is_facing\":0] destroy",
-                "/summon entity:kitchen_furniture_inventory fridge ~ ~-0.25 ~",
-                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_no_hit_box"
+                "/setblock ~~+1~ block:kitchen_fridge_top [\"property:direction_player_is_facing\":0]",
+                "/summon entity:kitchen_fridge_inventory fridge ~ ~1 ~",
+                "/event entity @e[type=entity:kitchen_fridge_inventory,r=2] event:inventory_has_no_hit_box"
               ]
             },
             "set_block_property": {
@@ -296,9 +218,9 @@
             "condition": "q.block_property('property:direction_player_is_facing') == 1",
             "run_command": {
               "command": [
-                "/setblock ~~+1~ block:kitchen_fridge_top [\"property:direction_player_is_facing\":1] destroy",
-                "/summon entity:kitchen_furniture_inventory fridge ~ ~-0.25 ~",
-                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_no_hit_box"
+                "/setblock ~~+1~ block:kitchen_fridge_top [\"property:direction_player_is_facing\":1]",
+                "/summon entity:kitchen_fridge_inventory fridge ~ ~1 ~",
+                "/event entity @e[type=entity:kitchen_fridge_inventory,r=2] event:inventory_has_no_hit_box"
               ]
             },
             "set_block_property": {
@@ -311,9 +233,9 @@
             "condition": "q.block_property('property:direction_player_is_facing') == 2",
             "run_command": {
               "command": [
-                "/setblock ~~+1~ block:kitchen_fridge_top [\"property:direction_player_is_facing\":2] destroy",
-                "/summon entity:kitchen_furniture_inventory fridge ~ ~-0.25 ~",
-                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_no_hit_box"
+                "/setblock ~~+1~ block:kitchen_fridge_top [\"property:direction_player_is_facing\":2]",
+                "/summon entity:kitchen_fridge_inventory fridge ~ ~1 ~",
+                "/event entity @e[type=entity:kitchen_fridge_inventory,r=2] event:inventory_has_no_hit_box"
               ]
             },
             "set_block_property": {
@@ -326,9 +248,9 @@
             "condition": "q.block_property('property:direction_player_is_facing') == 3",
             "run_command": {
               "command": [
-                "/setblock ~~+1~ block:kitchen_fridge_top [\"property:direction_player_is_facing\":3] destroy",
-                "/summon entity:kitchen_furniture_inventory fridge ~ ~-0.25 ~",
-                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_no_hit_box"
+                "/setblock ~~+1~ block:kitchen_fridge_top [\"property:direction_player_is_facing\":3]",
+                "/summon entity:kitchen_fridge_inventory fridge ~ ~1 ~",
+                "/event entity @e[type=entity:kitchen_fridge_inventory,r=2] event:inventory_has_no_hit_box"
               ]
             },
             "set_block_property": {
@@ -345,7 +267,7 @@
             "condition": "q.block_property('property:animated') <= 1",
             "run_command": {
               "command": [
-                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_no_hit_box"
+                "/event entity @e[type=entity:kitchen_fridge_inventory,r=2] event:inventory_has_no_hit_box"
               ]
             }
           },
@@ -353,7 +275,7 @@
             "condition": "q.block_property('property:animated') > 1",
             "run_command": {
               "command": [
-                "/event entity @e[type=entity:kitchen_furniture_inventory,r=1] event:inventory_has_hit_box"
+                "/event entity @e[type=entity:kitchen_fridge_inventory,r=2] event:inventory_has_hit_box"
               ]
             }
           }
@@ -365,13 +287,12 @@
         }
       },
       "event:block_destroyed": {
-        "set_block_at_pos": {
-          "block_offset": [
-            0.0,
-            1.0,
-            0.0
-          ],
-          "block_type": "air"
+        "run_command": {
+          "command": [
+            "/setblock ~ ~1 ~ air destroy",
+            "/event entity @e[type=entity:kitchen_fridge_inventory,x=~,y=~+1,z=~] event:despawn",
+            "/event entity @e[type=entity:kitchen_fridge_inventory,x=~,y=~,z=~] event:despawn"
+          ]
         }
       },
       "event:cycle_properties": {
@@ -382,9 +303,7 @@
               "property:storage0": "q.block_property('property:storage0') == 2 ? 0 :q.block_property('property:storage0')+1"
             },
             "run_command": {
-              "command": [
-                "/playsound interact.drawer_fill @p"
-              ]
+              "command": ["/playsound interact.drawer_fill @p"]
             }
           },
           {

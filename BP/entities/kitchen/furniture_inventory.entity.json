@@ -53,6 +53,17 @@
           ]
         }
       },
+      "component_group:fridge": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [
+            {
+              "width": 0.7,
+              "height": 0.5,
+              "pivot": [0, 1.45, 0]
+            }
+          ]
+        }
+      },
       "component_group:hit_box": {
         "minecraft:inventory": {
           "private": false,
@@ -1529,6 +1540,11 @@
         },
         "remove": {
           "component_groups": ["component_group:hit_box"]
+        }
+      },
+      "event:fridge": {
+        "add": {
+          "component_groups": ["component_group:fridge"]
         }
       },
       "event:inventory_has_hit_box": {
