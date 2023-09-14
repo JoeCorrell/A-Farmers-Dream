@@ -1,0 +1,160 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:kitchen_fridge_top",
+      "menu_category": {
+        "category": "construction",
+        "group": "itemGroup.name.fridge"
+      },
+      "properties": {
+        "property:direction_player_is_facing": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "property:animated": [
+          0,
+          1
+        ],
+        "property:timer": [
+          0,
+          1
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.fridge_top_closed"
+        }
+      },
+      {
+        "condition": "query.block_property('property:animated') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.fridge_top_opened"
+        }
+      }
+    ],
+    "components": {
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          15,
+          14
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -7.5
+        ],
+        "size": [
+          16,
+          16,
+          15
+        ]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:on_player_placing": {
+        "event": "event:block_placed",
+        "target": "self"
+      },
+      "minecraft:on_player_destroyed": {
+        "event": "event:block_destroyed",
+        "target": "self"
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "fridge",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        },
+        "storage0": {
+          "texture": "drawer_storage_empty",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:map_color": "#7d7d7d"
+    },
+    "events": {
+      "event:block_placed": {
+        "set_block_property": {
+          "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
+        }
+      },
+      "event:block_destroyed": {
+        "set_block_at_pos": {
+          "block_offset": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "block_type": "air"
+        }
+      }
+    }
+  }
+}

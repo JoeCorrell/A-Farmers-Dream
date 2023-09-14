@@ -1,4 +1,10 @@
 {
+  "kitchen_fridge": {
+    "sound": "metal"
+  },
+  "kitchen_fridge_bottom": {
+    "sound": "metal"
+  },
   "backpack_blue": {
     "sound": "cloth"
   },
