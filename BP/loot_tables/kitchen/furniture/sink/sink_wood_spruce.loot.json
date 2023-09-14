@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "block:kitchen_sink_wood_spruce",
+          "name": "block:kitchen_sink_spruce",
           "weight": 1,
           "functions": [
             {

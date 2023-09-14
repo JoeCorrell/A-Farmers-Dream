@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_cupboard_bamboo"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "H#H",
+      "VVV"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:bamboo_block"
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      },
+      "V": {
+        "item": "minecraft:bamboo_planks"
+      }
+    },
+    "result": "block:kitchen_cupboard_bamboo"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_drawer_birch"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "priority": 1,
+    "pattern": [
+      "###",
+      "C#C",
+      "PPP"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:birch_log",
+        "data": 2
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "P": {
+        "item": "minecraft:planks",
+        "data": 2
+      }
+    },
+    "result": "block:kitchen_drawer_birch",
+    "count": 3
+  }
+}

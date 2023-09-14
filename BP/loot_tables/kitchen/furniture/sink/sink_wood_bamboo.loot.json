@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "block:kitchen_sink_wood_bamboo",
+          "name": "block:kitchen_sink_bamboo",
           "weight": 1,
           "functions": [
             {

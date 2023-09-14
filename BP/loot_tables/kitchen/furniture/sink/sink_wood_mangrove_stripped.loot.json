@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "block:kitchen_sink_wood_mangrove_stripped",
+          "name": "block:kitchen_sink_mangrove_stripped",
           "weight": 1,
           "functions": [
             {

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_cabinent_spruce_stripped"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "#C#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_spruce_log"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      }
+    },
+    "result": "block:kitchen_cabinent_spruce_stripped"
+  }
+}

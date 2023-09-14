@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_drawer_spruce"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "priority": 1,
+    "pattern": [
+      "###",
+      "C#C",
+      "PPP"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:spruce_log",
+        "data": 1
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "P": {
+        "item": "minecraft:planks",
+        "data": 1
+      }
+    },
+    "result": "block:kitchen_drawer_spruce",
+    "count": 3
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_counter_oak"
+    },
+    "priority": 0,
+    "tags": ["crafting_table"],
+    "pattern": ["LLL", "PPP", "PPP"],
+    "key": {
+      "L": {
+        "item": "minecraft:oak_log"
+      },
+      "P": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": "block:kitchen_counter_oak"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_counter_crimson"
+    },
+    "priority": 0,
+    "tags": ["crafting_table"],
+    "pattern": ["LLL", "PPP", "PPP"],
+    "key": {
+      "L": {
+        "item": "minecraft:crimson_stem"
+      },
+      "P": {
+        "item": "minecraft:crimson_planks"
+      }
+    },
+    "result": "block:kitchen_counter_crimson"
+  }
+}

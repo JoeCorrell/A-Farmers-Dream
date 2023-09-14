@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "block:kitchen_cooking_table_wood_bamboo",
+          "name": "block:kitchen_cooking_table_bamboo",
           "weight": 1,
           "functions": [
             {

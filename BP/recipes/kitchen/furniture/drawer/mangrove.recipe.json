@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_drawer_mangrove"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "priority": 1,
+    "pattern": [
+      "###",
+      "C#C",
+      "PPP"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:mangrove_log"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "P": {
+        "item": "minecraft:mangrove_planks"
+      }
+    },
+    "result": "block:kitchen_drawer_mangrove",
+    "count": 3
+  }
+}

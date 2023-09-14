@@ -219,7 +219,7 @@
       "event:spawn_particles_entity": {
         "run_command": {
           "command": [
-            "/summon entity:sink_particles ~ ~ ~"
+            
           ]
         }
       },

@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "block:kitchen_counter_wood_acacia",
+          "name": "block:kitchen_counter_acacia",
           "weight": 1,
           "functions": [
             {

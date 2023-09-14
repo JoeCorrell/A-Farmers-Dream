@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "block:kitchen_sink_wood_birch_stripped",
+          "name": "block:kitchen_sink_birch_stripped",
           "weight": 1,
           "functions": [
             {

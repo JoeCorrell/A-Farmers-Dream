@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "block:kitchen_cooking_table_wood_jungle",
+          "name": "block:kitchen_cooking_table_jungle",
           "weight": 1,
           "functions": [
             {

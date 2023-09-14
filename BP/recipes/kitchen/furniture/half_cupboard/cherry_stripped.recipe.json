@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_half_cupboard_cherry_stripped"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "#H#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_cherry_log"
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      }
+    },
+    "result": "block:kitchen_half_cupboard_cherry_stripped"
+  }
+}

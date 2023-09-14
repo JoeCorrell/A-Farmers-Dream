@@ -2,7 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "block:kitchen_sink_wood_spruce_stripped"
+      "identifier": "block:kitchen_sink_spruce_stripped"
     },
     "priority": 0,
     "tags": [
@@ -24,6 +24,6 @@
         "item": "minecraft:concrete"
       }
     },
-    "result": "block:kitchen_sink_wood_spruce_stripped"
+    "result": "block:kitchen_sink_spruce_stripped"
   }
 }

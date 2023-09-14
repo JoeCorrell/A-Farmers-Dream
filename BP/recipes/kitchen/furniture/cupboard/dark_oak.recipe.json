@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_cupboard_dark_oak"
+    },
+    "priority": 0,
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "H#H",
+      "VVV"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:dark_oak_log",
+        "data": 1
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      },
+      "V": {
+        "item": "minecraft:planks",
+        "data": 5
+      }
+    },
+    "result": "block:kitchen_cupboard_dark_oak"
+  }
+}

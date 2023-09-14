@@ -2,7 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:block": {
     "description": {
-      "identifier": "block:kitchen_drawer_wood_cherry",
+      "identifier": "block:kitchen_drawer_cherry",
       "menu_category": {
         "category": "construction",
         "group": "itemGroup.name.drawer"

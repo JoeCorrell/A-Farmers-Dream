@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "block:kitchen_sink_wood_dark_oak_stripped",
+          "name": "block:kitchen_sink_dark_oak_stripped",
           "weight": 1,
           "functions": [
             {

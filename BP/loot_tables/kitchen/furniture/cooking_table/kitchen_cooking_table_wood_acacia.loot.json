@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "block:kitchen_cooking_table_wood_acacia",
+          "name": "block:kitchen_cooking_table_acacia",
           "weight": 1,
           "functions": [
             {
