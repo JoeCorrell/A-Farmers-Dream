@@ -1,5 +1,893 @@
 {
   "namespace": "farming_containers",
+  "backpack_leather_ui@backpack_leather_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_leather_ui",
+    "layer": 1
+  },
+  "backpack_leather_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_leather_inventory_template"
+  },
+  "backpack_leather_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_leather_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_leather_hotbar_template"
+  },
+  "backpack_leather_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+
+  "backpack_leather_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+
+  "backpack_leather_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_leather_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_leather_grid@chest.backpack_leather_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+
+  "backpack_leather_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_leather_ui_cell",
+    "layer": 1
+  },
+
+  "backpack_leather_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_leather_hotbar",
+    "$inventory_contents": "chest.backpack_leather_inventory",
+    "$dialog_background": "chest.backpack_leather_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_leather_top_half"
+  },
+  "backpack_blue_ui@backpack_blue_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_blue_ui",
+    "layer": 1
+  },
+  "backpack_blue_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_blue_ui_cell",
+    "layer": 1
+  },
+  "backpack_blue_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_blue_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_blue_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_blue_grid@chest.backpack_blue_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_blue_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_blue_inventory_template"
+  },
+  "backpack_blue_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_blue_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_blue_hotbar_template"
+  },
+  "backpack_blue_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_blue_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_blue_hotbar",
+    "$inventory_contents": "chest.backpack_blue_inventory",
+    "$dialog_background": "chest.backpack_blue_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_blue_top_half"
+  },
+  "backpack_green_ui@backpack_green_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_green_ui",
+    "layer": 1
+  },
+  "backpack_green_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_green_ui_cell",
+    "layer": 1
+  },
+  "backpack_green_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_green_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_green_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_green_grid@chest.backpack_green_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_green_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_green_inventory_template"
+  },
+  "backpack_green_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_green_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_green_hotbar_template"
+  },
+  "backpack_green_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_green_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_green_hotbar",
+    "$inventory_contents": "chest.backpack_green_inventory",
+    "$dialog_background": "chest.backpack_green_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_green_top_half"
+  },
+  "backpack_yellow_ui@backpack_yellow_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_yellow_ui",
+    "layer": 1
+  },
+  "backpack_yellow_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_yellow_ui_cell",
+    "layer": 1
+  },
+  "backpack_yellow_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_yellow_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_yellow_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_yellow_grid@chest.backpack_yellow_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_yellow_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_yellow_inventory_template"
+  },
+  "backpack_yellow_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_yellow_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_yellow_hotbar_template"
+  },
+  "backpack_yellow_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_yellow_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_yellow_hotbar",
+    "$inventory_contents": "chest.backpack_yellow_inventory",
+    "$dialog_background": "chest.backpack_yellow_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_yellow_top_half"
+  },
+  "backpack_lime_ui@backpack_lime_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_lime_ui",
+    "layer": 1
+  },
+  "backpack_lime_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_lime_ui_cell",
+    "layer": 1
+  },
+  "backpack_lime_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_lime_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_lime_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_lime_grid@chest.backpack_lime_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_lime_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_lime_inventory_template"
+  },
+  "backpack_lime_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_lime_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_lime_hotbar_template"
+  },
+  "backpack_lime_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_lime_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_lime_hotbar",
+    "$inventory_contents": "chest.backpack_lime_inventory",
+    "$dialog_background": "chest.backpack_lime_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_lime_top_half"
+  },
+  "backpack_white_ui@backpack_white_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_white_ui",
+    "layer": 1
+  },
+  "backpack_white_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_white_ui_cell",
+    "layer": 1
+  },
+  "backpack_white_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_white_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_white_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_white_grid@chest.backpack_white_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_white_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_white_inventory_template"
+  },
+  "backpack_white_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_white_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_white_hotbar_template"
+  },
+  "backpack_white_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_white_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_white_hotbar",
+    "$inventory_contents": "chest.backpack_white_inventory",
+    "$dialog_background": "chest.backpack_white_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_white_top_half"
+  },
+  "backpack_silver_ui@backpack_silver_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_silver_ui",
+    "layer": 1
+  },
+  "backpack_silver_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_silver_ui_cell",
+    "layer": 1
+  },
+  "backpack_silver_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_silver_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_silver_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_silver_grid@chest.backpack_silver_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_silver_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_silver_inventory_template"
+  },
+  "backpack_silver_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_silver_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_silver_hotbar_template"
+  },
+  "backpack_silver_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_silver_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_silver_hotbar",
+    "$inventory_contents": "chest.backpack_silver_inventory",
+    "$dialog_background": "chest.backpack_silver_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_silver_top_half"
+  },
+  "backpack_gray_ui@backpack_gray_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_gray_ui",
+    "layer": 1
+  },
+  "backpack_gray_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_gray_ui_cell",
+    "layer": 1
+  },
+  "backpack_gray_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_gray_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_gray_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_gray_grid@chest.backpack_gray_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_gray_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_gray_inventory_template"
+  },
+  "backpack_gray_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_gray_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_gray_hotbar_template"
+  },
+  "backpack_gray_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_gray_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_gray_hotbar",
+    "$inventory_contents": "chest.backpack_gray_inventory",
+    "$dialog_background": "chest.backpack_gray_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_gray_top_half"
+  },
+  "backpack_orange_ui@backpack_orange_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_orange_ui",
+    "layer": 1
+  },
+  "backpack_orange_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_orange_ui_cell",
+    "layer": 1
+  },
+  "backpack_orange_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_orange_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_orange_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_orange_grid@chest.backpack_orange_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_orange_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_orange_inventory_template"
+  },
+  "backpack_orange_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_orange_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_orange_hotbar_template"
+  },
+  "backpack_orange_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_orange_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_orange_hotbar",
+    "$inventory_contents": "chest.backpack_orange_inventory",
+    "$dialog_background": "chest.backpack_orange_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_orange_top_half"
+  },
+  "backpack_purple_ui@backpack_purple_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_purple_ui",
+    "layer": 1
+  },
+  "backpack_purple_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_purple_ui_cell",
+    "layer": 1
+  },
+  "backpack_purple_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_purple_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_purple_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_purple_grid@chest.backpack_purple_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_purple_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_purple_inventory_template"
+  },
+  "backpack_purple_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_purple_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_purple_hotbar_template"
+  },
+  "backpack_purple_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_purple_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_purple_hotbar",
+    "$inventory_contents": "chest.backpack_purple_inventory",
+    "$dialog_background": "chest.backpack_purple_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_purple_top_half"
+  },
+  "backpack_pink_ui@backpack_pink_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_pink_ui",
+    "layer": 1
+  },
+  "backpack_pink_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_pink_ui_cell",
+    "layer": 1
+  },
+  "backpack_pink_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_pink_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_pink_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_pink_grid@chest.backpack_pink_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_pink_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_pink_inventory_template"
+  },
+  "backpack_pink_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_pink_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_pink_hotbar_template"
+  },
+  "backpack_pink_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_pink_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_pink_hotbar",
+    "$inventory_contents": "chest.backpack_pink_inventory",
+    "$dialog_background": "chest.backpack_pink_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_pink_top_half"
+  },
+  "backpack_magenta_ui@backpack_magenta_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_magenta_ui",
+    "layer": 1
+  },
+  "backpack_magenta_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_magenta_ui_cell",
+    "layer": 1
+  },
+  "backpack_magenta_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_magenta_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_magenta_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_magenta_grid@chest.backpack_magenta_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_magenta_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_magenta_inventory_template"
+  },
+  "backpack_magenta_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_magenta_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_magenta_hotbar_template"
+  },
+  "backpack_magenta_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_magenta_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_magenta_hotbar",
+    "$inventory_contents": "chest.backpack_magenta_inventory",
+    "$dialog_background": "chest.backpack_magenta_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_magenta_top_half"
+  },
+  "backpack_brown_ui@backpack_brown_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_brown_ui",
+    "layer": 1
+  },
+  "backpack_brown_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_brown_ui_cell",
+    "layer": 1
+  },
+  "backpack_brown_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_brown_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_brown_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_brown_grid@chest.backpack_brown_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_brown_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_brown_inventory_template"
+  },
+  "backpack_brown_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_brown_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_brown_hotbar_template"
+  },
+  "backpack_brown_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_brown_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_brown_hotbar",
+    "$inventory_contents": "chest.backpack_brown_inventory",
+    "$dialog_background": "chest.backpack_brown_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_brown_top_half"
+  },
+  "backpack_cyan_ui@backpack_cyan_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_cyan_ui",
+    "layer": 1
+  },
+  "backpack_cyan_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_cyan_ui_cell",
+    "layer": 1
+  },
+  "backpack_cyan_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_cyan_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_cyan_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_cyan_grid@chest.backpack_cyan_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_cyan_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_cyan_inventory_template"
+  },
+  "backpack_cyan_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_cyan_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_cyan_hotbar_template"
+  },
+  "backpack_cyan_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_cyan_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_cyan_hotbar",
+    "$inventory_contents": "chest.backpack_cyan_inventory",
+    "$dialog_background": "chest.backpack_cyan_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_cyan_top_half"
+  },
+  "backpack_light_blue_ui@backpack_light_blue_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_light_blue_ui",
+    "layer": 1
+  },
+  "backpack_light_blue_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_light_blue_ui_cell",
+    "layer": 1
+  },
+  "backpack_light_blue_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_light_blue_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_light_blue_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_light_blue_grid@chest.backpack_light_blue_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_light_blue_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_light_blue_inventory_template"
+  },
+  "backpack_light_blue_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_light_blue_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_light_blue_hotbar_template"
+  },
+  "backpack_light_blue_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_light_blue_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_light_blue_hotbar",
+    "$inventory_contents": "chest.backpack_light_blue_inventory",
+    "$dialog_background": "chest.backpack_light_blue_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_light_blue_top_half"
+  },
+  "backpack_black_ui@backpack_black_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_black_ui",
+    "layer": 1
+  },
+  "backpack_black_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_black_ui_cell",
+    "layer": 1
+  },
+  "backpack_black_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_black_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_black_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_black_grid@chest.backpack_black_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_black_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_black_inventory_template"
+  },
+  "backpack_black_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_black_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_black_hotbar_template"
+  },
+  "backpack_black_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_black_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_black_hotbar",
+    "$inventory_contents": "chest.backpack_black_inventory",
+    "$dialog_background": "chest.backpack_black_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_black_top_half"
+  },
+  "backpack_red_ui@backpack_red_ui_common": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_red_ui",
+    "layer": 1
+  },
+  "backpack_red_cell_image": {
+    "type": "image",
+    "texture": "textures/ui/cosmetics/backpack/backpack_red_ui_cell",
+    "layer": 1
+  },
+  "backpack_red_grid": {
+    "type": "grid",
+    "size": [162, 36],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [9, 2],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+  "backpack_red_top_half": {
+    "type": "panel",
+    "$background_images": "backpack_red_cell_image",
+    "size": ["100%", 100],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "backpack_red_grid@chest.backpack_red_grid": {
+          "offset": [6, 18]
+        }
+      }
+    ]
+  },
+  "backpack_red_inventory@chest.inventory_contents": {
+    "$grid_template": "chest.backpack_red_inventory_template"
+  },
+  "backpack_red_inventory_template@common.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+  "backpack_red_hotbar@chest.hotbar_contents": {
+    "$grid_template": "chest.backpack_red_hotbar_template"
+  },
+  "backpack_red_hotbar_template@common.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+  "backpack_red_root_panel@small_root_panel": {
+    "$hotbar_contents": "chest.backpack_red_hotbar",
+    "$inventory_contents": "chest.backpack_red_inventory",
+    "$dialog_background": "chest.backpack_red_ui",
+    "size": [175, 153],
+    "$chest_panel": "chest.backpack_red_top_half"
+  },
   "drawer_blue_ui@drawer_blue_ui_common": {
     "type": "image",
     "texture": "textures/ui/kitchen/furniture/drawer/drawer_blue_ui",
@@ -12,35 +900,23 @@
   },
   "drawer_blue_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_blue_top_half": {
     "type": "panel",
     "$background_images": "drawer_blue_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_blue_grid@chest.drawer_blue_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -61,10 +937,7 @@
     "$hotbar_contents": "chest.drawer_blue_hotbar",
     "$inventory_contents": "chest.drawer_blue_inventory",
     "$dialog_background": "chest.drawer_blue_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_blue_top_half"
   },
   "drawer_red_ui@drawer_red_ui_common": {
@@ -79,35 +952,23 @@
   },
   "drawer_red_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_red_top_half": {
     "type": "panel",
     "$background_images": "drawer_red_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_red_grid@chest.drawer_red_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -128,10 +989,7 @@
     "$hotbar_contents": "chest.drawer_red_hotbar",
     "$inventory_contents": "chest.drawer_red_inventory",
     "$dialog_background": "chest.drawer_red_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_red_top_half"
   },
   "drawer_green_ui@drawer_green_ui_common": {
@@ -146,35 +1004,23 @@
   },
   "drawer_green_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_green_top_half": {
     "type": "panel",
     "$background_images": "drawer_green_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_green_grid@chest.drawer_green_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -195,10 +1041,7 @@
     "$hotbar_contents": "chest.drawer_green_hotbar",
     "$inventory_contents": "chest.drawer_green_inventory",
     "$dialog_background": "chest.drawer_green_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_green_top_half"
   },
   "drawer_yellow_ui@drawer_yellow_ui_common": {
@@ -213,35 +1056,23 @@
   },
   "drawer_yellow_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_yellow_top_half": {
     "type": "panel",
     "$background_images": "drawer_yellow_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_yellow_grid@chest.drawer_yellow_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -262,10 +1093,7 @@
     "$hotbar_contents": "chest.drawer_yellow_hotbar",
     "$inventory_contents": "chest.drawer_yellow_inventory",
     "$dialog_background": "chest.drawer_yellow_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_yellow_top_half"
   },
   "drawer_black_ui@drawer_black_ui_common": {
@@ -280,35 +1108,23 @@
   },
   "drawer_black_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_black_top_half": {
     "type": "panel",
     "$background_images": "drawer_black_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_black_grid@chest.drawer_black_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -329,10 +1145,7 @@
     "$hotbar_contents": "chest.drawer_black_hotbar",
     "$inventory_contents": "chest.drawer_black_inventory",
     "$dialog_background": "chest.drawer_black_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_black_top_half"
   },
   "drawer_brown_ui@drawer_brown_ui_common": {
@@ -347,35 +1160,23 @@
   },
   "drawer_brown_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_brown_top_half": {
     "type": "panel",
     "$background_images": "drawer_brown_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_brown_grid@chest.drawer_brown_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -396,10 +1197,7 @@
     "$hotbar_contents": "chest.drawer_brown_hotbar",
     "$inventory_contents": "chest.drawer_brown_inventory",
     "$dialog_background": "chest.drawer_brown_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_brown_top_half"
   },
   "drawer_gray_ui@drawer_gray_ui_common": {
@@ -414,35 +1212,23 @@
   },
   "drawer_gray_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_gray_top_half": {
     "type": "panel",
     "$background_images": "drawer_gray_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_gray_grid@chest.drawer_gray_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -463,10 +1249,7 @@
     "$hotbar_contents": "chest.drawer_gray_hotbar",
     "$inventory_contents": "chest.drawer_gray_inventory",
     "$dialog_background": "chest.drawer_gray_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_gray_top_half"
   },
   "drawer_light_gray_ui@drawer_light_gray_ui_common": {
@@ -481,35 +1264,23 @@
   },
   "drawer_light_gray_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_light_gray_top_half": {
     "type": "panel",
     "$background_images": "drawer_light_gray_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_light_gray_grid@chest.drawer_light_gray_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -530,10 +1301,7 @@
     "$hotbar_contents": "chest.drawer_light_gray_hotbar",
     "$inventory_contents": "chest.drawer_light_gray_inventory",
     "$dialog_background": "chest.drawer_light_gray_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_light_gray_top_half"
   },
   "drawer_light_blue_ui@drawer_light_blue_ui_common": {
@@ -548,35 +1316,23 @@
   },
   "drawer_light_blue_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_light_blue_top_half": {
     "type": "panel",
     "$background_images": "drawer_light_blue_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_light_blue_grid@chest.drawer_light_blue_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -597,10 +1353,7 @@
     "$hotbar_contents": "chest.drawer_light_blue_hotbar",
     "$inventory_contents": "chest.drawer_light_blue_inventory",
     "$dialog_background": "chest.drawer_light_blue_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_light_blue_top_half"
   },
   "drawer_lime_ui@drawer_lime_ui_common": {
@@ -615,35 +1368,23 @@
   },
   "drawer_lime_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_lime_top_half": {
     "type": "panel",
     "$background_images": "drawer_lime_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_lime_grid@chest.drawer_lime_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -664,10 +1405,7 @@
     "$hotbar_contents": "chest.drawer_lime_hotbar",
     "$inventory_contents": "chest.drawer_lime_inventory",
     "$dialog_background": "chest.drawer_lime_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_lime_top_half"
   },
   "drawer_magenta_ui@drawer_magenta_ui_common": {
@@ -682,35 +1420,23 @@
   },
   "drawer_magenta_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_magenta_top_half": {
     "type": "panel",
     "$background_images": "drawer_magenta_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_magenta_grid@chest.drawer_magenta_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -731,10 +1457,7 @@
     "$hotbar_contents": "chest.drawer_magenta_hotbar",
     "$inventory_contents": "chest.drawer_magenta_inventory",
     "$dialog_background": "chest.drawer_magenta_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_magenta_top_half"
   },
   "drawer_purple_ui@drawer_purple_ui_common": {
@@ -749,35 +1472,23 @@
   },
   "drawer_purple_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_purple_top_half": {
     "type": "panel",
     "$background_images": "drawer_purple_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_purple_grid@chest.drawer_purple_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -798,10 +1509,7 @@
     "$hotbar_contents": "chest.drawer_purple_hotbar",
     "$inventory_contents": "chest.drawer_purple_inventory",
     "$dialog_background": "chest.drawer_purple_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_purple_top_half"
   },
   "drawer_pink_ui@drawer_pink_ui_common": {
@@ -816,35 +1524,23 @@
   },
   "drawer_pink_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_pink_top_half": {
     "type": "panel",
     "$background_images": "drawer_pink_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_pink_grid@chest.drawer_pink_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -865,10 +1561,7 @@
     "$hotbar_contents": "chest.drawer_pink_hotbar",
     "$inventory_contents": "chest.drawer_pink_inventory",
     "$dialog_background": "chest.drawer_pink_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_pink_top_half"
   },
   "drawer_white_ui@drawer_white_ui_common": {
@@ -883,35 +1576,23 @@
   },
   "drawer_white_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_white_top_half": {
     "type": "panel",
     "$background_images": "drawer_white_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_white_grid@chest.drawer_white_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -932,10 +1613,7 @@
     "$hotbar_contents": "chest.drawer_white_hotbar",
     "$inventory_contents": "chest.drawer_white_inventory",
     "$dialog_background": "chest.drawer_white_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_white_top_half"
   },
   "drawer_orange_ui@drawer_orange_ui_common": {
@@ -950,35 +1628,23 @@
   },
   "drawer_orange_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_orange_top_half": {
     "type": "panel",
     "$background_images": "drawer_orange_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_orange_grid@chest.drawer_orange_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -999,10 +1665,7 @@
     "$hotbar_contents": "chest.drawer_orange_hotbar",
     "$inventory_contents": "chest.drawer_orange_inventory",
     "$dialog_background": "chest.drawer_orange_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_orange_top_half"
   },
   "drawer_cyan_ui@drawer_cyan_ui_common": {
@@ -1017,35 +1680,23 @@
   },
   "drawer_cyan_grid": {
     "type": "grid",
-    "size": [
-      90,
-      54
-    ],
+    "size": [90, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      5,
-      3
-    ],
+    "grid_dimensions": [5, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "drawer_cyan_top_half": {
     "type": "panel",
     "$background_images": "drawer_cyan_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "drawer_cyan_grid@chest.drawer_cyan_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1066,10 +1717,7 @@
     "$hotbar_contents": "chest.drawer_cyan_hotbar",
     "$inventory_contents": "chest.drawer_cyan_inventory",
     "$dialog_background": "chest.drawer_cyan_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.drawer_cyan_top_half"
   },
   "cupboard_blue_ui@cupboard_blue_ui_common": {
@@ -1084,35 +1732,23 @@
   },
   "cupboard_blue_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_blue_top_half": {
     "type": "panel",
     "$background_images": "cupboard_blue_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_blue_grid@chest.cupboard_blue_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1133,10 +1769,7 @@
     "$hotbar_contents": "chest.cupboard_blue_hotbar",
     "$inventory_contents": "chest.cupboard_blue_inventory",
     "$dialog_background": "chest.cupboard_blue_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_blue_top_half"
   },
   "cupboard_red_ui@cupboard_red_ui_common": {
@@ -1151,35 +1784,23 @@
   },
   "cupboard_red_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_red_top_half": {
     "type": "panel",
     "$background_images": "cupboard_red_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_red_grid@chest.cupboard_red_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1200,10 +1821,7 @@
     "$hotbar_contents": "chest.cupboard_red_hotbar",
     "$inventory_contents": "chest.cupboard_red_inventory",
     "$dialog_background": "chest.cupboard_red_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_red_top_half"
   },
   "cupboard_green_ui@cupboard_green_ui_common": {
@@ -1218,35 +1836,23 @@
   },
   "cupboard_green_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_green_top_half": {
     "type": "panel",
     "$background_images": "cupboard_green_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_green_grid@chest.cupboard_green_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1267,10 +1873,7 @@
     "$hotbar_contents": "chest.cupboard_green_hotbar",
     "$inventory_contents": "chest.cupboard_green_inventory",
     "$dialog_background": "chest.cupboard_green_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_green_top_half"
   },
   "cupboard_yellow_ui@cupboard_yellow_ui_common": {
@@ -1285,35 +1888,23 @@
   },
   "cupboard_yellow_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_yellow_top_half": {
     "type": "panel",
     "$background_images": "cupboard_yellow_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_yellow_grid@chest.cupboard_yellow_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1334,10 +1925,7 @@
     "$hotbar_contents": "chest.cupboard_yellow_hotbar",
     "$inventory_contents": "chest.cupboard_yellow_inventory",
     "$dialog_background": "chest.cupboard_yellow_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_yellow_top_half"
   },
   "cupboard_black_ui@cupboard_black_ui_common": {
@@ -1352,35 +1940,23 @@
   },
   "cupboard_black_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_black_top_half": {
     "type": "panel",
     "$background_images": "cupboard_black_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_black_grid@chest.cupboard_black_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1401,10 +1977,7 @@
     "$hotbar_contents": "chest.cupboard_black_hotbar",
     "$inventory_contents": "chest.cupboard_black_inventory",
     "$dialog_background": "chest.cupboard_black_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_black_top_half"
   },
   "cupboard_brown_ui@cupboard_brown_ui_common": {
@@ -1419,35 +1992,23 @@
   },
   "cupboard_brown_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_brown_top_half": {
     "type": "panel",
     "$background_images": "cupboard_brown_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_brown_grid@chest.cupboard_brown_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1468,10 +2029,7 @@
     "$hotbar_contents": "chest.cupboard_brown_hotbar",
     "$inventory_contents": "chest.cupboard_brown_inventory",
     "$dialog_background": "chest.cupboard_brown_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_brown_top_half"
   },
   "cupboard_gray_ui@cupboard_gray_ui_common": {
@@ -1486,35 +2044,23 @@
   },
   "cupboard_gray_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_gray_top_half": {
     "type": "panel",
     "$background_images": "cupboard_gray_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_gray_grid@chest.cupboard_gray_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1535,10 +2081,7 @@
     "$hotbar_contents": "chest.cupboard_gray_hotbar",
     "$inventory_contents": "chest.cupboard_gray_inventory",
     "$dialog_background": "chest.cupboard_gray_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_gray_top_half"
   },
   "cupboard_light_gray_ui@cupboard_light_gray_ui_common": {
@@ -1553,35 +2096,23 @@
   },
   "cupboard_light_gray_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_light_gray_top_half": {
     "type": "panel",
     "$background_images": "cupboard_light_gray_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_light_gray_grid@chest.cupboard_light_gray_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1602,10 +2133,7 @@
     "$hotbar_contents": "chest.cupboard_light_gray_hotbar",
     "$inventory_contents": "chest.cupboard_light_gray_inventory",
     "$dialog_background": "chest.cupboard_light_gray_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_light_gray_top_half"
   },
   "cupboard_light_blue_ui@cupboard_light_blue_ui_common": {
@@ -1620,35 +2148,23 @@
   },
   "cupboard_light_blue_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_light_blue_top_half": {
     "type": "panel",
     "$background_images": "cupboard_light_blue_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_light_blue_grid@chest.cupboard_light_blue_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1669,10 +2185,7 @@
     "$hotbar_contents": "chest.cupboard_light_blue_hotbar",
     "$inventory_contents": "chest.cupboard_light_blue_inventory",
     "$dialog_background": "chest.cupboard_light_blue_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_light_blue_top_half"
   },
   "cupboard_lime_ui@cupboard_lime_ui_common": {
@@ -1687,35 +2200,23 @@
   },
   "cupboard_lime_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_lime_top_half": {
     "type": "panel",
     "$background_images": "cupboard_lime_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_lime_grid@chest.cupboard_lime_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1736,10 +2237,7 @@
     "$hotbar_contents": "chest.cupboard_lime_hotbar",
     "$inventory_contents": "chest.cupboard_lime_inventory",
     "$dialog_background": "chest.cupboard_lime_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_lime_top_half"
   },
   "cupboard_magenta_ui@cupboard_magenta_ui_common": {
@@ -1754,35 +2252,23 @@
   },
   "cupboard_magenta_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_magenta_top_half": {
     "type": "panel",
     "$background_images": "cupboard_magenta_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_magenta_grid@chest.cupboard_magenta_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1803,10 +2289,7 @@
     "$hotbar_contents": "chest.cupboard_magenta_hotbar",
     "$inventory_contents": "chest.cupboard_magenta_inventory",
     "$dialog_background": "chest.cupboard_magenta_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_magenta_top_half"
   },
   "cupboard_purple_ui@cupboard_purple_ui_common": {
@@ -1821,35 +2304,23 @@
   },
   "cupboard_purple_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_purple_top_half": {
     "type": "panel",
     "$background_images": "cupboard_purple_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_purple_grid@chest.cupboard_purple_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1870,10 +2341,7 @@
     "$hotbar_contents": "chest.cupboard_purple_hotbar",
     "$inventory_contents": "chest.cupboard_purple_inventory",
     "$dialog_background": "chest.cupboard_purple_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_purple_top_half"
   },
   "cupboard_pink_ui@cupboard_pink_ui_common": {
@@ -1888,35 +2356,23 @@
   },
   "cupboard_pink_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_pink_top_half": {
     "type": "panel",
     "$background_images": "cupboard_pink_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_pink_grid@chest.cupboard_pink_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -1937,10 +2393,7 @@
     "$hotbar_contents": "chest.cupboard_pink_hotbar",
     "$inventory_contents": "chest.cupboard_pink_inventory",
     "$dialog_background": "chest.cupboard_pink_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_pink_top_half"
   },
   "cupboard_white_ui@cupboard_white_ui_common": {
@@ -1955,35 +2408,23 @@
   },
   "cupboard_white_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_white_top_half": {
     "type": "panel",
     "$background_images": "cupboard_white_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_white_grid@chest.cupboard_white_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2004,10 +2445,7 @@
     "$hotbar_contents": "chest.cupboard_white_hotbar",
     "$inventory_contents": "chest.cupboard_white_inventory",
     "$dialog_background": "chest.cupboard_white_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_white_top_half"
   },
   "cupboard_orange_ui@cupboard_orange_ui_common": {
@@ -2022,35 +2460,23 @@
   },
   "cupboard_orange_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_orange_top_half": {
     "type": "panel",
     "$background_images": "cupboard_orange_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_orange_grid@chest.cupboard_orange_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2071,10 +2497,7 @@
     "$hotbar_contents": "chest.cupboard_orange_hotbar",
     "$inventory_contents": "chest.cupboard_orange_inventory",
     "$dialog_background": "chest.cupboard_orange_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_orange_top_half"
   },
   "cupboard_cyan_ui@cupboard_cyan_ui_common": {
@@ -2089,35 +2512,23 @@
   },
   "cupboard_cyan_grid": {
     "type": "grid",
-    "size": [
-      72,
-      54
-    ],
+    "size": [72, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      4,
-      3
-    ],
+    "grid_dimensions": [4, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "cupboard_cyan_top_half": {
     "type": "panel",
     "$background_images": "cupboard_cyan_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "cupboard_cyan_grid@chest.cupboard_cyan_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2138,10 +2549,7 @@
     "$hotbar_contents": "chest.cupboard_cyan_hotbar",
     "$inventory_contents": "chest.cupboard_cyan_inventory",
     "$dialog_background": "chest.cupboard_cyan_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.cupboard_cyan_top_half"
   },
   "half_cupboard_blue_ui@half_cupboard_blue_ui_common": {
@@ -2156,35 +2564,23 @@
   },
   "half_cupboard_blue_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_blue_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_blue_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_blue_grid@chest.half_cupboard_blue_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2205,10 +2601,7 @@
     "$hotbar_contents": "chest.half_cupboard_blue_hotbar",
     "$inventory_contents": "chest.half_cupboard_blue_inventory",
     "$dialog_background": "chest.half_cupboard_blue_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_blue_top_half"
   },
   "half_cupboard_red_ui@half_cupboard_red_ui_common": {
@@ -2223,35 +2616,23 @@
   },
   "half_cupboard_red_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_red_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_red_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_red_grid@chest.half_cupboard_red_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2272,10 +2653,7 @@
     "$hotbar_contents": "chest.half_cupboard_red_hotbar",
     "$inventory_contents": "chest.half_cupboard_red_inventory",
     "$dialog_background": "chest.half_cupboard_red_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_red_top_half"
   },
   "half_cupboard_green_ui@half_cupboard_green_ui_common": {
@@ -2290,35 +2668,23 @@
   },
   "half_cupboard_green_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_green_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_green_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_green_grid@chest.half_cupboard_green_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2339,10 +2705,7 @@
     "$hotbar_contents": "chest.half_cupboard_green_hotbar",
     "$inventory_contents": "chest.half_cupboard_green_inventory",
     "$dialog_background": "chest.half_cupboard_green_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_green_top_half"
   },
   "half_cupboard_yellow_ui@half_cupboard_yellow_ui_common": {
@@ -2357,35 +2720,23 @@
   },
   "half_cupboard_yellow_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_yellow_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_yellow_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_yellow_grid@chest.half_cupboard_yellow_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2406,10 +2757,7 @@
     "$hotbar_contents": "chest.half_cupboard_yellow_hotbar",
     "$inventory_contents": "chest.half_cupboard_yellow_inventory",
     "$dialog_background": "chest.half_cupboard_yellow_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_yellow_top_half"
   },
   "half_cupboard_black_ui@half_cupboard_black_ui_common": {
@@ -2424,35 +2772,23 @@
   },
   "half_cupboard_black_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_black_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_black_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_black_grid@chest.half_cupboard_black_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2473,10 +2809,7 @@
     "$hotbar_contents": "chest.half_cupboard_black_hotbar",
     "$inventory_contents": "chest.half_cupboard_black_inventory",
     "$dialog_background": "chest.half_cupboard_black_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_black_top_half"
   },
   "half_cupboard_brown_ui@half_cupboard_brown_ui_common": {
@@ -2491,35 +2824,23 @@
   },
   "half_cupboard_brown_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_brown_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_brown_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_brown_grid@chest.half_cupboard_brown_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2540,10 +2861,7 @@
     "$hotbar_contents": "chest.half_cupboard_brown_hotbar",
     "$inventory_contents": "chest.half_cupboard_brown_inventory",
     "$dialog_background": "chest.half_cupboard_brown_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_brown_top_half"
   },
   "half_cupboard_gray_ui@half_cupboard_gray_ui_common": {
@@ -2558,35 +2876,23 @@
   },
   "half_cupboard_gray_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_gray_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_gray_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_gray_grid@chest.half_cupboard_gray_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2607,10 +2913,7 @@
     "$hotbar_contents": "chest.half_cupboard_gray_hotbar",
     "$inventory_contents": "chest.half_cupboard_gray_inventory",
     "$dialog_background": "chest.half_cupboard_gray_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_gray_top_half"
   },
   "half_cupboard_light_gray_ui@half_cupboard_light_gray_ui_common": {
@@ -2625,35 +2928,23 @@
   },
   "half_cupboard_light_gray_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_light_gray_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_light_gray_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_light_gray_grid@chest.half_cupboard_light_gray_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2674,10 +2965,7 @@
     "$hotbar_contents": "chest.half_cupboard_light_gray_hotbar",
     "$inventory_contents": "chest.half_cupboard_light_gray_inventory",
     "$dialog_background": "chest.half_cupboard_light_gray_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_light_gray_top_half"
   },
   "half_cupboard_light_blue_ui@half_cupboard_light_blue_ui_common": {
@@ -2692,35 +2980,23 @@
   },
   "half_cupboard_light_blue_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_light_blue_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_light_blue_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_light_blue_grid@chest.half_cupboard_light_blue_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2741,10 +3017,7 @@
     "$hotbar_contents": "chest.half_cupboard_light_blue_hotbar",
     "$inventory_contents": "chest.half_cupboard_light_blue_inventory",
     "$dialog_background": "chest.half_cupboard_light_blue_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_light_blue_top_half"
   },
   "half_cupboard_lime_ui@half_cupboard_lime_ui_common": {
@@ -2759,35 +3032,23 @@
   },
   "half_cupboard_lime_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_lime_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_lime_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_lime_grid@chest.half_cupboard_lime_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2808,10 +3069,7 @@
     "$hotbar_contents": "chest.half_cupboard_lime_hotbar",
     "$inventory_contents": "chest.half_cupboard_lime_inventory",
     "$dialog_background": "chest.half_cupboard_lime_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_lime_top_half"
   },
   "half_cupboard_magenta_ui@half_cupboard_magenta_ui_common": {
@@ -2826,35 +3084,23 @@
   },
   "half_cupboard_magenta_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_magenta_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_magenta_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_magenta_grid@chest.half_cupboard_magenta_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2875,10 +3121,7 @@
     "$hotbar_contents": "chest.half_cupboard_magenta_hotbar",
     "$inventory_contents": "chest.half_cupboard_magenta_inventory",
     "$dialog_background": "chest.half_cupboard_magenta_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_magenta_top_half"
   },
   "half_cupboard_purple_ui@half_cupboard_purple_ui_common": {
@@ -2893,35 +3136,23 @@
   },
   "half_cupboard_purple_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_purple_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_purple_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_purple_grid@chest.half_cupboard_purple_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -2942,10 +3173,7 @@
     "$hotbar_contents": "chest.half_cupboard_purple_hotbar",
     "$inventory_contents": "chest.half_cupboard_purple_inventory",
     "$dialog_background": "chest.half_cupboard_purple_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_purple_top_half"
   },
   "half_cupboard_pink_ui@half_cupboard_pink_ui_common": {
@@ -2960,35 +3188,23 @@
   },
   "half_cupboard_pink_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_pink_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_pink_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_pink_grid@chest.half_cupboard_pink_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -3009,10 +3225,7 @@
     "$hotbar_contents": "chest.half_cupboard_pink_hotbar",
     "$inventory_contents": "chest.half_cupboard_pink_inventory",
     "$dialog_background": "chest.half_cupboard_pink_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_pink_top_half"
   },
   "half_cupboard_white_ui@half_cupboard_white_ui_common": {
@@ -3027,35 +3240,23 @@
   },
   "half_cupboard_white_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_white_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_white_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_white_grid@chest.half_cupboard_white_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -3076,10 +3277,7 @@
     "$hotbar_contents": "chest.half_cupboard_white_hotbar",
     "$inventory_contents": "chest.half_cupboard_white_inventory",
     "$dialog_background": "chest.half_cupboard_white_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_white_top_half"
   },
   "half_cupboard_orange_ui@half_cupboard_orange_ui_common": {
@@ -3094,35 +3292,23 @@
   },
   "half_cupboard_orange_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_orange_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_orange_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_orange_grid@chest.half_cupboard_orange_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -3143,10 +3329,7 @@
     "$hotbar_contents": "chest.half_cupboard_orange_hotbar",
     "$inventory_contents": "chest.half_cupboard_orange_inventory",
     "$dialog_background": "chest.half_cupboard_orange_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_orange_top_half"
   },
   "half_cupboard_cyan_ui@half_cupboard_cyan_ui_common": {
@@ -3161,35 +3344,23 @@
   },
   "half_cupboard_cyan_grid": {
     "type": "grid",
-    "size": [
-      54,
-      54
-    ],
+    "size": [54, 54],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "grid_dimensions": [
-      3,
-      3
-    ],
+    "grid_dimensions": [3, 3],
     "grid_item_template": "chest.chest_grid_item",
     "collection_name": "container_items"
   },
   "half_cupboard_cyan_top_half": {
     "type": "panel",
     "$background_images": "half_cupboard_cyan_cell_image",
-    "size": [
-      "100%",
-      100
-    ],
+    "size": ["100%", 100],
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "controls": [
       {
         "half_cupboard_cyan_grid@chest.half_cupboard_cyan_grid": {
-          "offset": [
-            42,
-            20
-          ]
+          "offset": [42, 20]
         }
       }
     ]
@@ -3210,10 +3381,7 @@
     "$hotbar_contents": "chest.half_cupboard_cyan_hotbar",
     "$inventory_contents": "chest.half_cupboard_cyan_inventory",
     "$dialog_background": "chest.half_cupboard_cyan_ui",
-    "size": [
-      175,
-      187
-    ],
+    "size": [175, 187],
     "$chest_panel": "chest.half_cupboard_cyan_top_half"
   },
   "small_root_panel@common.root_panel": {
@@ -3258,30 +3426,18 @@
       {
         "inventory_panel": {
           "type": "panel",
-          "size": [
-            88,
-            83
-          ],
+          "size": [88, 83],
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle",
           "controls": [
             {
               "inventory_grid": {
                 "type": "grid",
-                "size": [
-                  162,
-                  54
-                ],
+                "size": [162, 54],
                 "anchor_from": "bottom_middle",
                 "anchor_to": "bottom_middle",
-                "offset": [
-                  0,
-                  -26
-                ],
-                "grid_dimensions": [
-                  9,
-                  3
-                ],
+                "offset": [0, -26],
+                "grid_dimensions": [9, 3],
                 "grid_item_template": "$grid_template",
                 "collection_name": "inventory_items"
               }
@@ -3293,16 +3449,9 @@
         "inventory_label@common.section_heading_label": {
           "anchor_from": "top_left",
           "anchor_to": "top_left",
-          "offset": [
-            8,
-            3
-          ],
+          "offset": [8, 3],
           "layer": 2,
-          "color": [
-            0.3,
-            0.3,
-            0.3
-          ],
+          "color": [0.3, 0.3, 0.3],
           "text": "container.inventory"
         }
       }
@@ -3582,6 +3731,91 @@
         "requires": "($container_title = 'half_cupboard_yellow')",
         "$root_panel": "chest.half_cupboard_yellow_root_panel",
         "$container_size": 12
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_leather')",
+        "$root_panel": "chest.backpack_leather_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_brown')",
+        "$root_panel": "chest.backpack_brown_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_blue')",
+        "$root_panel": "chest.backpack_blue_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_green')",
+        "$root_panel": "chest.backpack_green_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_light_blue')",
+        "$root_panel": "chest.backpack_light_blue_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_magenta')",
+        "$root_panel": "chest.backpack_magenta_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_pink')",
+        "$root_panel": "chest.backpack_pink_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_purple')",
+        "$root_panel": "chest.backpack_purple_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_orange')",
+        "$root_panel": "chest.backpack_orange_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_yellow')",
+        "$root_panel": "chest.backpack_yellow_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_black')",
+        "$root_panel": "chest.backpack_black_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_silver')",
+        "$root_panel": "chest.backpack_silver_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_gray')",
+        "$root_panel": "chest.backpack_gray_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_white')",
+        "$root_panel": "chest.backpack_white_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_lime')",
+        "$root_panel": "chest.backpack_lime_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_cyan')",
+        "$root_panel": "chest.backpack_cyan_root_panel",
+        "$container_size": 18
+      },
+      {
+        "requires": "($container_title = 'backpack_inventory_red')",
+        "$root_panel": "chest.backpack_red_root_panel",
+        "$container_size": 18
       },
       {
         "requires": "$desktop_screen",

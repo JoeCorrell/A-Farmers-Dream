@@ -1,0 +1,146 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:kitchen_fridge",
+      "menu_category": {
+        "category": "construction",
+        "group": "itemGroup.name.fridge"
+      },
+      "properties": {
+        "property:direction_player_is_facing": [0, 1, 2, 3],
+        "property:animated": [0, 1],
+        "property:timer": [0, 1],
+        "property:storage0": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 0",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 1",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 2",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('property:direction_player_is_facing')== 3",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:selection_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:collision_box": {
+        "origin": [-8, 0, -7.5],
+        "size": [16, 16, 15]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:geometry": "geometry.fridge",
+      "minecraft:on_player_placing": {
+        "event": "event:block_placed",
+        "target": "self"
+      },
+      "minecraft:on_interact": {
+        "event": "event:cycle_properties",
+        "target": "self"
+      },
+      "minecraft:on_player_destroyed": {
+        "event": "event:block_destroyed",
+        "target": "self"
+      },
+      "minecraft:loot": "loot_tables/kitchen/furniture/other/fridge.loot.json",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "fridge",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        },
+
+        "storage0": {
+          "texture": "drawer_storage_empty",
+          "ambient_occlusion": true,
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:queued_ticking": {
+        "looping": true,
+        "interval_range": [0.01, 0.01],
+        "on_tick": {
+          "event": "event:block_place"
+        }
+      },
+      "minecraft:map_color": "#7d7d7d"
+    },
+    "events": {
+      "event:block_placed": {
+        "set_block_property": {
+          "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
+        }
+      },
+      "event:block_place": {
+        "sequence": [
+          {
+            "condition": "q.block_property('property:direction_player_is_facing') == 0",
+            "run_command": {
+              "command": [
+                "/setblock ~~~ block:kitchen_fridge_bottom [\"property:direction_player_is_facing\":0]"
+              ]
+            }
+          },
+          {
+            "condition": "q.block_property('property:direction_player_is_facing') == 1",
+            "run_command": {
+              "command": [
+                "/setblock ~~~ block:kitchen_fridge_bottom [\"property:direction_player_is_facing\":1]"
+              ]
+            }
+          },
+          {
+            "condition": "q.block_property('property:direction_player_is_facing') == 2",
+            "run_command": {
+              "command": [
+                "/setblock ~~~ block:kitchen_fridge_bottom [\"property:direction_player_is_facing\":2]"
+              ]
+            }
+          },
+          {
+            "condition": "q.block_property('property:direction_player_is_facing') == 3",
+            "run_command": {
+              "command": [
+                "/setblock ~~~ block:kitchen_fridge_bottom [\"property:direction_player_is_facing\":3]"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

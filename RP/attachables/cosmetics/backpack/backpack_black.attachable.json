@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "item:backpack_black",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/blocks/cosmetics/backpack/backpack_black"
+      },
+      "geometry": {
+        "backpack_being_carried": "geometry.backpack",
+        "backpack_being_held": "geometry.backpack_being_held"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "firstperson": "c.is_first_person"
+          },
+          {
+            "thirdperson": "!c.is_first_person"
+          }
+        ]
+      },
+      "animations": {
+        "firstperson": "animation.backpack.firstperson",
+        "thirdperson": "animation.backpack.thirdperson"
+      },
+      "render_controllers": [
+        "controller.render.backpack"
+      ]
+    }
+  }
+}

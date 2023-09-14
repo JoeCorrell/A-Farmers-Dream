@@ -4,15 +4,9 @@
     "description": {
       "identifier": "block:kitchen_sink_terracotta_black"
     },
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "priority": 1,
-    "pattern": [
-      "###",
-      "#C#",
-      "YYY"
-    ],
+    "pattern": ["###", "#C#", "YYY"],
     "key": {
       "#": {
         "item": "minecraft:stained_hardened_clay",

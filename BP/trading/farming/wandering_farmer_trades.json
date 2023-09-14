@@ -161,6 +161,198 @@
               "item": "minecraft:emerald"
             }
           ]
+        },
+        {
+          "wants": [
+            {
+              "item": "item:chicken_and_dumplings"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "item:steak_and_potatoes"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "item:pumpkin_stew"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "item:cod_stew"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "item:scrambled_eggs"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "item:chicken_sandwich"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "item:fried_rice"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "item:chicken_and_dumplings"
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "item:chicken_sandwich"
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "item:cod_stew"
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "item:pumpkin_stew"
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "item:steak_and_potatoes"
+            }
+          ]
         }
       ]
     }

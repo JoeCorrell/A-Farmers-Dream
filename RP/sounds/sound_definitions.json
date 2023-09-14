@@ -1,6 +1,15 @@
 {
   "format_version": "1.20.0",
   "sound_definitions": {
+    "backpack.claim": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/cosmetics/backpack/backpack_claim",
+          "volume": 10
+        }
+      ]
+    },
     "drawer.open": {
       "category": "block",
       "sounds": [
@@ -97,6 +106,24 @@
         {
           "name": "sounds/kitchen/furniture/interactions/cutting_board_wood_chop",
           "volume": 1
+        }
+      ]
+    },
+    "interact.fridge_open": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/kitchen/furniture/interactions/fridge_open",
+          "volume": 3
+        }
+      ]
+    },
+    "interact.fridge_close": {
+      "category": "block",
+      "sounds": [
+        {
+          "name": "sounds/kitchen/furniture/interactions/fridge_close",
+          "volume": 3
         }
       ]
     }

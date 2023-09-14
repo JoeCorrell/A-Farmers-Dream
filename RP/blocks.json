@@ -1,4 +1,55 @@
 {
+  "backpack_blue": {
+    "sound": "cloth"
+  },
+  "backpack_red": {
+    "sound": "cloth"
+  },
+  "backpack_light_blue": {
+    "sound": "cloth"
+  },
+  "backpack_green": {
+    "sound": "cloth"
+  },
+  "backpack_yellow": {
+    "sound": "cloth"
+  },
+  "backpack_silver": {
+    "sound": "cloth"
+  },
+  "backpack_gray": {
+    "sound": "cloth"
+  },
+  "backpack_white": {
+    "sound": "cloth"
+  },
+  "backpack_black": {
+    "sound": "cloth"
+  },
+  "backpack_orange": {
+    "sound": "cloth"
+  },
+  "backpack_purple": {
+    "sound": "cloth"
+  },
+  "backpack_pink": {
+    "sound": "cloth"
+  },
+  "backpack_magenta": {
+    "sound": "cloth"
+  },
+  "backpack_brown": {
+    "sound": "cloth"
+  },
+  "backpack_cyan": {
+    "sound": "cloth"
+  },
+  "backpack_lime": {
+    "sound": "cloth"
+  },
+  "backpack_leather": {
+    "sound": "cloth"
+  },
   "cabbage_crate": {
     "sound": "cloth"
   },

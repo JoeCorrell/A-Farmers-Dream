@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block:kitchen_fridge"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["#i#", "iCi", "#i#"],
+    "key": {
+      "#": {
+        "item": "minecraft:concrete"
+      },
+      "i": {
+        "item": "minecraft:iron_ingot"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      }
+    },
+    "result": {
+      "item": "block:kitchen_fridge",
+      "count": 1
+    }
+  }
+}

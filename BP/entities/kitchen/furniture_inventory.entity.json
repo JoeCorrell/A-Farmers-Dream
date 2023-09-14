@@ -164,6 +164,15 @@
             }
           },
           {
+            "block": "block:kitchen_fridge_bottom",
+            "entered_block_event": {
+              "event": "event:fridge"
+            },
+            "exited_block_event": {
+              "event": "event:despawn"
+            }
+          },
+          {
             "block": "block:kitchen_cabinent_terracotta_blue",
             "entered_block_event": {
               "event": "event:kitchen_cabinent_terracotta_blue"

@@ -1,16 +1,22 @@
 import json
 import os
 
+# Constants
+BASE_OUTPUT_DIRECTORY = r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\blocks\kitchen\furniture\half_cupboard"
+LANG_FILE_PATH = os.path.join(BASE_OUTPUT_DIRECTORY, "RP/texts/en_US.lang")
+
 # Function to create a directory if it doesn't exist
 
 
 def create_directory_if_not_exists(directory):
+    """Create a directory if it doesn't exist."""
     os.makedirs(directory, exist_ok=True)
 
 # Function to save JSON data to a file with overwrite
 
 
 def save_json_to_file(data, file_path, overwrite=True):
+    """Save JSON data to a file with overwrite option."""
     mode = "w" if overwrite else "x" if not os.path.exists(file_path) else "a"
     with open(file_path, mode) as json_file:
         json.dump(data, json_file, indent=2)
@@ -19,6 +25,7 @@ def save_json_to_file(data, file_path, overwrite=True):
 
 
 def add_or_replace_line(file_path, line_to_add_or_replace):
+    """Add or replace a line in a text file."""
     with open(file_path, "r", encoding="utf-8", errors="ignore") as file:
         lines = file.readlines()
 
@@ -46,18 +53,13 @@ colors = [
     "wood_warped_stripped", "wood_crimson_stripped", "wood_birch_stripped", "wood_jungle_stripped"
 ]
 
-# Specify the directory where files will be generated
-base_output_directory = r"C:\Users\Joe\AppData\Local\com.bridge.dev\bridge\projects\HarvestCraft\BP\blocks\kitchen\furniture\half_cupboard"
-
 for color in colors:
     # Define the JSON item template
     formatted_file_name = f"half_cupboard_{color}"
-    block_template = {
-
-    }
+    block_template = {}
 
     # Specify the output directory for items
-    output_directory = os.path.join(base_output_directory)
+    output_directory = os.path.join(BASE_OUTPUT_DIRECTORY)
 
     create_directory_if_not_exists(output_directory)
 
@@ -76,10 +78,7 @@ for color in colors:
     line_number = 6
 
     # Append data to another file (en_US.lang) with capitalized text or replace it if exists
-    lang_file_path = os.path.join(
-        base_output_directory, f"RP/texts/en_US.lang")
-
     line_to_add_or_replace = f"tile.block:{formatted_file_name.lower()}.name={formatted_file_name_for_lang}"
-    add_or_replace_line(lang_file_path, line_to_add_or_replace)
+    add_or_replace_line(LANG_FILE_PATH, line_to_add_or_replace)
 
-    print(f'Line added or replaced in "{lang_file_path}".')
+    print(f'Line added or replaced in "{LANG_FILE_PATH}".')

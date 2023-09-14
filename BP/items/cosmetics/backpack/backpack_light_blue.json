@@ -1,0 +1,39 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "item:backpack_light_blue"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "backpack_light_blue"
+			},
+			"minecraft:creative_category": {
+				"category": "equipment"
+			},
+			"minecraft:block_placer": {
+				"block": "block:backpack_light_blue"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "event:claim",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"event:claim": {
+				"swing": {},
+				"run_command": {
+					"command": [
+						"execute at @p[tag=!backpack_light_blue_claim] run playsound backpack.claim",
+						"execute as @p[tag=!backpack_light_blue_claim] run summon entity:backpack_inventory_light_blue backpack_inventory_light_blue ~~1~",
+						"execute as @p[tag=!backpack_light_blue_claim] run tag @p add backpack_light_blue_claim"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,148 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "block:backpack_green",
+			"menu_category": {
+				"category": "equipment"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('minecraft:cardinal_direction')== 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('minecraft:cardinal_direction')== 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('minecraft:cardinal_direction')== 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('minecraft:cardinal_direction')== 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					12,
+					10
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					12,
+					10
+				]
+			},
+			"minecraft:light_dampening": 1,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.3
+			},
+			"minecraft:queued_ticking": {
+				"looping": true,
+				"interval_range": [
+					0.1,
+					0.1
+				],
+				"on_tick": {
+					"event": "event:teleport_entity_command",
+					"target": "self"
+				}
+			},
+			"minecraft:loot": "loot_tables/cosmetics/backpack/backpack_green.loot.json",
+			"minecraft:on_placed": {
+				"event": "event:teleport_entity_command",
+				"target": "self"
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "event:unground_backpack",
+				"target": "self"
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 15
+			},
+			"minecraft:geometry": "geometry.backpack_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "backpack_green",
+					"ambient_occlusion": true,
+					"face_dimming": true,
+					"render_method": "double_sided"
+				}
+			},
+			"minecraft:map_color": "#7d7d7d"
+		},
+		"events": {
+			"event:teleport_entity_command": {
+				"run_command": {
+					"command": [
+						"tag @e[type=entity:backpack_inventory_green] add grounded",
+						"tp @e[type=entity:backpack_inventory_green] ~~0.2~"
+					]
+				}
+			},
+			"event:unground_backpack": {
+				"run_command": {
+					"command": [
+						"tag @e[type=entity:backpack_inventory_green] remove grounded"
+					]
+				}
+			}
+		}
+	}
+}
