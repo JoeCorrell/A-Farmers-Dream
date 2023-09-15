@@ -2,9 +2,9 @@
   "format_version": "1.20.0",
   "minecraft:scatter_feature": {
     "description": {
-      "identifier": "feature:scatter_wild_cabbage_feature"
+      "identifier": "feature:scatter_wild_onion_feature"
     },
-    "places_feature": "feature:wild_cabbage_feature",
+    "places_feature": "feature:wild_onion_feature",
     "iterations": 3,
     "scatter_chance": 100,
     "x": {

@@ -1,59 +1,53 @@
 {
-    "format_version": "1.20.0",
-    "minecraft:block": {
-        "description": {
-            "identifier": "block:wild_onion"
-        },
-        "components": {
-            "minecraft:geometry": "geometry.wild_onion",
-            "minecraft:collision_box": {
-                "origin": [
-                    -3,
-                    2,
-                    -3
-                ],
-                "size": [
-                    6,
-                    4,
-                    6
-                ]
-            },
-            "minecraft:selection_box": {
-                "origin": [
-                    -3,
-                    2,
-                    -3
-                ],
-                "size": [
-                    6,
-                    4,
-                    6
-                ]
-            },
-            "minecraft:on_interact": {
-                "condition": "query.is_item_name_any('slot.weapon.mainhand','item:chef_knife')",
-                "event": "event:harvest"
-            },
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "onion_crop_block_stage_2",
-                    "ambient_occlusion": false,
-                    "render_method": "alpha_test"
-                }
-            },
-            "minecraft:light_dampening": 0
-        },
-        "events": {
-            "event:harvest": {
-                "run_command": {
-                    "command": [
-                        "/setblock ~~~ air"
-                    ]
-                },
-                "spawn_loot": {
-                    "table": "loot_tables/farming/crops/wild/wild_onion.loot.json"
-                }
-            }
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:wild_onion"
+    },
+    "components": {
+      "minecraft:geometry": "geometry.wild_onion",
+      "minecraft:collision_box": {
+        "origin": [-3, 2, -3],
+        "size": [6, 4, 6]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3, 2, -3],
+        "size": [6, 4, 6]
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "minecraft:grass",
+              "minecraft:dirt",
+              "minecraft:podzol"
+            ],
+            "allowed_faces": ["up"]
+          }
+        ]
+      },
+      "minecraft:on_interact": {
+        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:chef_knife')",
+        "event": "event:harvest"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "onion_crop_block_stage_2",
+          "ambient_occlusion": false,
+          "render_method": "alpha_test"
         }
+      },
+      "minecraft:light_dampening": 0
+    },
+    "events": {
+      "event:harvest": {
+        "run_command": {
+          "command": ["/setblock ~~~ air"]
+        },
+        "spawn_loot": {
+          "table": "loot_tables/farming/crops/wild/wild_onion.loot.json"
+        }
+      }
     }
+  }
 }

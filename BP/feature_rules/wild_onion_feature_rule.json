@@ -2,8 +2,8 @@
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "rule:wild_corn_feature_rule",
-      "places_feature": "feature:scatter_wild_corn_feature"
+      "identifier": "rule:wild_onion_feature_rule",
+      "places_feature": "feature:scatter_wild_onion_feature"
     },
     "conditions": {
       "placement_pass": "surface_pass",

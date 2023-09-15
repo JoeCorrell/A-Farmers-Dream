@@ -6,7 +6,7 @@
     },
     "places_feature": "feature:wild_tomato_feature",
     "iterations": 3,
-    "scatter_chance": 38.0,
+    "scatter_chance": 100,
     "x": {
       "distribution": "uniform",
       "extent": [0, 15]

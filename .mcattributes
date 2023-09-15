@@ -9,3 +9,4 @@ diagnostic.disable.=true
 diagnostic.disable.=true
 diagnostic.disable.minecraft.commands.fill.syntax=true
 diagnostic.disable.minecraft.commands.fill.syntax=true
+diagnostic.disable.=true
