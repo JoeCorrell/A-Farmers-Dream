@@ -1,12 +1,6 @@
-
 addon.name=A Farmer's Dream
 addon.description=Dive into a tastier Minecraft! Grow new crops, cook delicious foods, and decorate with stylish furniture for an enriched gameplay experience.
 entity.entity:wandering_trader.name=Wandering Farmer
-
-hunger.fullbar=
-hunger.halfbar=
-hunger.hungryfull=
-hunger.hungryhalf=
 item.item:tomato_seed=Tomato Seed
 item.item:corn_seed=Corn Seed
 item.item:cabbage_seed=Cabbage Seed
@@ -38,7 +32,6 @@ item.item:mutton_chops_raw=Raw Mutton Chop
 item.item:mutton_chops_cooked=Cooked Mutton Chop
 item.item:frying_pan=Frying Pan
 item.item:chef_knife=Chef's Cooking Knife
-
 tile.block:corn_crate.name=Crate of Corn
 tile.block:cabbage_crate.name=Crate of Cabbage
 tile.block:onion_crate.name=Crate of Onion

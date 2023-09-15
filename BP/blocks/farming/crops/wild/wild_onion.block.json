@@ -7,12 +7,28 @@
     "components": {
       "minecraft:geometry": "geometry.wild_onion",
       "minecraft:collision_box": {
-        "origin": [-3, 2, -3],
-        "size": [6, 4, 6]
+        "origin": [
+          -3,
+          2,
+          -3
+        ],
+        "size": [
+          6,
+          4,
+          6
+        ]
       },
       "minecraft:selection_box": {
-        "origin": [-3, 2, -3],
-        "size": [6, 4, 6]
+        "origin": [
+          -3,
+          2,
+          -3
+        ],
+        "size": [
+          6,
+          4,
+          6
+        ]
       },
       "minecraft:placement_filter": {
         "conditions": [
@@ -22,7 +38,9 @@
               "minecraft:dirt",
               "minecraft:podzol"
             ],
-            "allowed_faces": ["up"]
+            "allowed_faces": [
+              "up"
+            ]
           }
         ]
       },
@@ -42,7 +60,9 @@
     "events": {
       "event:harvest": {
         "run_command": {
-          "command": ["/setblock ~~~ air"]
+          "command": [
+            "/setblock ~~~ air"
+          ]
         },
         "spawn_loot": {
           "table": "loot_tables/farming/crops/wild/wild_onion.loot.json"

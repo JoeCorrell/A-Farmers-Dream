@@ -6,7 +6,7 @@
     },
     "places_feature": "feature:wild_rice_feature",
     "iterations": 3,
-    "scatter_chance": 100,
+    "scatter_chance": 40,
     "x": {
       "distribution": "uniform",
       "extent": [0, 15]

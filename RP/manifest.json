@@ -8,8 +8,8 @@
     }
   },
   "header": {
-    "name": "addon.name",
-    "description": "addon.description",
+    "name": "§o§6A Farmer's Dream V§a1.0.0",
+    "description": "§pDive into a tastier Minecraft! Grow new crops, cook delicious foods, and decorate with stylish furniture for an enriched gameplay experience.",
     "min_engine_version": [1, 20, 0],
     "uuid": "8cfe6f02-75d4-4022-b98b-da7478794c43",
     "version": [1, 0, 0]

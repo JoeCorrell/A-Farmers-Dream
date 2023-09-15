@@ -496,7 +496,7 @@
       "event:place_inventory": {
         "run_command": {
           "command": [
-            "/summon entity:kitchen_furniture_inventory cupboard_jungle ~ ~-0.25 ~"
+            "/summon entity:kitchen_furniture_inventory cupboard_terracotta_white ~ ~-0.25 ~"
           ]
         },
         "set_block_property": {
