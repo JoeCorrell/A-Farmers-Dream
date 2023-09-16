@@ -4,57 +4,6 @@
   "resource_pack_name": "FarmersDream",
   "texture_name": "atlas.terrain",
   "texture_data": {
-    "backpack_leather": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_leather"
-    },
-    "backpack_black": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_black"
-    },
-    "backpack_gray": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_gray"
-    },
-    "backpack_magenta": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_magenta"
-    },
-    "backpack_purple": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_purple"
-    },
-    "backpack_pink": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_pink"
-    },
-    "backpack_blue": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_blue"
-    },
-    "backpack_brown": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_brown"
-    },
-    "backpack_red": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_red"
-    },
-    "backpack_white": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_white"
-    },
-    "backpack_yellow": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_yellow"
-    },
-    "backpack_silver": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_silver"
-    },
-    "backpack_green": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_green"
-    },
-    "backpack_lime": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_lime"
-    },
-    "backpack_cyan": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_cyan"
-    },
-    "backpack_orange": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_orange"
-    },
-    "backpack_light_blue": {
-      "textures": "textures/blocks/cosmetics/backpack/backpack_light_blue"
-    },
     //Kitchen Block Textures =>
     "kitchen_terracotta_black": {
       "textures": "textures/blocks/kitchen/furniture/terracotta/black"

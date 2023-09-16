@@ -34,7 +34,11 @@
       },
      */
       "component_group:despawn": {
-        "minecraft:instant_despawn": {}
+        "minecraft:transformation": {
+          "drop_equipment": true,
+          "drop_inventory": true,
+          "into": "entity:despawn"
+        }
       },
       "component_group:no_hit_box": {
         "minecraft:inventory": {

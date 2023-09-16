@@ -7,6 +7,28 @@
     "components": {
       "minecraft:icon": {
         "texture": "chef_knife"
+      },
+      "minecraft:durability": {
+        "max_durability": 250
+      },
+      "minecraft:damage": 4,
+      "minecraft:weapon": {
+        "on_hurt_entity": {
+          "event": "event:damage_tool"
+        }
+      },
+      "minecraft:enchantable": {
+        "slot": "sword",
+        "value": 14
+      },
+      "events": {
+        "event:damage_tool": {
+          "damage": {
+            "type": "none",
+            "amount": 1,
+            "target": "self"
+          }
+        }
       }
     }
   }

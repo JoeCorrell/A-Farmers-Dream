@@ -34,7 +34,11 @@
       },
      */
       "component_group:despawn": {
-        "minecraft:instant_despawn": {}
+        "minecraft:transformation": {
+          "drop_equipment": true,
+          "drop_inventory": true,
+          "into": "entity:despawn"
+        }
       },
       "component_group:no_hit_box": {
         "minecraft:inventory": {
@@ -48,7 +52,11 @@
             {
               "width": 0.0,
               "height": 0,
-              "pivot": [0, -3, 5]
+              "pivot": [
+                0,
+                -3,
+                5
+              ]
             }
           ]
         }
@@ -59,7 +67,11 @@
             {
               "width": 0.7,
               "height": 0.5,
-              "pivot": [0, 1.45, 0]
+              "pivot": [
+                0,
+                1.45,
+                0
+              ]
             }
           ]
         }
@@ -76,7 +88,11 @@
             {
               "width": 0.7,
               "height": 0.5,
-              "pivot": [-0.03, 0.25, 0.03]
+              "pivot": [
+                -0.03,
+                0.25,
+                0.03
+              ]
             }
           ]
         }
@@ -119,7 +135,11 @@
           {
             "width": 0.7,
             "height": 0.5,
-            "pivot": [-0.03, -0, 0.03]
+            "pivot": [
+              -0.03,
+              -0,
+              0.03
+            ]
           }
         ]
       },
@@ -1501,7 +1521,9 @@
     "events": {
       "minecraft:entity_spawned": {
         "add": {
-          "component_groups": ["component_group:hit_box"]
+          "component_groups": [
+            "component_group:hit_box"
+          ]
         }
       },
       /*
@@ -1536,28 +1558,40 @@
      ,*/
       "event:inventory_has_no_hit_box": {
         "add": {
-          "component_groups": ["component_group:no_hit_box"]
+          "component_groups": [
+            "component_group:no_hit_box"
+          ]
         },
         "remove": {
-          "component_groups": ["component_group:hit_box"]
+          "component_groups": [
+            "component_group:hit_box"
+          ]
         }
       },
       "event:fridge": {
         "add": {
-          "component_groups": ["component_group:fridge"]
+          "component_groups": [
+            "component_group:fridge"
+          ]
         }
       },
       "event:inventory_has_hit_box": {
         "remove": {
-          "component_groups": ["component_group:no_hit_box"]
+          "component_groups": [
+            "component_group:no_hit_box"
+          ]
         },
         "add": {
-          "component_groups": ["component_group:hit_box"]
+          "component_groups": [
+            "component_group:hit_box"
+          ]
         }
       },
       "event:despawn": {
         "add": {
-          "component_groups": ["component_group:despawn"]
+          "component_groups": [
+            "component_group:despawn"
+          ]
         }
       }
     }

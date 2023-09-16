@@ -1,12 +1,6 @@
 diagnostic.disable.minecraft.format.path.length=true
-diagnostic.disable.=true
-diagnostic.disable.=true
-diagnostic.disable.minecraft.tag.missing=true
 diagnostic.disable.minecraft.tag.missing=true
 diagnostic.disable.=true
-diagnostic.disable.=true
-diagnostic.disable.=true
-diagnostic.disable.=true
 diagnostic.disable.minecraft.commands.fill.syntax=true
-diagnostic.disable.minecraft.commands.fill.syntax=true
+diagnostic.disable.behaviorpack.item.missing=true
 diagnostic.disable.=true
