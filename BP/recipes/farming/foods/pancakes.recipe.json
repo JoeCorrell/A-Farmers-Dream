@@ -5,14 +5,8 @@
       "identifier": "item:pancakes"
     },
     "priority": 0,
-    "tags": [
-      "stove_recipes"
-    ],
-    "pattern": [
-      "BEZ",
-      "",
-      " DC"
-    ],
+    "tags": ["stove_recipes"],
+    "pattern": ["BEZ", "", " DC"],
     "key": {
       "B": {
         "item": "item:milk_bottle"

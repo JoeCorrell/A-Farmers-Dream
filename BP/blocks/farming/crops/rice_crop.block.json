@@ -393,6 +393,7 @@
             "run_command": {
               "command": [
                 "/particle minecraft:crop_growth_emitter ~~~",
+                "/replaceitem entity @p slot.weapon.mainhand 0 minecraft:glass_bottle",
                 "/playsound bucket.fill_water @p"
               ]
             }

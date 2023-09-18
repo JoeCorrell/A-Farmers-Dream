@@ -225,6 +225,7 @@ tile.block:kitchen_counter_jungle.name=Kitchen Counter Jungle
 tile.block:kitchen_counter_crimson.name=Kitchen Counter Crimson
 tile.block:kitchen_counter_warped.name=Kitchen Counter Warped
 tile.block:kitchen_fridge.name=Kitchen Fridge
+tile.block:kitchen_stove.name=Kitchen Stove
 tile.block:kitchen_fridge_bottom.name=Kitchen Fridge Bottom
 tile.block:kitchen_fridge_Top.name=Kitchen Fridge Top
 tile.block:kitchen_counter_bamboo.name=Kitchen Counter Bamboo
