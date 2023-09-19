@@ -8,12 +8,7 @@
         "group": "itemGroup.name.cooking_table"
       },
       "properties": {
-        "property:direction_player_is_facing": [
-          0,
-          1,
-          2,
-          3
-        ]
+        "property:direction_player_is_facing": [0, 1, 2, 3]
       }
     },
     "permutations": [
@@ -21,11 +16,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 0",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              0,
-              0
-            ]
+            "rotation": [0, 0, 0]
           }
         }
       },
@@ -33,11 +24,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 1",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              180,
-              0
-            ]
+            "rotation": [0, 180, 0]
           }
         }
       },
@@ -45,11 +32,7 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 2",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              90,
-              0
-            ]
+            "rotation": [0, 90, 0]
           }
         }
       },
@@ -57,46 +40,24 @@
         "condition": "query.block_property('property:direction_player_is_facing')== 3",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              270,
-              0
-            ]
+            "rotation": [0, 270, 0]
           }
         }
       }
     ],
     "components": {
       "minecraft:selection_box": {
-        "origin": [
-          -8,
-          0,
-          -8
-        ],
-        "size": [
-          16,
-          16,
-          16
-        ]
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
       },
       "minecraft:collision_box": {
-        "origin": [
-          -8,
-          0,
-          -8
-        ],
-        "size": [
-          16,
-          16,
-          16
-        ]
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
       },
       "minecraft:crafting_table": {
         "table_name": "cooking",
         "grid_size": 3,
-        "crafting_tags": [
-          "cooking_table_recipes"
-        ]
+        "crafting_tags": ["cooking_table_recipes"]
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.3

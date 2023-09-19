@@ -1,4 +1,7 @@
 {
+  "block:soil": {
+    "sound": "gravel"
+  },
   "kitchen_fridge": {
     "sound": "metal"
   },

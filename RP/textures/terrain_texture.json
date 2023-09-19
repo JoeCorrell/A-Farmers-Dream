@@ -4,6 +4,12 @@
   "resource_pack_name": "FarmersDream",
   "texture_name": "atlas.terrain",
   "texture_data": {
+    "soil": {
+      "textures": "textures/blocks/farming/soil"
+    },
+    "invisible": {
+      "textures": "textures/blocks/farming/invisible"
+    },
     //Kitchen Block Textures =>
     "kitchen_terracotta_black": {
       "textures": "textures/blocks/kitchen/furniture/terracotta/black"

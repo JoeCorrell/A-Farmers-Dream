@@ -2,11 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:block": {
     "description": {
-      "identifier": "block:kitchen_cooking_table_bamboo",
-      "menu_category": {
-        "category": "construction",
-        "group": "itemGroup.name.cooking_table"
-      },
+      "identifier": "block:soil",
       "properties": {
         "property:direction_player_is_facing": [0, 1, 2, 3]
       }
@@ -46,53 +42,46 @@
       }
     ],
     "components": {
-      "minecraft:selection_box": {
-        "origin": [-8, 0, -8],
-        "size": [16, 16, 16]
-      },
-      "minecraft:collision_box": {
-        "origin": [-8, 0, -8],
-        "size": [16, 16, 16]
-      },
-      "minecraft:crafting_table": {
-        "table_name": "cooking",
-        "grid_size": 3,
-        "crafting_tags": ["cooking_table_recipes"]
-      },
-      "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 0.3
-      },
-      "minecraft:on_player_placing": {
-        "event": "event:block_placed"
-      },
-      "minecraft:geometry": "geometry.kitchen_cooking_table",
-      "minecraft:loot": "loot_tables/kitchen/furniture/cooking_table/cooking_table_wood_bamboo.loot.json",
-      "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 15
+      "minecraft:geometry": {
+        "identifier": "geometry.soil"
       },
       "minecraft:material_instances": {
-        "crafting": {
-          "texture": "kitchen_cooking_table",
-          "ambient_occlusion": true,
-          "render_method": "alpha_test"
-        },
-        "drawer": {
-          "texture": "kitchen_bamboo",
-          "ambient_occlusion": true,
-          "render_method": "alpha_test"
-        },
         "*": {
-          "texture": "kitchen_bamboo",
+          "texture": "soil",
+          "face_dimming": true,
           "ambient_occlusion": true,
           "render_method": "alpha_test"
         }
       },
-      "minecraft:map_color": "#7d7d7d"
+      "minecraft:collision_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 15.5, 16]
+      },
+      "minecraft:selection_box": {
+        "size": [16, 15, 16],
+        "origin": [-8, 0, -8]
+      },
+      "minecraft:on_placed": {
+        "event": "event:block_placed"
+      },
+      "minecraft:on_fall_on": {
+        "min_fall_distance": 1.0,
+        "event": "trample"
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:loot": "loot_tables/farming/dirt.json"
     },
     "events": {
       "event:block_placed": {
         "set_block_property": {
           "property:direction_player_is_facing": "q.cardinal_facing_2d-2"
+        }
+      },
+      "trample": {
+        "run_command": {
+          "command": ["setblock ~~~ dirt"]
         }
       }
     }

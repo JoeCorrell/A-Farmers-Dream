@@ -4,7 +4,6 @@
     "description": {
       "identifier": "block:onion_crop_block",
       "properties": {
-        "property:direction_player_is_facing": [0, 1, 2, 3],
         "property:growth_stage": [0, 1, 2, 3],
         "property:extra_tick": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
       },
@@ -13,38 +12,6 @@
       }
     },
     "permutations": [
-      {
-        "condition": "query.block_property('property:direction_player_is_facing')== 0",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [0, 0, 0]
-          }
-        }
-      },
-      {
-        "condition": "query.block_property('property:direction_player_is_facing')== 1",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [0, 180, 0]
-          }
-        }
-      },
-      {
-        "condition": "query.block_property('property:direction_player_is_facing')== 2",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [0, 90, 0]
-          }
-        }
-      },
-      {
-        "condition": "query.block_property('property:direction_player_is_facing')== 3",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [0, 270, 0]
-          }
-        }
-      },
       {
         "condition": "query.block_property('property:extra_tick') == 0",
         "components": {
@@ -268,13 +235,17 @@
         "event": "event:interactions",
         "target": "self"
       },
+      "minecraft:on_placed": {
+        "event": "event:block_placed"
+      },
       "minecraft:selection_box": true,
       "minecraft:placement_filter": {
         "conditions": [
           {
             "allowed_faces": ["up"],
             "block_filter": [
-              "farmland"
+              "farmland",
+              "block:soil"
               //"block:fertile_soil"
             ]
           }
@@ -286,8 +257,10 @@
     "events": {
       "event:block_placed": {
         "set_block_property": {
-          "property:direction_player_is_facing": "q.cardinal_facing_2d-2",
           "property:extra_tick": 0
+        },
+        "run_command": {
+          "command": ["/fill ~ ~-1 ~ ~ ~-1 ~ block:soil replace farmland"]
         }
       },
       "event:tick_go_to_1": {
