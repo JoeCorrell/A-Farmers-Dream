@@ -15,6 +15,7 @@
         "condition": "query.is_item_name_any('slot.weapon.mainhand','item:chef_knife')",
         "event": "event:harvest"
       },
+      "minecraft:loot": "loot_tables/farming/empty.json",
       "minecraft:material_instances": {
         "*": {
           "texture": "corn_crop_block_stage_3",

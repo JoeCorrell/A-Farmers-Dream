@@ -7,6 +7,15 @@
     "soil": {
       "textures": "textures/blocks/farming/soil"
     },
+    "soil_dry": {
+      "textures": "textures/blocks/farmland_dry"
+    },
+    "soil_wet": {
+      "textures": "textures/blocks/farmland_wet"
+    },
+    "soil_side": {
+      "textures": "textures/blocks/dirt"
+    },
     "invisible": {
       "textures": "textures/blocks/farming/invisible"
     },

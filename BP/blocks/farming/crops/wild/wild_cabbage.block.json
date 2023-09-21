@@ -17,6 +17,7 @@
       "minecraft:transformation": {
         "scale": [1.5, 1.5, 1.5]
       },
+      "minecraft:loot": "loot_tables/farming/empty.json",
       "minecraft:on_interact": {
         "condition": "query.is_item_name_any('slot.weapon.mainhand','item:chef_knife')",
         "event": "event:harvest"
